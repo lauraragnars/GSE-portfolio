@@ -4,16 +4,40 @@
     box-sizing: border-box;
 }
 
-html {
+body {
     margin: 0;
 }
 
 img {
     width: 100%;
+
 }
 
 .hide {
     display: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vh;
+}
+
+.section-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.text {
+    flex-basis: 550px;
+    flex-grow: 1;
+}
+
+.billede {
+    flex-basis: 450px;
+    flex-grow: 1;
+
+
 }
 
 /* -------------- MENU -------------- */
@@ -33,6 +57,11 @@ img {
     font-size: 5rem;
 }
 
+header {
+    height: 11vh;
+    margin-bottom: 5vh;
+}
+
 #menuknap {
     z-index: 101;
     position: fixed;
@@ -41,12 +70,13 @@ img {
     font-family: futura-pt, sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 #menulist {
     list-style-type: none;
     color: black;
+    padding-left: 0;
 }
 
 #menu a {
@@ -56,11 +86,87 @@ img {
 }
 
 #menu a:hover {
-    color: blue;
+    color: lightpink;
     transition: 0.3s;
 }
 
+.logo {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    position: fixed;
+    left: 2vw;
+    top: 2vw;
+}
+
+.logo a {
+    margin-top: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.top-navn {
+    text-align: center;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.top-navn p {
+    margin-top: 4vh;
+}
+
+
+
+/* -------------- FONTE -------------- */
+
+@font-face {
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima'), url('OPTIMA.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Optima Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima Italic'), url('Optima_Italic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Optima Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima Medium'), url('Optima Medium.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Optima Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima Bold'), url('OPTIMA_B.woff') format('woff');
+}
+
 /* -------------- FORSIDE -------------- */
+
+#forside .text {
+    text-align: center;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 30px;
+    align-self: center;
+
+}
+
+
 
 /* -------------- WORK -------------- */
 
