@@ -37,23 +37,79 @@
             </div>
             <div class="billede">
                 <img src="billeder/samplebillede1.png" alt="forside-billede">
+
             </div>
 
         </div>
     </section>
 
-    <section id="about" class="section-wrapper"></section>
+    <section id="about" class="section-wrapper">
+    </section>
 
-    <section id="work" class="section-wrapper"></section>
+    <section id="work" class="section-wrapper">
+
+        <section class="data-container"></section>
+    </section>
 
     <section id="contact" class="section-wrapper"></section>
 
     <footer>
 
     </footer>
-
+    <template>
+        <article>
+            <p class="navn"></p>
+            <img src="" alt="">
+        </article>
+    </template>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", hentData);
+
+
+        let work = [];
+        let billeder = [];
+        const link = "http://lauraragnars.dk/GSE-wordpress/wordpress/wp-json/wp/v2/featured_work";
+        const link2 = "SÆTNYTLINKIND";
+        const container = document.querySelector(".data-container");
+        const template = document.querySelector("template");
+
+        async function hentData() {
+            const response = await fetch(link);
+            work = await response.json();
+            visWork();
+
+            const response2 = await fetch(link2);
+            billeder = await response.json();
+            visBilleder();
+        }
+
+        function visBilleder() {
+            document.querySelector(".billeder").innerHTML = billeder.content.rendered;
+        }
+
+        function visWork() {
+            container.innerHTML = "";
+
+
+
+            work.forEach(elm => {
+
+                let klon = template.cloneNode(true).content;
+                klon.querySelector(".navn").textContent = elm.title.rendered;
+
+                container.appendChild(klon);
+
+                //                    container.lastElementChild.addEventListener("click", () => {
+                //                        location.href = "produktview.html?id=" + produkt.id;
+                //                    });
+
+            })
+
+        };
+
+    </script>
 </body>
 
 </html>
