@@ -21,3 +21,6 @@ function toggleMenu() {
     }
 
 }
+
+
+document.addEventListener("DOMContentLoaded", hentData);

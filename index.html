@@ -71,7 +71,7 @@
         let work = [];
         let billeder = [];
         const link = "http://lauraragnars.dk/GSE-wordpress/wordpress/wp-json/wp/v2/featured_work";
-        const link2 = "SÆTNYTLINKIND";
+        const link2 = "http://lauraragnars.dk/GSE-wordpress/wordpress/wp-json/wp/v2/billede";
         const container = document.querySelector(".data-container");
         const template = document.querySelector("template");
 
@@ -86,8 +86,19 @@
         }
 
         function visBilleder() {
-            document.querySelector(".billeder").innerHTML = billeder.content.rendered;
+            document.querySelector(".billede1").src = billeder.billede1.guid;
+
+            document.querySelector(".billede2").src = billeder.billede2.guid;
+
+            document.querySelector(".billede3").src = billeder.billede3.guid;
+
+            document.querySelector(".billede4").src = billeder.billede4.guid;
+
+            document.querySelector(".billede5").src = billeder.billede5.guid;
+
+            document.querySelector(".billede6").src = billeder.billede6.guid;
         }
+
 
         function visWork() {
             container.innerHTML = "";
