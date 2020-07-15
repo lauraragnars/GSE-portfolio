@@ -122,6 +122,16 @@ header {
 /* -------------- HOVER EFFECT -------------- */
 
 /*
+#examples {
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
+    width: 960px;
+    background-color: white;
+    opacity: 0.95;
+    padding: 15px 30px;
+    margin: 0 auto 30px;
+*/
 
 .example {
     display: flex;
@@ -210,7 +220,6 @@ header {
         }
     }
 }
-*/
 
 
 /* -------------- FONTE -------------- */
@@ -263,8 +272,142 @@ header {
 
 /* -------------- WORK -------------- */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -------------- ABOUT -------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -------------- CONTACT -------------- */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -------------- FOOTER -------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------- MEDIA QUERY -------------- */
+
+
+@media only screen and (min-width: 600px) {}
