@@ -35,8 +35,15 @@
             <div class="text">
                 <p>INDEPENDENT <br>ART DIRECTOR & DESIGNER <br> BASED IN COPENHAGEN</p>
             </div>
-            <div class="billede">
-                <img src="billeder/samplebillede1.png" alt="forside-billede">
+            <div class="box">
+
+                <img class="mySlides billede1">
+                <img class="mySlides billede2">
+                <img class="mySlides billede3">
+                <img class="mySlides billede4">
+                <img class="mySlides billede5">
+
+
             </div>
 
         </div>
@@ -81,7 +88,7 @@
             visWork();
 
             const response2 = await fetch(link2);
-            billeder = await response.json();
+            billeder = await response2.json();
             visBilleder();
         }
 
@@ -119,8 +126,5 @@
             })
 
         };
-
     </script>
-</body>
-
-</html>
+</body></html>
