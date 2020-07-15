@@ -61,13 +61,14 @@ section {
 header {
     height: 11vh;
     margin-bottom: 5vh;
+    background-color: white;
 }
 
 #menuknap {
     z-index: 101;
     position: fixed;
-    right: 2vw;
-    top: 1.5vw;
+    right: 3vw;
+    top: 2vw;
     font-family: futura-pt, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -78,6 +79,7 @@ header {
     list-style-type: none;
     color: black;
     padding-left: 0;
+    margin-top: 25vh;
 }
 
 #menu a {
@@ -97,8 +99,8 @@ header {
     font-weight: normal;
     font-size: 1.5rem;
     position: fixed;
-    left: 2vw;
-    top: 2vw;
+    left: 3vw;
+    top: 3vw;
 }
 
 .logo a {
@@ -116,7 +118,7 @@ header {
 }
 
 .top-navn p {
-    margin-top: 4vh;
+    margin-top: 2.5vh;
 }
 
 
@@ -442,4 +444,21 @@ header {
 /* -------------- MEDIA QUERY -------------- */
 
 
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+
+    #menuknap {
+
+        right: 2vw;
+        top: 1.5vw;
+
+    }
+
+    .logo {
+        left: 2vw;
+        top: 2vw;
+    }
+
+    .top-navn p {
+        margin-top: 4vh;
+    }
+}
