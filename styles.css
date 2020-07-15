@@ -300,7 +300,15 @@ header {
 
 }
 
+.mySlides {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
 
+#forside .box {
+    flex-basis: 400px;
+}
 
 /* -------------- WORK -------------- */
 
