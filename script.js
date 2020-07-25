@@ -11,13 +11,16 @@ function toggleMenu() {
     console.log("toggleMenu");
 
     document.querySelector("#menu").classList.toggle("hide");
+    document.querySelector(".top-navn").classList.toggle("hide");
 
     let erSkjult = document.querySelector("#menu").classList.contains("hide");
 
     if (erSkjult == true) {
-        document.querySelector("#menuknap").textContent = "☰";
+        //        document.querySelector("#menuknap").textContent = "☰";
+        document.querySelector(".menuknapicon").src = "billeder/burgermenuicon.svg"
     } else {
-        document.querySelector("#menuknap").textContent = "X";
+        //        document.querySelector("#menuknap").textContent = "X";
+        document.querySelector(".menuknapicon").src = "billeder/luk_icon.svg"
     }
 
 }

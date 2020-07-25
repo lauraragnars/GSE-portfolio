@@ -14,6 +14,12 @@ img {
 }
 
 .hide {
+    transition: 0.2s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.hidden {
     display: none;
 }
 
@@ -25,26 +31,49 @@ img {
 .section-wrapper {
     max-width: 1100px;
     margin: 0 auto;
+    margin-bottom: 10vh;
 }
 
+.knap {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: normal;
+    text-decoration: underline;
+    color: black;
+    transition: 0.2s;
+
+}
+
+.knap:hover {
+    color: pink;
+    transition: 0.3s;
+}
+
+/*
 .text {
-    flex-basis: 550px;
+    flex-basis: 50%;
     flex-grow: 1;
 }
+*/
 
+.beige {
+    background-color: #f9faf8;
+    width: 100vw;
+}
+
+/*
 .billede {
     flex-basis: 450px;
     flex-grow: 1;
-}
+}*/
 
-section {
-    background-color: pink;
-}
 
 /* -------------- MENU -------------- */
 
 #menu {
-    background-color: aliceblue;
+    background-color: #f9faf8;
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -56,11 +85,21 @@ section {
     font-weight: 400;
     font-style: normal;
     font-size: 5rem;
+    transition: 0.3s;
+
+}
+
+
+.spacer {
+    height: 80px;
+    width: 100vw;
 }
 
 header {
-    height: 11vh;
-    margin-bottom: 5vh;
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
     background-color: white;
 }
 
@@ -73,6 +112,11 @@ header {
     font-weight: 500;
     font-style: normal;
     font-size: 1.5rem;
+
+}
+
+.menuknapicon {
+    width: 34px;
 }
 
 #menulist {
@@ -89,7 +133,7 @@ header {
 }
 
 #menu a:hover {
-    color: lightpink;
+    color: pink;
     transition: 0.3s;
 }
 
@@ -115,25 +159,12 @@ header {
     font-style: normal;
     font-weight: normal;
     font-size: 1.5rem;
+    z-index: 100000;
+    margin: 0 auto;
+    margin-top: -85px;
+    position: relative;
+    pointer-events: none;
 }
-
-.top-navn p {
-    margin-top: 2.5vh;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -299,6 +330,7 @@ header {
     font-size: 1.5rem;
     line-height: 30px;
     align-self: center;
+    flex-basis: 50%;
 
 }
 
@@ -309,7 +341,44 @@ header {
 }
 
 #forside .box {
-    flex-basis: 400px;
+    flex-basis: 50%;
+}
+
+#about .img {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+#about .text {
+    flex-grow: 1;
+    flex-basis: 50%;
+    text-align: center;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 30px;
+    align-self: center;
+    padding: 70px;
+
+}
+
+#about .text p {
+    line-height: 35px;
+}
+
+#about .text h2 {
+    text-align: center;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#work .data-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    margin: 0 auto;
+    grid-gap: 10px;
 }
 
 /* -------------- WORK -------------- */
@@ -327,46 +396,7 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* -------------- ABOUT -------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -398,45 +428,13 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* -------------- FOOTER -------------- */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer p {
+    font-family: futura-pt, sans-serif;
+    text-align: center;
+}
 
 
 
@@ -468,5 +466,9 @@ header {
 
     .top-navn p {
         margin-top: 4vh;
+    }
+
+    header {
+        background-color: transparent;
     }
 }
