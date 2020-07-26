@@ -26,6 +26,16 @@ img {
 .wrapper {
     display: flex;
     flex-wrap: wrap;
+    margin: 20px;
+
+}
+
+#forside .wrapper {
+    margin: 0;
+}
+
+.wrapreverse {
+    flex-wrap: wrap-reverse;
 }
 
 .section-wrapper {
@@ -106,8 +116,8 @@ header {
 #menuknap {
     z-index: 101;
     position: fixed;
-    right: 3vw;
-    top: 2vw;
+    right: 5vw;
+    top: 3.4vw;
     font-family: futura-pt, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -144,7 +154,7 @@ header {
     font-size: 1.5rem;
     position: fixed;
     left: 3vw;
-    top: 3vw;
+    top: 4.3vw;
 }
 
 .logo a {
@@ -161,7 +171,7 @@ header {
     font-size: 1.5rem;
     z-index: 100000;
     margin: 0 auto;
-    margin-top: -85px;
+    margin-top: -40px;
     position: relative;
     pointer-events: none;
 }
@@ -330,7 +340,8 @@ header {
     font-size: 1.5rem;
     line-height: 30px;
     align-self: center;
-    flex-basis: 50%;
+    flex-basis: 550px;
+    margin: 20px;
 
 }
 
@@ -341,7 +352,8 @@ header {
 }
 
 #forside .box {
-    flex-basis: 50%;
+    flex-basis: 550px;
+    margin: 20px;
 }
 
 #about .img {
@@ -363,6 +375,10 @@ header {
 
 }
 
+#forside .text p {
+    line-height: 35px;
+}
+
 #about .text p {
     line-height: 35px;
 }
@@ -380,6 +396,123 @@ header {
     margin: 0 auto;
     grid-gap: 10px;
 }
+
+.grid-item {
+    margin: 20px;
+    text-align: center;
+
+}
+
+.grid-item .navn {
+    font-family: 'Optima';
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.grid-item .knap {
+    font-size: 0.8rem;
+}
+
+.section-header {
+    font-family: futura-pt, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.knap-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.knap2 {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: normal;
+    text-decoration: underline;
+    color: black;
+    transition: 0.2s;
+
+
+}
+
+
+.knap2:hover {
+    color: pink;
+    transition: 0.3s;
+}
+
+
+/*
+#contact .col {
+    flex-basis: 33%;
+    flex-grow: 1;
+}
+*/
+
+#contact .wrapper {
+    justify-content: flex-start;
+}
+
+#contact .col1 {
+    flex-grow: 2;
+
+}
+
+#contact .col2 {
+    flex-grow: 1;
+}
+
+#contact .col3 {
+    flex-grow: 1;
+}
+
+#contact .col {
+    margin-bottom: 50px;
+}
+
+
+
+.p1 {
+    font-family: 'Optima';
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.p2 {
+    font-family: 'Optima';
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    margin: 15px 0 15px 0;
+    display: inline-block;
+}
+
+.p3 {
+    font-family: futura-pt, sans-serif;
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#contact .knap {
+    font-size: 1.3rem;
+}
+
+
+#contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 
 /* -------------- WORK -------------- */
 
@@ -434,6 +567,7 @@ header {
 footer p {
     font-family: futura-pt, sans-serif;
     text-align: center;
+
 }
 
 
@@ -471,4 +605,38 @@ footer p {
     header {
         background-color: transparent;
     }
+
+    #forside .box {
+        margin: 0;
+    }
+
+    #forside .text {
+        margin: 0;
+    }
+
+    #contact {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+
+
+
+    .top-navn {
+        text-align: center;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        z-index: 100000;
+        margin: 0 auto;
+        margin-top: -85px;
+        position: relative;
+        pointer-events: none;
+    }
+
+
 }
