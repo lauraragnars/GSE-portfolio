@@ -361,6 +361,7 @@ header {
 #about .img {
     flex-grow: 1;
     flex-basis: 50%;
+    align-self: center;
 }
 
 #about .text {
@@ -497,10 +498,20 @@ header {
 
 .p3 {
     font-family: futura-pt, sans-serif;
-    font-size: 5.5rem;
+    font-size: 4.3rem;
     text-transform: uppercase;
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 30px;
+}
+
+.p3_email {
+    font-family: 'optima';
+    font-weight: normal;
+    color: black;
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    padding-bottom: 5px;
 }
 
 #contact .knap {
