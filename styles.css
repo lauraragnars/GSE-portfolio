@@ -515,6 +515,12 @@ header {
     padding-right: 50px;
 }
 
+.img img {
+    border-radius: 50%;
+    width: 75%;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+}
 
 /* -------------- WORK -------------- */
 
