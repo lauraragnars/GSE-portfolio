@@ -359,6 +359,7 @@ header {
 #about .img {
     flex-grow: 1;
     flex-basis: 50%;
+    align-self: center;
 }
 
 #about .text {
