@@ -39,13 +39,79 @@
         <p>Gry Strange Echwald</p>
     </div>
 
+    <section class="section-wrapper" id="work-header">
+        <div class="wrapper">
+            <div class="col col-txt">
+                <h1>WORK</h1>
+            </div>
+            <div class="col img-col">
+                <img src="billeder/samplebillede1.png" alt="sample">
+            </div>
+        </div>
+        <div class="arrow"><img src="billeder/arrow.svg" alt="arrow icon"></div>
+    </section>
+
+    <section id="work" class="section-wrapper">
+        <h1 class="section-header">SELECTED CASES</h1>
+
+        <section class="data-container"></section>
+
+    </section>
 
 
     <footer>
         <p>&#169;GRYSTRANGEECHWALD2020</p>
     </footer>
 
+    <template>
+        <div class="grid-item">
+            <img src="" alt="">
+            <p class="navn"></p>
+            <a class="knap" href="">View project</a>
+
+        </div>
+    </template>
+
+
     <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", hentData);
+
+
+        let work = [];
+        const link = "http://lauraragnars.dk/GSE-wordpress/wordpress/wp-json/wp/v2/work?per_page=100";
+        const container = document.querySelector(".data-container");
+        const template = document.querySelector("template");
+
+        async function hentData() {
+            const response = await fetch(link);
+            work = await response.json();
+            visWork();
+
+        }
+
+        function visWork() {
+            container.innerHTML = "";
+
+
+            work.forEach(elm => {
+
+                let klon = template.cloneNode(true).content;
+                klon.querySelector(".navn").textContent = elm.titel;
+
+                klon.querySelector("img").src = elm.billede1.guid;
+
+                container.appendChild(klon);
+
+                container.lastElementChild.addEventListener("click", () => {
+                    location.href = "work-single.html?id=" + elm.id;
+                });
+
+            })
+
+        };
+
+    </script>
 </body>
 
 </html>

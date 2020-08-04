@@ -101,7 +101,7 @@ img {
     font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 5rem;
+    font-size: 4rem;
     transition: 0.3s;
 
 }
@@ -342,6 +342,7 @@ header {
     flex-grow: 1;
     flex-basis: 50%;
     align-self: center;
+    text-align: center;
 }
 
 #about .text {
@@ -364,6 +365,7 @@ header {
 
 #about .text p {
     line-height: 35px;
+    padding-bottom: 20px;
 }
 
 #about .text h2 {
@@ -371,6 +373,7 @@ header {
     font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-style: normal;
+    padding-bottom: 30px;
 }
 
 #work .data-container {
@@ -433,8 +436,7 @@ header {
 
 #contact .col1 {
     flex-grow: 2;
-    text-align: center;
-
+    text-align: left;
 }
 
 #contact .col2 {
@@ -507,7 +509,24 @@ header {
 
 /* -------------- WORK -------------- */
 
+#work-header .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+    align-self: center;
 
+}
+
+
+#work-header h1 {
+    font-family: futura-pt, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 4rem;
+}
+
+#work-header {
+    margin-top: 30px;
+}
 
 
 
@@ -521,6 +540,42 @@ header {
 
 
 /* -------------- ABOUT -------------- */
+#about-header .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+    align-self: center;
+
+}
+
+
+
+#about-header h1 {
+    font-family: futura-pt, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 4rem;
+}
+
+#about-header {
+    margin-top: 30px;
+}
+
+#abouttext .abouttext {
+    text-align: center;
+    font-family: 'optima', sans-serif;
+    font-size: 1.3rem;
+    padding: 50px;
+
+
+}
+
+#abouttext {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 900px;
+}
+
+
 
 
 
@@ -609,6 +664,12 @@ footer p {
 
     }
 
+    #contact .col1 {
+
+        text-align: center;
+
+    }
+
     .logo {
         left: 2vw;
         top: 2vw;
@@ -616,6 +677,13 @@ footer p {
 
     .top-navn p {
         margin-top: 4vh;
+    }
+
+    #menu {
+
+        font-size: 5rem;
+
+
     }
 
     /*
