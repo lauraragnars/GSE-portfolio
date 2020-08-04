@@ -36,10 +36,11 @@ img {
 
 .wrapreverse {
     flex-wrap: wrap-reverse;
+    justify-content: space-between;
 }
 
 .section-wrapper {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 10vh;
 }
@@ -50,16 +51,22 @@ img {
     text-transform: uppercase;
     font-size: 1.1rem;
     font-weight: normal;
+    color: black;
+    text-decoration: none;
+    /*
     text-decoration: underline;
     color: black;
     transition: 0.2s;
+*/
 
 }
 
+/*
 .knap:hover {
-    color: pink;
+    color: #8e8e8e;
     transition: 0.3s;
 }
+*/
 
 /*
 .text {
@@ -110,6 +117,7 @@ header {
     width: 100vw;
     position: fixed;
     top: 0;
+    z-index: 90;
     background-color: white;
 }
 
@@ -143,8 +151,70 @@ header {
 }
 
 #menu a:hover {
-    color: pink;
+    color: #c6c6c6;
     transition: 0.3s;
+}
+
+.knap {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+
+}
+
+
+.knap:hover {
+    color: #000;
+}
+
+
+.knap::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: visible;
+    transform: scaleX(1);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.knap:hover::before {
+    visibility: visible;
+    transform: scaleX(0);
+}
+
+.knap2 {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+
+}
+
+
+.knap2:hover {
+    color: #000;
+}
+
+
+.knap2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: visible;
+    transform: scaleX(1);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.knap2:hover::before {
+    visibility: visible;
+    transform: scaleX(0);
 }
 
 .logo {
@@ -180,123 +250,33 @@ header {
     font-size: 2.2rem;
 }
 
+.arrow {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------------- HOVER EFFECT -------------- */
-
-/*
-#examples {
-    display: flex;
-    flex-flow: column;
-    max-width: 100%;
-    width: 960px;
-    background-color: white;
-    opacity: 0.95;
-    padding: 15px 30px;
-    margin: 0 auto 30px;
-*/
-
-.example {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    margin: 0 0 45px;
-
-    .hover {
-        font-size: 36px;
-        text-align: center;
-        margin: 0 auto;
-        padding: 0;
-        transition: $animate;
-        position: relative;
-
-        &:before,
-        &:after {
-            content: "";
-            position: absolute;
-            bottom: -10px;
-            width: 0px;
-            height: 5px;
-            margin: 5px 0 0;
-            transition: $animate;
-            transition-duration: 0.75s;
-            opacity: 0;
-            background-color: darken(orange, 5%);
-        }
-
-        &.hover-1 {
-
-            &:before,
-            &:after {
-                left: 0;
-            }
-        }
-
-        &.hover-2 {
-
-            &:before,
-            &:after {
-                right: 0;
-            }
-        }
-
-        &.hover-3 {
-            &:before {
-                left: 50%;
-            }
-
-            &:after {
-                right: 50%;
-            }
-        }
-
-        &.hover-4 {
-            &:before {
-                left: 0;
-            }
-
-            &:after {
-                right: 0;
-            }
-        }
-    }
-
-    &:hover {
-        cursor: pointer;
-
-        .hover {
-
-            &:before,
-            &:after {
-                width: 100%;
-                opacity: 1;
-            }
-
-            &.hover-3,
-            &.hover-4 {
-
-                &:before,
-                &:after {
-                    width: 50%;
-                }
-            }
-        }
-    }
 }
+
+.arrow img {
+    width: 50px;
+    opacity: 0.9;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* -------------- FONTE -------------- */
@@ -343,7 +323,7 @@ header {
     line-height: 30px;
     align-self: center;
     flex-basis: 550px;
-    margin: 20px;
+    margin: 50px;
 
 }
 
@@ -355,7 +335,7 @@ header {
 
 #forside .box {
     flex-basis: 550px;
-    margin: 20px;
+    margin: 50px;
 }
 
 #about .img {
@@ -435,17 +415,8 @@ header {
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: normal;
-    text-decoration: underline;
     color: black;
-    transition: 0.2s;
 
-
-}
-
-
-.knap2:hover {
-    color: pink;
-    transition: 0.3s;
 }
 
 
@@ -462,6 +433,7 @@ header {
 
 #contact .col1 {
     flex-grow: 2;
+    text-align: center;
 
 }
 
@@ -566,6 +538,31 @@ header {
 /* -------------- CONTACT -------------- */
 
 
+#contact-header .col {
+    flex-grow: 1;
+    flex-basis: 400px;
+    align-self: center;
+
+}
+
+
+#contact-header h1 {
+    font-family: futura-pt, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 4rem;
+}
+
+#contact-header {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -621,9 +618,10 @@ footer p {
         margin-top: 4vh;
     }
 
+    /*
     header {
         background-color: transparent;
-    }
+    }*/
 
     #forside .box {
         margin: 0;
