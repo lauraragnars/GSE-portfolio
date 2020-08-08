@@ -11,7 +11,6 @@ function toggleMenu() {
     console.log("toggleMenu");
 
     document.querySelector("#menu").classList.toggle("hide");
-    document.querySelector(".top-navn").classList.toggle("hide");
 
     let erSkjult = document.querySelector("#menu").classList.contains("hide");
 
@@ -24,6 +23,15 @@ function toggleMenu() {
     }
 
 }
+
+$('.logo').hover(
+    function () {
+        $('.nameFull').removeClass('hiddenn');
+    },
+    function () {
+        $('.nameFull').addClass('hiddenn');
+    }
+);
 
 
 // carousel aka slideshow

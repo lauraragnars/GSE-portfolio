@@ -103,12 +103,11 @@ img {
     font-style: normal;
     font-size: 4rem;
     transition: 0.3s;
-
 }
 
 
 .spacer {
-    height: 80px;
+    height: 60px;
     width: 100vw;
 }
 
@@ -124,8 +123,8 @@ header {
 #menuknap {
     z-index: 101;
     position: fixed;
-    right: 5vw;
-    top: 3.4vw;
+    right: 20px;
+    top: 14px;
     font-family: futura-pt, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -223,8 +222,8 @@ header {
     font-weight: normal;
     font-size: 1.5rem;
     position: fixed;
-    left: 3vw;
-    top: 4.3vw;
+    left: 20px;
+    top: 16.4px;
 }
 
 .logo a {
@@ -266,8 +265,38 @@ header {
 }
 
 
+/* -------------- TOP ANIMATION -------------- */
 
+span {
+    display: inline-block;
+    overflow: hidden;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition-delay: 0.2s;
+}
 
+.a1 {
+    width: 23px;
+}
+
+.a2 {
+    width: 68px;
+}
+
+.a3 {
+    width: 80px;
+}
+
+span.hiddenn {
+    width: 0px;
+    opacity: 0;
+}
+
+.logo-wrapper {
+    color: black;
+
+}
 
 
 
@@ -432,11 +461,13 @@ header {
 
 #contact .wrapper {
     justify-content: flex-start;
+
 }
 
 #contact .col1 {
     flex-grow: 2;
     text-align: left;
+    flex-basis: 700px;
 }
 
 #contact .col2 {
@@ -445,6 +476,7 @@ header {
 
 #contact .col3 {
     flex-grow: 1;
+
 }
 
 #contact .col {
@@ -456,17 +488,17 @@ header {
 .p1 {
     font-family: 'Optima';
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-top: 20px;
 }
 
 .p2 {
-    font-family: 'Optima';
+    font-family: futura-pt, sans-serif;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     color: black;
-    margin: 15px 0 15px 0;
+    margin: 15px 0 5px 0;
     display: inline-block;
 }
 
@@ -475,7 +507,8 @@ header {
     font-size: 4.3rem;
     text-transform: uppercase;
     margin-bottom: 0;
-    margin-top: 30px;
+    margin-top: 3px;
+
 }
 
 .p3_email {
@@ -638,6 +671,7 @@ header {
 footer p {
     font-family: futura-pt, sans-serif;
     text-align: center;
+    letter-spacing: 1px;
 
 }
 
@@ -654,31 +688,55 @@ footer p {
 
 /* -------------- MEDIA QUERY -------------- */
 
+@media only screen and (min-width: 800px) {
+    /* -------   FOOTER ---------*/
 
-@media only screen and (min-width: 600px) {
 
+    .p1 {
+        font-family: 'Optima';
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin-top: 20px;
+    }
 
-    #menuknap {
+    .p2 {
+        font-family: futura-pt, sans-serif;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: black;
 
-        right: 2vw;
-        top: 1.5vw;
+        display: inline-block;
+    }
 
+    .p3 {
+        font-family: futura-pt, sans-serif;
+        font-size: 4.3rem;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        margin-top: 3px;
     }
 
     #contact .col1 {
 
         text-align: center;
+        flex-grow: 2;
+        flex-basis: 300px;
 
     }
 
-    .logo {
-        left: 2vw;
-        top: 2vw;
-    }
 
-    .top-navn p {
-        margin-top: 4vh;
-    }
+}
+
+
+@media only screen and (min-width: 600px) {
+
+
+
+
+
+
+
 
     #menu {
 
@@ -710,6 +768,7 @@ footer p {
 
 
 
+    /*
 
     .top-navn {
         text-align: center;
@@ -723,10 +782,32 @@ footer p {
         position: relative;
         pointer-events: none;
     }
+*/
+
+    /* -------   MENU ---------*/
+
+    #menu {
+        background-color: #f9faf8;
+        height: 100vh;
+        width: 40vw;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 60vw;
+        z-index: 100;
+        text-align: center;
+        font-family: futura-pt, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 4rem;
+        transition: 0.3s;
+    }
+
 
 
 
 }
+
 
 @media only screen and (min-width: 300px) {
 
@@ -753,10 +834,12 @@ footer p {
         margin-top: 30px;
     }
 
+    /*
     #work.section-wrapper {
         max-width: 500px;
         margin: 40px 0px;
     }
+*/
 
     #contact.section-wrapper {
         padding: 50px 30px;
