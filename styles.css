@@ -42,7 +42,7 @@ img {
 .section-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 10vh;
+
 }
 
 .knap {
@@ -657,6 +657,7 @@ footer p {
 
 @media only screen and (min-width: 600px) {
 
+
     #menuknap {
 
         right: 2vw;
@@ -724,4 +725,40 @@ footer p {
     }
 
 
+
+}
+
+@media only screen and (min-width: 300px) {
+
+    #forside .box {
+        margin: 40px;
+    }
+
+    #forside .mySlides {
+        height: 50vh;
+    }
+
+    #forside .text {
+        margin: 20px 0px;
+    }
+
+    #about .text {
+        padding: 0px 40px;
+
+        font-size: 1.2rem;
+
+    }
+
+    #about .img img {
+        margin-top: 30px;
+    }
+
+    #work.section-wrapper {
+        max-width: 500px;
+        margin: 40px 0px;
+    }
+
+    #contact.section-wrapper {
+        padding: 50px 30px;
+    }
 }
