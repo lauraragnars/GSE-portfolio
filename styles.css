@@ -27,20 +27,19 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
-
 }
 
-#forside .wrapper {
-    margin: 0;
-}
 
 .wrapreverse {
     flex-wrap: wrap-reverse;
-    justify-content: space-between;
 }
 
 .section-wrapper {
     max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-wrapper-forside {
     margin: 0 auto;
 
 }
@@ -155,17 +154,20 @@ header {
 }
 
 .knap {
-    position: relative;
     color: #000;
-    text-decoration: none;
+    text-decoration: underline;
+    transition: 0.3s;
+
 
 }
 
 
 .knap:hover {
-    color: #000;
+    color: #c6c6c6;
+    transition: 0.3s;
 }
 
+/*
 
 .knap::before {
     content: "";
@@ -179,25 +181,31 @@ header {
     transform: scaleX(1);
     transition: all 0.3s ease-in-out 0s;
 }
+*/
 
+/*
 .knap:hover::before {
     visibility: visible;
     transform: scaleX(0);
 }
+*/
 
 .knap2 {
-    position: relative;
     color: #000;
-    text-decoration: none;
+    text-decoration: underline;
+    transition: 0.3s;
+
 
 }
 
 
 .knap2:hover {
-    color: #000;
+    color: #c6c6c6;
+    transition: 0.3s;
 }
 
 
+/*
 .knap2::before {
     content: "";
     position: absolute;
@@ -215,15 +223,16 @@ header {
     visibility: visible;
     transform: scaleX(0);
 }
+*/
 
 .logo {
     font-family: 'Optima';
     font-style: normal;
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     position: fixed;
     left: 20px;
-    top: 16.4px;
+    top: 17.5px;
 }
 
 .logo a {
@@ -232,6 +241,7 @@ header {
     color: black;
 }
 
+/*
 .top-navn {
     text-align: center;
     font-family: 'Optima';
@@ -244,21 +254,19 @@ header {
     position: relative;
     pointer-events: none;
 }
+*/
 
-.burgerbreak {
-    font-size: 2.2rem;
-}
 
 .arrow {
     width: 100%;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 0;
 
 }
 
 .arrow img {
-    width: 50px;
+    width: 40px;
     opacity: 0.9;
 
 
@@ -277,11 +285,11 @@ span {
 }
 
 .a1 {
-    width: 23px;
+    width: 21px;
 }
 
 .a2 {
-    width: 68px;
+    width: 62px;
 }
 
 .a3 {
@@ -343,6 +351,13 @@ span.hiddenn {
 
 /* -------------- FORSIDE -------------- */
 
+#forside .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 20px 20px 20px;
+}
+
+
 #forside .text {
     text-align: center;
     font-family: 'Optima';
@@ -351,32 +366,30 @@ span.hiddenn {
     font-size: 1.5rem;
     line-height: 30px;
     align-self: center;
-    flex-basis: 550px;
-    margin: 50px;
+    flex-basis: 100%;
 
 }
 
 .mySlides {
-    height: 100vh;
+    height: 80vh;
     object-fit: cover;
     width: 100%;
 }
 
 #forside .box {
-    flex-basis: 550px;
-    margin: 50px;
+    flex-basis: 100%;
 }
 
 #about .img {
     flex-grow: 1;
-    flex-basis: 50%;
+    flex-basis: 100%;
     align-self: center;
     text-align: center;
 }
 
 #about .text {
     flex-grow: 1;
-    flex-basis: 50%;
+    flex-basis: 100%;
     text-align: center;
     font-family: 'Optima';
     font-style: normal;
@@ -598,8 +611,6 @@ span.hiddenn {
     font-family: 'optima', sans-serif;
     font-size: 1.3rem;
     padding: 50px;
-
-
 }
 
 #abouttext {
@@ -608,13 +619,26 @@ span.hiddenn {
     max-width: 900px;
 }
 
+.client-header {
+    text-align: center;
+    font-family: futura-pt, sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+}
 
+.client-text {
+    font-family: 'optima', sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: center;
+    line-height: 35px;
+}
 
-
-
-
-
-
+#clients {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 700px;
+}
 
 
 
@@ -625,43 +649,30 @@ span.hiddenn {
 
 /* -------------- CONTACT -------------- */
 
-
-#contact-header .col {
-    flex-grow: 1;
-    flex-basis: 400px;
-    align-self: center;
-
+.bg-img-contact {
+    height: 85vh;
+    width: 100%;
+    background-image: url(billeder/samplebillede1.png);
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
 }
 
+#contact-header {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
-#contact-header h1 {
+.contact-title {
     font-family: futura-pt, sans-serif;
     font-weight: normal;
     text-align: center;
     font-size: 4rem;
+    position: absolute;
+    top: 20vh;
+    left: 40%;
+
 }
-
-#contact-header {
-    margin-top: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -695,7 +706,7 @@ footer p {
     .p1 {
         font-family: 'Optima';
         text-transform: uppercase;
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-top: 20px;
     }
 
@@ -705,7 +716,6 @@ footer p {
         font-size: 1.2rem;
         text-decoration: none;
         color: black;
-
         display: inline-block;
     }
 
@@ -722,6 +732,51 @@ footer p {
         text-align: center;
         flex-grow: 2;
         flex-basis: 300px;
+
+    }
+
+    /* -------------- FORSIDE -------------- */
+
+    #forside .text {
+        text-align: center;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 30px;
+        align-self: center;
+        flex-basis: 50%;
+
+    }
+
+    .mySlides {
+        height: 80vh;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    #forside .box {
+        flex-basis: 50%;
+    }
+
+    #about .img {
+        flex-grow: 1;
+        flex-basis: 50%;
+        align-self: center;
+        text-align: center;
+    }
+
+    #about .text {
+        flex-grow: 1;
+        flex-basis: 50%;
+        text-align: center;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 30px;
+        align-self: center;
+        padding: 70px;
 
     }
 
@@ -811,6 +866,7 @@ footer p {
 
 @media only screen and (min-width: 300px) {
 
+    /*
     #forside .box {
         margin: 40px;
     }
@@ -822,6 +878,7 @@ footer p {
     #forside .text {
         margin: 20px 0px;
     }
+*/
 
     #about .text {
         padding: 0px 40px;
