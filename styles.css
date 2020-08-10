@@ -935,3 +935,22 @@ footer p {
         transition: 0.3s;
     }
 }
+
+@media only screen and (min-width: 1800px) {
+    .section-wrapper {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    #work .data-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        margin: 0 auto;
+        grid-gap: 0px;
+    }
+
+    #about .text {
+        font-size: 1.3rem;
+        padding: 70px
+    }
+}
