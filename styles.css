@@ -155,7 +155,8 @@ header {
 
 .knap {
     color: #000;
-    text-decoration: underline;
+    border-bottom: 1px solid black;
+    text-decoration: none;
     transition: 0.3s;
 
 
@@ -192,7 +193,8 @@ header {
 
 .knap2 {
     color: #000;
-    text-decoration: underline;
+    border-bottom: 1px solid black;
+    text-decoration: none;
     transition: 0.3s;
 
 
@@ -261,7 +263,8 @@ header {
     width: 100%;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+
 
 }
 
@@ -422,7 +425,7 @@ span.hiddenn {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     margin: 0 auto;
-    grid-gap: 10px;
+    grid-gap: 0px;
 }
 
 .grid-item {
@@ -447,11 +450,13 @@ span.hiddenn {
     text-transform: uppercase;
     font-size: 2rem;
     text-align: center;
+    margin-top: 40px;
 }
 
 .knap-container {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .knap2 {
@@ -555,27 +560,44 @@ span.hiddenn {
 
 /* -------------- WORK -------------- */
 
-#work-header .col {
-    flex-grow: 1;
-    flex-basis: 400px;
-    align-self: center;
 
+
+.bg-img-work {
+    height: 85vh;
+    width: 100%;
+    background-image: url(billeder/samplebillede1.png);
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#work-header {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
-#work-header h1 {
+
+.work-title {
     font-family: futura-pt, sans-serif;
     font-weight: normal;
     text-align: center;
     font-size: 4rem;
+
 }
 
-#work-header {
-    margin-top: 30px;
+.title-container {
+    width: 50vw;
+    position: absolute;
+    left: 25vw;
+    text-align: center;
+    top: 20vh;
 }
 
 
-
+.work-all {
+    margin-bottom: 30px;
+}
 
 
 
@@ -586,25 +608,6 @@ span.hiddenn {
 
 
 /* -------------- ABOUT -------------- */
-#about-header .col {
-    flex-grow: 1;
-    flex-basis: 400px;
-    align-self: center;
-
-}
-
-
-
-#about-header h1 {
-    font-family: futura-pt, sans-serif;
-    font-weight: normal;
-    text-align: center;
-    font-size: 4rem;
-}
-
-#about-header {
-    margin-top: 30px;
-}
 
 #abouttext .abouttext {
     text-align: center;
@@ -640,6 +643,36 @@ span.hiddenn {
     max-width: 700px;
 }
 
+.bg-img-about {
+    height: 85vh;
+    width: 100%;
+    background-image: url(billeder/samplebillede1.png);
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#about-header {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.about-title {
+    font-family: futura-pt, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 4rem;
+
+}
+
+.title-container {
+    width: 50vw;
+    position: absolute;
+    left: 25vw;
+    text-align: center;
+    top: 20vh;
+}
+
 
 
 
@@ -663,16 +696,24 @@ span.hiddenn {
     margin-right: 20px;
 }
 
+
+
 .contact-title {
     font-family: futura-pt, sans-serif;
     font-weight: normal;
     text-align: center;
     font-size: 4rem;
-    position: absolute;
-    top: 20vh;
-    left: 40%;
 
 }
+
+.title-container {
+    width: 50vw;
+    position: absolute;
+    left: 25vw;
+    text-align: center;
+    top: 20vh;
+}
+
 
 
 
