@@ -69,7 +69,49 @@
     <section id="work" class="section-wrapper work-all">
         <h1 class="section-header">SELECTED CASES</h1>
 
-        <section class="data-container"></section>
+        <section class="data-container">
+            <div class="grid-item">
+                <img src="billeder/samplebillede1_4x5.png" alt="Karoline_billede">
+                <p class="navn">Karoline Trier</p>
+                <a class="knap" href="">View project</a>
+
+            </div>
+
+            <div class="grid-item">
+                <img src="billeder/samplebillede1_4x5.png" alt="alt">
+                <p class="navn">Mille Dinesen</p>
+                <a class="knap" href="">View project</a>
+
+            </div>
+
+            <div class="grid-item">
+                <img src="billeder/samplebillede1_4x5.png" alt="alt">
+                <p class="navn">Carl Hansen & Søn</p>
+                <a class="knap" href="">View project</a>
+
+            </div>
+
+            <div class="grid-item">
+                <img src="billeder/samplebillede1_4x5.png" alt="Karoline_billede">
+                <p class="navn">Karoline Trier</p>
+                <a class="knap" href="">View project</a>
+
+            </div>
+
+            <div class="grid-item">
+                <img src="billeder/samplebillede1_4x5.png" alt="alt">
+                <p class="navn">Mille Dinesen</p>
+                <a class="knap" href="">View project</a>
+
+            </div>
+
+            <div class="grid-item">
+                <img src="billeder/samplebillede1_4x5.png" alt="alt">
+                <p class="navn">Carl Hansen & Søn</p>
+                <a class="knap" href="">View project</a>
+
+            </div>
+        </section>
 
     </section>
 
@@ -77,7 +119,7 @@
         <section id="contact" class="section-wrapper">
             <div class="wrapper">
                 <div class="col1 col">
-                    <p class="p3">SAY HI</p>
+                    <p class="p3">HELLO</p>
                     <a class="p3_email" href="mailto:mail@gryechwald.com">mail@gryechwald.com</a>
                 </div>
                 <div class="col2 col">
@@ -100,19 +142,12 @@
         <p>&#169;GRYSTRANGEECHWALD2020</p>
     </footer>
 
-    <template>
-        <div class="grid-item">
-            <img src="" alt="">
-            <p class="navn"></p>
-            <a class="knap" href="">View project</a>
 
-        </div>
-    </template>
 
 
     <script src="script.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", hentData);
+        //        document.addEventListener("DOMContentLoaded", hentData);
 
 
         let work = [];
@@ -120,12 +155,12 @@
         const container = document.querySelector(".data-container");
         const template = document.querySelector("template");
 
-        async function hentData() {
-            const response = await fetch(link);
-            work = await response.json();
-            visWork();
-
-        }
+        //        async function hentData() {
+        //            const response = await fetch(link);
+        //            work = await response.json();
+        //            visWork();
+        //
+        //        }
 
         function visWork() {
             container.innerHTML = "";

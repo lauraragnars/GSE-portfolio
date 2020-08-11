@@ -13,6 +13,15 @@ img {
 
 }
 
+a:hover {
+    color: #c6c6c6;
+    transition: 0.3s;
+}
+
+a {
+    transition: 0.3s;
+}
+
 .hide {
     transition: 0.2s;
     opacity: 0;
@@ -139,13 +148,19 @@ header {
     list-style-type: none;
     color: black;
     padding-left: 0;
-    margin-top: 25vh;
+    margin-top: 30vh;
 }
 
 #menu a {
     color: black;
     text-decoration: none;
     transition: 0.3s;
+
+
+}
+
+#menu li {
+    padding-bottom: 10px;
 }
 
 #menu a:hover {
@@ -309,6 +324,11 @@ span.hiddenn {
 
 }
 
+.logo-wrapper:hover {
+    color: black;
+
+}
+
 
 
 
@@ -325,7 +345,7 @@ span.hiddenn {
     font-family: 'Optima';
     font-style: normal;
     font-weight: normal;
-    src: local('Optima'), url('OPTIMA.woff') format('woff');
+    src: local('Optima'), url('Optima-Regular.woff') format('woff');
 }
 
 
@@ -356,7 +376,6 @@ span.hiddenn {
 
 #forside .wrapper {
     display: flex;
-    flex-wrap: wrap;
     margin: 0px 20px 20px 20px;
 }
 
@@ -374,10 +393,28 @@ span.hiddenn {
 }
 
 .mySlides {
-    height: 80vh;
+    height: 70vh;
     object-fit: cover;
     width: 100%;
 }
+
+.mySlides2 {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 75%;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+    margin: 0 auto;
+}
+
+/*
+.img img {
+    border-radius: 50%;
+    width: 75%;
+    padding-bottom: 5vw;
+    padding-top: 5vw;
+}
+*/
 
 #forside .box {
     flex-basis: 100%;
@@ -451,6 +488,7 @@ span.hiddenn {
     font-size: 2rem;
     text-align: center;
     margin-top: 40px;
+    letter-spacing: 1px;
 }
 
 .knap-container {
@@ -485,15 +523,17 @@ span.hiddenn {
 #contact .col1 {
     flex-grow: 2;
     text-align: left;
-    flex-basis: 700px;
+    flex-basis: 100%;
 }
 
 #contact .col2 {
     flex-grow: 1;
+    flex-basis: 100%;
 }
 
 #contact .col3 {
     flex-grow: 1;
+    flex-basis: 100%;
 
 }
 
@@ -551,12 +591,7 @@ span.hiddenn {
     padding-right: 50px;
 }
 
-.img img {
-    border-radius: 50%;
-    width: 75%;
-    padding-bottom: 5vw;
-    padding-top: 5vw;
-}
+
 
 /* -------------- WORK -------------- */
 
@@ -587,9 +622,9 @@ span.hiddenn {
 }
 
 .title-container {
-    width: 50vw;
+    width: 80vw;
     position: absolute;
-    left: 25vw;
+    left: 10vw;
     text-align: center;
     top: 20vh;
 }
@@ -666,14 +701,6 @@ span.hiddenn {
 
 }
 
-.title-container {
-    width: 50vw;
-    position: absolute;
-    left: 25vw;
-    text-align: center;
-    top: 20vh;
-}
-
 
 
 
@@ -707,13 +734,7 @@ span.hiddenn {
 
 }
 
-.title-container {
-    width: 50vw;
-    position: absolute;
-    left: 25vw;
-    text-align: center;
-    top: 20vh;
-}
+
 
 
 
@@ -846,7 +867,7 @@ footer p {
 
     .p3 {
         font-family: futura-pt, sans-serif;
-        font-size: 4.3rem;
+        font-size: 4rem;
         text-transform: uppercase;
         margin-bottom: 0;
         margin-top: 3px;
@@ -857,6 +878,18 @@ footer p {
         text-align: center;
         flex-grow: 2;
         flex-basis: 300px;
+
+    }
+
+
+    #contact .col2 {
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+
+    #contact .col3 {
+        flex-grow: 1;
+        flex-basis: auto;
 
     }
 
@@ -879,6 +912,8 @@ footer p {
         object-fit: cover;
         width: 100%;
     }
+
+
 
     #forside .box {
         flex-basis: 50%;
@@ -934,6 +969,7 @@ footer p {
         font-size: 4rem;
         transition: 0.3s;
     }
+
 }
 
 @media only screen and (min-width: 1800px) {

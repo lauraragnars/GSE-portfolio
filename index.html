@@ -55,7 +55,11 @@
                 <img class="mySlides billede3">
                 <img class="mySlides billede4">
                 <img class="mySlides billede5">
-
+                <img class="mySlides billede6">
+                <img class="mySlides billede7">
+                <img class="mySlides billede8">
+                <img class="mySlides billede9">
+                <img class="mySlides billede10">
             </div>
 
         </div>
@@ -66,7 +70,15 @@
         <section id="about" class="section-wrapper">
             <div class="wrapper">
                 <div class="img">
-                    <img src="billeder/samplebillede1.png" alt="sample">
+                    <img class="mySlides2 billede11">
+                    <img class="mySlides2 billede22">
+                    <img class="mySlides2 billede33">
+                    <img class="mySlides2 billede44">
+                    <img class="mySlides2 billede55">
+                    <img class="mySlides2 billede66">
+                    <img class="mySlides2 billede77">
+                    <img class="mySlides2 billede88">
+
                 </div>
                 <div class="text">
                     <h2>ABOUT</h2>
@@ -87,7 +99,28 @@
     <section id="work" class="section-wrapper">
         <h1 class="section-header">SELECTED CASES</h1>
 
-        <section class="data-container"></section>
+        <section class="data-container">
+            <div class="grid-item">
+                <img src="billeder/samplebillede1_4x5.png" alt="Karoline_billede">
+                <p class="navn">Karoline Trier</p>
+                <a class="knap" href="">View project</a>
+
+            </div>
+
+            <div class="grid-item">
+                <img src="billeder/samplebillede1_4x5.png" alt="alt">
+                <p class="navn">Mille Dinesen</p>
+                <a class="knap" href="">View project</a>
+
+            </div>
+
+            <div class="grid-item">
+                <img src="billeder/samplebillede1_4x5.png" alt="alt">
+                <p class="navn">Carl Hansen & Søn</p>
+                <a class="knap" href="">View project</a>
+
+            </div>
+        </section>
         <div class="knap-container">
             <a class="knap2" href="work.html">View all projects</a>
         </div>
@@ -98,15 +131,15 @@
         <section id="contact" class="section-wrapper">
             <div class="wrapper">
                 <div class="col1 col">
-                    <p class="p3">SAY HI</p>
+                    <p class="p3">HELLO</p>
                     <a class="p3_email" href="mailto:mail@gryechwald.com">mail@gryechwald.com</a>
                 </div>
                 <div class="col2 col">
                     <p class="p1">GET IN TOUCH</p>
                     <a class="p2" href="mailto:mail@gryechwald.com">mail@gryechwald.com</a> <br>
-                    <p class="p2">
-                        +45 60735705
-                    </p>
+
+                    <a class="p2" href="tel:+45 60735705"> +45 60735705</a>
+
                 </div>
                 <div class="col3 col">
                     <p class="p1">FOLLOW</p>
@@ -120,14 +153,7 @@
     <footer>
         <p>&#169;GRYSTRANGEECHWALD2020</p>
     </footer>
-    <template>
-        <div class="grid-item">
-            <img src="" alt="">
-            <p class="navn"></p>
-            <a class="knap" href="">View project</a>
 
-        </div>
-    </template>
 
     <script src="script.js"></script>
     <script>
@@ -136,19 +162,25 @@
 
         let work = [];
         let billeder = [];
+        let billeder2 = [];
         const link = "http://lauraragnars.dk/GSE-wordpress/wordpress/wp-json/wp/v2/featuredwork";
         const link2 = "http://lauraragnars.dk/GSE-wordpress/wordpress/wp-json/wp/v2/billede/42";
+        const link3 = "http://lauraragnars.dk/GSE-wordpress/wordpress/wp-json/wp/v2/billede/68"
         const container = document.querySelector(".data-container");
         const template = document.querySelector("template");
 
         async function hentData() {
-            const response = await fetch(link);
-            work = await response.json();
-            visWork();
+            //            const response = await fetch(link);
+            // work = await response.json();
+            // visWork();
 
             const response2 = await fetch(link2);
             billeder = await response2.json();
             visBilleder();
+
+            const response3 = await fetch(link3);
+            billeder2 = await response3.json();
+            visBilleder2();
         }
 
         function visBilleder() {
@@ -162,8 +194,38 @@
 
             document.querySelector(".billede5").src = billeder.billede5.guid;
 
+            document.querySelector(".billede6").src = billeder.billede6.guid;
+
+            document.querySelector(".billede7").src = billeder.billede7.guid;
+
+            document.querySelector(".billede8").src = billeder.billede8.guid;
+
+            document.querySelector(".billede9").src = billeder.billede9.guid;
+
+            document.querySelector(".billede10").src = billeder.billede10.guid;
+
+
+
         }
 
+        function visBilleder2() {
+            document.querySelector(".billede11").src = billeder2.billede1.guid;
+
+            document.querySelector(".billede22").src = billeder2.billede2.guid;
+
+            document.querySelector(".billede33").src = billeder2.billede3.guid;
+
+            document.querySelector(".billede44").src = billeder2.billede4.guid;
+
+            document.querySelector(".billede55").src = billeder2.billede5.guid;
+
+            document.querySelector(".billede66").src = billeder2.billede6.guid;
+
+            document.querySelector(".billede77").src = billeder2.billede7.guid;
+
+            document.querySelector(".billede88").src = billeder2.billede8.guid;
+
+        }
 
         function visWork() {
             container.innerHTML = "";
@@ -185,6 +247,76 @@
             })
 
         };
+
+        // carousel aka slideshow
+        let slideIndex = 0;
+        let ii;
+        let slideIndex2 = 0;
+        let i;
+        let x = document.querySelectorAll(".mySlides");
+        let xx = document.querySelectorAll(".mySlides2");
+
+
+
+        carousel();
+        carousel2();
+
+
+        function carousel() {
+            // henholdvis ændre display modes for at vise nyt billede
+            // fungere lidt som et array hvor der brugges ++ for at target det enkelte billede
+            /*    for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";
+               }
+              slideIndex++;
+              */
+
+            /*------- Desktop -------*/
+
+            if (slideIndex > x.length - 1) {
+                slideIndex = 0;
+            }
+            x.forEach(billede => {
+                billede.style.display = "none";
+            })
+
+            x[slideIndex].style.display = "block";
+            slideIndex++
+            // skifter display mode hvert andet sekundt
+            setTimeout(carousel, 2000);
+
+
+            /*------- Desktop Slut-------*/
+
+        }
+
+        function carousel2() {
+            // henholdvis ændre display modes for at vise nyt billede
+            // fungere lidt som et array hvor der brugges ++ for at target det enkelte billede
+            /*    for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";
+               }
+              slideIndex++;
+              */
+
+            /*------- Desktop -------*/
+
+            if (slideIndex2 > xx.length - 1) {
+                slideIndex2 = 0;
+            }
+            xx.forEach(billede2 => {
+                billede2.style.display = "none";
+            })
+
+            xx[slideIndex2].style.display = "block";
+            slideIndex2++
+            // skifter display mode hvert andet sekundt
+            setTimeout(carousel2, 2000);
+
+
+            /*------- Desktop Slut-------*/
+
+        }
 
     </script>
 </body>
