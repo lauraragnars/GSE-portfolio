@@ -345,7 +345,7 @@ span.hiddenn {
     font-family: 'Optima';
     font-style: normal;
     font-weight: normal;
-    src: local('Optima'), url('Optima-Regular.woff') format('woff');
+    src: local('Optima Regular'), url('Optima-Regular.woff') format('woff');
 }
 
 
@@ -403,7 +403,8 @@ span.hiddenn {
     border-radius: 50%;
     width: 75%;
     padding-bottom: 5vw;
-    padding-top: 5vw;    margin: 0 auto;
+    padding-top: 5vw;
+    margin: 0 auto;
 }
 
 /*
@@ -832,7 +833,7 @@ footer p {
     }
 
     .client-text {
-        font-family: 'optima', sans-serif;
+        font-family: 'Optima';
         font-size: 1.2rem;
         font-weight: normal;
         text-align: center;
