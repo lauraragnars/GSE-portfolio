@@ -778,6 +778,26 @@ span.hiddenn {
     min-height: 100%;
 }
 
+.bg-img-case-kt {
+    height: 70vh;
+    width: 100%;
+    background-image: url(case_billeder/chs-header.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.bg-img-case-md {
+    height: 70vh;
+    width: 100%;
+    background-image: url(case_billeder/chs-header.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 .case-title {
     font-family: 'Optima';
     font-size: 1.7rem;
@@ -849,6 +869,10 @@ span.hiddenn {
     padding: 20px;
 }
 
+.case-img-img {
+    padding: 0 20px 0 20px;
+}
+
 .case-text-img {
     padding: 20px;
 }
@@ -870,6 +894,21 @@ span.hiddenn {
     flex-basis: 100%;
     margin-bottom: 19px;
 }
+
+.case-col-small {
+    flex-grow: 1;
+    flex-basis: 100%;
+
+    padding: 100px;
+}
+
+
+.case-col-large {
+    flex-grow: 1;
+    flex-basis: 100%;
+
+}
+
 
 #case-header .title-container {
     width: 80vw;
@@ -1211,6 +1250,16 @@ footer p {
     }
 
     .case-col {
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+
+    .case-col-small {
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
+
+    .case-col-large {
         flex-grow: 1;
         flex-basis: 50%;
     }
