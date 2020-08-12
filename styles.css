@@ -148,7 +148,7 @@ header {
     list-style-type: none;
     color: black;
     padding-left: 0;
-    margin-top: 30vh;
+    margin-top: 20vh;
 }
 
 #menu a {
@@ -850,7 +850,7 @@ span.hiddenn {
 
 .case-img-wrapper {
     display: flex;
-
+    flex-wrap: wrap;
 }
 
 .case-double-img {
@@ -867,6 +867,12 @@ span.hiddenn {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.case-col {
+    flex-grow: 1;
+    flex-basis: 100%;
+    margin-bottom: 19px;
 }
 
 
@@ -1105,13 +1111,32 @@ footer p {
     }
 
 
-
-
-
-
-
     .grid-item {
         margin-bottom: 20px;
+    }
+
+    #menu {
+        background-color: #f9faf8;
+        height: 500px;
+        width: 350px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: auto;
+        z-index: 100;
+        text-align: center;
+        font-family: futura-pt, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem;
+        transition: 0.3s;
+    }
+
+    #menulist {
+        list-style-type: none;
+        color: black;
+        padding-left: 0;
+        margin-top: 150px;
     }
 
     /* --------------CASES-------------- */
@@ -1155,6 +1180,11 @@ footer p {
         margin: auto;
         line-height: 33px;
     }
+
+    .case-col {
+        flex-grow: 1;
+        flex-basis: 50%;
+    }
 }
 
 
@@ -1164,29 +1194,7 @@ footer p {
 
     /* -------   MENU ---------*/
 
-    #menu {
-        background-color: #f9faf8;
-        height: 60vh;
-        width: 25vw;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 75vw;
-        z-index: 100;
-        text-align: center;
-        font-family: futura-pt, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 3rem;
-        transition: 0.3s;
-    }
 
-    #menulist {
-        list-style-type: none;
-        color: black;
-        padding-left: 0;
-        margin-top: 20vh;
-    }
 
 
 }
@@ -1197,6 +1205,7 @@ footer p {
         line-height: 50px;
     }
 
+    /*
     #menu {
         background-color: #f9faf8;
         height: 50vh;
@@ -1220,6 +1229,7 @@ footer p {
         padding-left: 0;
         margin-top: 15vh;
     }
+*/
 
 
 }
