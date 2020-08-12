@@ -875,6 +875,15 @@ span.hiddenn {
     margin-bottom: 19px;
 }
 
+#case-header .title-container {
+    width: 80vw;
+    position: absolute;
+    left: 10vw;
+    text-align: center;
+    top: 28vh;
+}
+
+
 
 
 
@@ -990,6 +999,15 @@ footer p {
         font-weight: normal;
 
     }
+
+    #case-header .title-container {
+        width: 80vw;
+        position: absolute;
+        left: 10vw;
+        text-align: center;
+        top: 20vh;
+    }
+
 
 
 
