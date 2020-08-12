@@ -816,6 +816,61 @@ span.hiddenn {
 
 }
 
+#case-start {
+    padding: 20px;
+
+}
+
+.case-small-thumbnail {
+    width: 35%;
+    margin-left: 32.5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.case-name {
+    font-family: futura-pt, sans-serif;
+    font-size: 1.7rem;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.case-info {
+    font-family: 'Optima';
+    font-weight: normal;
+    text-align: center;
+    max-width: 800px;
+    font-size: 1rem;
+    padding: 20px;
+    margin: auto;
+    line-height: 25px;
+}
+
+.case-img-wrapper {
+    display: flex;
+
+}
+
+.case-double-img {
+    padding: 20px;
+}
+
+.case-single-img {
+    padding: 20px;
+}
+
+.case-single-img div {
+    width: 50%;
+    margin-left: auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
 
 
 
@@ -1049,11 +1104,17 @@ footer p {
 
     }
 
-    .bg-img-case {
-        height: 89vh;
 
+
+
+
+
+
+    .grid-item {
+        margin-bottom: 20px;
     }
 
+    /* --------------CASES-------------- */
 
     .case-title {
         font-family: 'Optima';
@@ -1064,14 +1125,36 @@ footer p {
 
     }
 
+    .bg-img-case {
+        height: 89vh;
 
-    .grid-item {
+    }
+
+    .case-small-thumbnail {
+        width: 15%;
+        margin-left: 42.5%;
+        margin-top: 20px;
         margin-bottom: 20px;
     }
 
+    .case-name {
+        font-family: futura-pt, sans-serif;
+        font-size: 2.2rem;
+        margin-top: 50px;
+        text-align: center;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
 
-
-
+    .case-info {
+        font-family: 'Optima';
+        font-weight: normal;
+        text-align: center;
+        max-width: 800px;
+        font-size: 1.2rem;
+        margin: auto;
+        line-height: 33px;
+    }
 }
 
 
