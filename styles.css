@@ -399,11 +399,19 @@ span.hiddenn {
 }
 
 .billede1 {
-    object-position: center;
+    object-position: 40% 35%;
 }
 
 .billede2 {
-    object-position: bottom;
+    object-position: 20% 75%;
+}
+
+.billede3 {
+    object-position: 50% 90%;
+}
+
+.billede4 {
+    object-position: 50% 59%;
 }
 
 .billede7 {
@@ -416,7 +424,11 @@ span.hiddenn {
 }
 
 .billede9 {
-    object-position: bottom;
+    object-position: 50% 89%;
+}
+
+.billede10 {
+    object-position: 50% 50%;
 }
 
 .mySlides2 {
@@ -763,6 +775,41 @@ span.hiddenn {
 }
 
 
+/* -------------- CASES -------------- */
+
+#case-header {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+.bg-img-case-chs {
+    height: 70vh;
+    width: 100%;
+    background-image: url(case_billeder/chs-header.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.case-title {
+    font-family: 'Optima';
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+
+}
+
+.case-arrow {
+    position: relative;
+    bottom: 7vh;
+    margin: 0;
+    margin-bottom: -3vh;
+
+}
 
 
 
@@ -974,19 +1021,25 @@ footer p {
 
 
     .bg-img-work {
-        height: 85vh;
+        height: 89vh;
 
     }
 
     .bg-img-about {
-        height: 85vh;
+        height: 89vh;
 
     }
 
     .bg-img-contact {
-        height: 85vh;
+        height: 89vh;
 
     }
+
+    .bg-img-case {
+        height: 89vh;
+
+    }
+
 
 
 
