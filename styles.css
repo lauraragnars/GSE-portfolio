@@ -414,20 +414,20 @@ span.hiddenn {
     object-position: 50% 59%;
 }
 
-.billede7 {
-    object-position: bottom;
-}
-
-
 .billede8 {
     object-position: bottom;
 }
 
+
 .billede9 {
-    object-position: 50% 89%;
+    object-position: bottom;
 }
 
 .billede10 {
+    object-position: 50% 89%;
+}
+
+.billede11 {
     object-position: 50% 50%;
 }
 

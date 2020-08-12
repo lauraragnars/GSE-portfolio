@@ -60,6 +60,7 @@
                 <img class="mySlides billede8">
                 <img class="mySlides billede9">
                 <img class="mySlides billede10">
+                <img class="mySlides billede111">
             </div>
 
         </div>
@@ -77,7 +78,7 @@
                     <img class="mySlides2 billede55">
                     <img class="mySlides2 billede66">
                     <img class="mySlides2 billede77">
-                    <img class="mySlides2 billede88">
+
 
                 </div>
                 <div class="text">
@@ -164,7 +165,7 @@
         let billeder = [];
         let billeder2 = [];
         const link = "http://lauraragnars.dk/GSE-wordpress/wordpress/wp-json/wp/v2/featuredwork";
-        const link2 = "http://lauraragnars.dk/GSE-wordpress/wordpress/wp-json/wp/v2/billede/42";
+        const link2 = "http://lauraragnars.dk/GSE-wordpress/wordpress/wp-json/wp/v2/billede/42?per_page=100";
         const link3 = "http://lauraragnars.dk/GSE-wordpress/wordpress/wp-json/wp/v2/billede/68"
         const container = document.querySelector(".data-container");
         const template = document.querySelector("template");
@@ -204,6 +205,8 @@
 
             document.querySelector(".billede10").src = billeder.billede10.guid;
 
+            document.querySelector(".billede111").src = billeder.billede11.guid;
+
 
 
         }
@@ -223,7 +226,7 @@
 
             document.querySelector(".billede77").src = billeder2.billede7.guid;
 
-            document.querySelector(".billede88").src = billeder2.billede8.guid;
+
 
         }
 
