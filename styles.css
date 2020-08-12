@@ -810,9 +810,9 @@ span.hiddenn {
 
 .case-arrow {
     position: relative;
-    bottom: 7vh;
+    bottom: 50px;
     margin: 0;
-    margin-bottom: -3vh;
+    margin-bottom: -20px;
 
 }
 
@@ -848,12 +848,29 @@ span.hiddenn {
     line-height: 25px;
 }
 
+.case-category {
+    font-family: 'Optima';
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin: 30px 20px 50px 20px;
+    text-align: center;
+}
+
 .case-img-wrapper {
     display: flex;
     flex-wrap: wrap;
 }
 
+.case-img-wrapper.wrapreverse {
+    flex-wrap: wrap-reverse;
+}
+
 .case-double-img {
+    padding: 20px;
+}
+
+.case-text-img {
     padding: 20px;
 }
 
@@ -862,7 +879,7 @@ span.hiddenn {
 }
 
 .case-single-img div {
-    width: 50%;
+    width: 75%;
     margin-left: auto;
     margin: auto;
     margin-top: 50px;
@@ -881,6 +898,15 @@ span.hiddenn {
     left: 10vw;
     text-align: center;
     top: 28vh;
+}
+
+.case-col-text {
+    font-family: 'Optima';
+    font-weight: normal;
+    text-align: center;
+    align-self: center;
+    font-size: 1.2rem;
+    line-height: 30px;
 }
 
 
@@ -1203,25 +1229,37 @@ footer p {
         flex-grow: 1;
         flex-basis: 50%;
     }
+
+    .case-col-text {
+
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+
+    .case-single-img div {
+        width: 50%;
+        margin-left: auto;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+
 }
 
 
 
 
-@media only screen and (min-width: 1000px) {
-
-    /* -------   MENU ---------*/
-
-
-
-
-}
+@media only screen and (min-width: 1000px) {}
 
 @media only screen and (min-width: 1500px) {
     #forside .text p {
         font-size: 2rem;
         line-height: 50px;
     }
+
+
 
     /*
     #menu {
@@ -1269,6 +1307,12 @@ footer p {
     #about .text {
         font-size: 1.3rem;
         padding: 70px
+    }
+
+    .case-col-text {
+
+        font-size: 2rem;
+        line-height: 50px;
     }
 
 
