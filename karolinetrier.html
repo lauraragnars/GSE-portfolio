@@ -46,9 +46,9 @@
 
     <section id="case-header">
 
-        <div class="bg-img-case-chs bg-img-case"></div>
-        <div class="title-container">
-            <h1 class="case-title">
+        <div class="bg-img-case-kt bg-img-case"></div>
+        <div class="title-container-kt">
+            <h1 class="case-title case-title-kt">
                 KAROLINE TRIER
             </h1>
         </div>
@@ -59,7 +59,7 @@
     <section class="beige">
 
         <section id="case-start" class="section-wrapper">
-            <img class="case-small-thumbnail" src="case_billeder/karoline-thumbnail.jpg" alt="Carl Hansen og Søn">
+            <img class="case-small-thumbnail" src="case_billeder/kt-thumbnail-new.jpg" alt="Karoline Trier">
             <h2 class="case-name">
                 SUSTAINABLE FOOD CULTURE
             </h2>
@@ -81,15 +81,48 @@
             <div class="case-col case-col-text ">
                 <p>A SERIES OF FOOD STILL LIFES <br> CREATED FOR CONTENT <br>AND STORYTELLING</p>
             </div>
-            <div class="case-col"> <img src="case_billeder/chs-header.jpg" alt="CHS"></div>
+            <div class="case-col">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER1.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER2.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER3.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER4.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER5.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER6.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER7.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER8.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER9.jpg" alt="Karoline Trier Case Billede">
+            </div>
         </div>
     </section>
 
     <section class="beige">
         <section class="case-single-img section-wrapper">
             <div>
-                <img src="billeder/placeholder-landscape.jpg" alt="alt">
+                <img class="caseSlides2" src="case_billeder/kt-roulette-2/KAROLINE_TRIER1.jpg" alt="Karoline Trier Case Billede">
+                <!--
+                <img class="caseSlides2" src="case_billeder/kt-roulette-2/KAROLINE_TRIER2.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides2" src="case_billeder/kt-roulette-2/KAROLINE_TRIER3.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides2" src="case_billeder/kt-roulette-2/KAROLINE_TRIER4.jpg" alt="Karoline Trier Case Billede">
+-->
             </div>
+        </section>
+    </section>
+
+    <section class="case-single-img-big section-wrapper">
+        <h2 class="kt-case-header">IDENTITY</h2>
+        <div>
+            <img class="caseSlides3" src="case_billeder/kt-roulette-3/1.jpg" alt="Karoline Trier Case Billede">
+            <img class="caseSlides3" src="case_billeder/kt-roulette-3/2.jpg" alt="Karoline Trier Case Billede">
+            <img class="caseSlides3" src="case_billeder/kt-roulette-3/3.png" alt="Karoline Trier Case Billede">
+
+        </div>
+    </section>
+
+    <section class="beige">
+        <section class="section-wrapper case-text">
+            <p>Sharing knowled and inspiration is key the stationary. <br>
+                We designed 12 business cards, one for each month. <br>
+                Each card has a recipe with the ingredient, that is in season in that month. <br>The colours of the cards are inspired by the ingredient.</p>
         </section>
     </section>
 
@@ -101,4 +134,57 @@
     </footer>
 
     <script src="script.js"></script>
-</body></html>
+    <script>
+        let slideIndex = 0;
+        let i;
+        let x = document.querySelectorAll(".caseSlides");
+
+        let slideIndex2 = 0;
+        let ii;
+        let xx = document.querySelectorAll(".caseSlides3");
+
+        carousel();
+        carousel2();
+
+        function carousel() {
+
+            /*------- Desktop -------*/
+
+            if (slideIndex > x.length - 1) {
+                slideIndex = 0;
+            }
+            x.forEach(billede => {
+                billede.style.display = "none";
+            })
+
+            x[slideIndex].style.display = "block";
+            slideIndex++
+            // skifter display mode hvert andet sekundt
+            setTimeout(carousel, 2000);
+
+
+        }
+
+        function carousel2() {
+
+            /*------- Desktop -------*/
+
+            if (slideIndex2 > xx.length - 1) {
+                slideIndex2 = 0;
+            }
+            xx.forEach(billede => {
+                billede.style.display = "none";
+            })
+
+            xx[slideIndex2].style.display = "block";
+            slideIndex2++
+            // skifter display mode hvert andet sekundt
+            setTimeout(carousel2, 2000);
+
+
+        }
+
+    </script>
+</body>
+
+</html>
