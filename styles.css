@@ -695,9 +695,9 @@ span.hiddenn {
 .bg-img-case-md {
     height: 70vh;
     width: 100%;
-    background-image: url(case_billeder/mille-dinesen/4.jpg);
+    background-image: url(case_billeder/mille-dinesen/header-billede.jpg);
     background-size: cover;
-    background-position: 50% 80%;
+    background-position: 50% 60%;
     min-width: 100%;
     min-height: 100%;
 }
@@ -1039,6 +1039,9 @@ video {
     padding: 10vw;
 }
 
+#milledinesen .col-fs {
+    margin-bottom: -4px;
+}
 
 
 
