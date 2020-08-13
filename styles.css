@@ -722,6 +722,16 @@ span.hiddenn {
     min-height: 100%;
 }
 
+.bg-img-case-emp {
+    height: 70vh;
+    width: 100%;
+    background-image: url(case_billeder/emporia/emporia-headerbillede.jpg);
+    background-size: cover;
+    background-position: top;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 .case-title {
     font-family: 'Optima';
     font-size: 1.7rem;
@@ -786,7 +796,7 @@ span.hiddenn {
     font-weight: normal;
     text-align: center;
     max-width: 800px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 20px;
     margin: auto;
     line-height: 25px;
@@ -822,13 +832,17 @@ span.hiddenn {
     padding: 20px;
 }
 
+/*
 .case-single-img {
     padding: 20px;
 }
+*/
 
+/*
 .case-single-img-big {
     padding: 20px;
 }
+*/
 
 .rcy-website-img {
     padding: 10vw;
@@ -841,18 +855,21 @@ span.hiddenn {
     font-size: 2rem;
 }
 
+/*
 .case-single-img-big div {
     width: 80%;
     margin: auto;
 }
+*/
 
+/*
 .case-single-img div {
     width: 75%;
     margin-left: auto;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-}
+}*/
 
 .triobike .case-single-img div {
     width: 90%;
@@ -865,7 +882,7 @@ span.hiddenn {
 .case-col {
     flex-grow: 1;
     flex-basis: 100%;
-    margin-bottom: 19px;
+    /*    margin-bottom: 19px;*/
 }
 
 .case-col-small {
@@ -996,6 +1013,34 @@ video {
 }
 
 
+.section-wrapper-fs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.col-fs {
+    flex-basis: 100vw;
+    flex-grow: 1;
+}
+
+.col-fs-small {
+    flex-basis: 100vw;
+    flex-grow: 1;
+    padding: 5vw;
+    align-self: center;
+}
+
+.section-wrapper-large {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+
+.case-single-img-fs {
+    padding: 10vw;
+}
+
 
 
 
@@ -1034,6 +1079,10 @@ footer p {
 
     #about .img img {
         margin-top: 30px;
+    }
+
+    .wrapreverse {
+        flex-wrap: wrap-reverse;
     }
 
 }
@@ -1299,18 +1348,18 @@ footer p {
 
     .case-col {
         flex-grow: 1;
-        flex-basis: 50%;
+        flex-basis: 50vw;
     }
 
     .case-col-small {
         flex-grow: 1;
-        flex-basis: 50%;
+        flex-basis: 50vw;
         padding: 60px;
     }
 
     .case-col-large {
         flex-grow: 1;
-        flex-basis: 50%;
+        flex-basis: 50vw;
     }
 
     .case-col-text {
@@ -1319,6 +1368,7 @@ footer p {
         line-height: 40px;
     }
 
+    /*
     .case-single-img div {
         width: 50%;
         margin-left: auto;
@@ -1326,6 +1376,7 @@ footer p {
         margin-top: 50px;
         margin-bottom: 50px;
     }
+*/
 
     .triobike .case-single-img div {
         width: 75%;
@@ -1357,6 +1408,35 @@ footer p {
 
     #work-header .title-container-white {
         top: 35vh;
+    }
+
+
+    .section-wrapper-fs {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .col-fs {
+        flex-basis: 50vw;
+        flex-grow: 1;
+    }
+
+    .col-fs-small {
+        flex-basis: 50vw;
+        flex-grow: 1;
+        padding: 5vw;
+        align-self: center;
+    }
+
+    .section-wrapper-large {
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+
+
+    .case-single-img-fs {
+        padding: 10vw;
     }
 
 
