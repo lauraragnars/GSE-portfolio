@@ -299,7 +299,7 @@ span.hiddenn {
 }
 
 .billede2 {
-    object-position: 20% 75%;
+    object-position: 20% 60%;
 }
 
 .billede3 {
@@ -321,10 +321,11 @@ span.hiddenn {
 
 .billede10 {
     object-position: 50% 89%;
+
 }
 
 .billede11 {
-    object-position: 50% 50%;
+    object-position: 50% 60%;
 }
 
 .mySlides2 {
@@ -520,8 +521,9 @@ span.hiddenn {
 .bg-img-work {
     height: 70vh;
     width: 100%;
-    background-image: url(billeder/placeholder-header.jpg);
+    background-image: url(case_billeder/chs-header.jpg);
     background-size: cover;
+    background-position: 50% 82%;
     min-width: 100%;
     min-height: 100%;
 }
@@ -547,6 +549,10 @@ span.hiddenn {
     left: 10vw;
     text-align: center;
     top: 20vh;
+}
+
+#about-header .title-container {
+    top: 10vh;
 }
 
 
@@ -598,11 +604,11 @@ span.hiddenn {
 .bg-img-about {
     height: 70vh;
     width: 100%;
-    background-image: url(billeder/placeholder-header.jpg);
+    background-image: url(case_billeder/about-headerbillede.jpg);
     background-size: cover;
 
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 70%;
 
     /*
     max-width: 100%;
@@ -632,10 +638,11 @@ span.hiddenn {
 .bg-img-contact {
     height: 70vh;
     width: 100%;
-    background-image: url(billeder/placeholder-header.jpg);
+    background-image: url(case_billeder/contact-headerbillede.jpg);
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
+    background-position: 50% 30%;
 }
 
 #contact-header {
@@ -725,6 +732,14 @@ span.hiddenn {
     top: 35vh;
 }
 
+#contact-header .title-container-white {
+    width: 80vw;
+    position: absolute;
+    left: 10vw;
+    text-align: center;
+    top: 30vh;
+}
+
 .case-arrow {
     position: relative;
     bottom: 50px;
@@ -747,7 +762,7 @@ span.hiddenn {
 
 .case-name {
     font-family: futura-pt, sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-top: 50px;
     text-align: center;
     font-weight: normal;
@@ -759,7 +774,7 @@ span.hiddenn {
     font-weight: normal;
     text-align: center;
     max-width: 800px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 20px;
     margin: auto;
     line-height: 25px;
@@ -840,7 +855,7 @@ span.hiddenn {
 .case-col-small {
     flex-grow: 1;
     flex-basis: 100%;
-    padding: 100px;
+    padding: 40px;
     align-self: center;
 }
 
@@ -1260,6 +1275,7 @@ footer p {
     .case-col-small {
         flex-grow: 1;
         flex-basis: 50%;
+        padding: 100px;
     }
 
     .case-col-large {
@@ -1295,6 +1311,14 @@ footer p {
         left: 10vw;
         text-align: center;
         top: 42vh;
+    }
+
+    #contact-header .title-container-white {
+        width: 80vw;
+        position: absolute;
+        left: 10vw;
+        text-align: center;
+        top: 40vh;
     }
 
 
