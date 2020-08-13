@@ -713,6 +713,16 @@ span.hiddenn {
     min-height: 100%;
 }
 
+.bg-img-case-rcy {
+    height: 70vh;
+    width: 100%;
+    background-image: url(case_billeder/red-cross-youth/rcy-thumbnail.jpg);
+    background-size: cover;
+    background-position: top;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 .case-title {
     font-family: 'Optima';
     font-size: 1.7rem;
@@ -819,6 +829,10 @@ span.hiddenn {
 
 .case-single-img-big {
     padding: 20px;
+}
+
+.rcy-website-img {
+    padding: 10vw;
 }
 
 .kt-case-header {
@@ -941,14 +955,15 @@ video {
     line-height: 30px;
 }
 
-.case-text {
+.case-text p {
     font-family: 'Optima';
     font-weight: normal;
     font-size: 1.1rem;
     text-align: center;
     line-height: 30px;
     padding: 50px;
-    max-width: 800px;
+    max-width: 600px;
+    margin: auto;
 
 
 }
