@@ -712,7 +712,7 @@ span.hiddenn {
     position: absolute;
     left: 10vw;
     text-align: center;
-    top: 42vh;
+    top: 35vh;
 }
 
 .case-arrow {
@@ -822,14 +822,37 @@ span.hiddenn {
 .case-col-small {
     flex-grow: 1;
     flex-basis: 100%;
-
     padding: 100px;
+    align-self: center;
 }
 
 
 .case-col-large {
     flex-grow: 1;
     flex-basis: 100%;
+
+}
+
+.collaborators {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.collaborators h2 {
+    font-family: futura-pt;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: center;
+
+}
+
+.collaborators p {
+    font-family: 'Optima';
+    font-weight: normal;
+    max-width: 800px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 auto;
 
 }
 
@@ -1204,6 +1227,15 @@ footer p {
         margin-top: 50px;
         margin-bottom: 50px;
     }
+
+    .title-container-kt {
+        width: 80vw;
+        position: absolute;
+        left: 10vw;
+        text-align: center;
+        top: 42vh;
+    }
+
 
 
 

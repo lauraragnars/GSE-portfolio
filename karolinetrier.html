@@ -82,15 +82,15 @@
                 <p>A SERIES OF FOOD STILL LIFES <br> CREATED FOR CONTENT <br>AND STORYTELLING</p>
             </div>
             <div class="case-col">
-                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER1.jpg" alt="Karoline Trier Case Billede">
-                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER2.jpg" alt="Karoline Trier Case Billede">
-                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER3.jpg" alt="Karoline Trier Case Billede">
-                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER4.jpg" alt="Karoline Trier Case Billede">
-                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER5.jpg" alt="Karoline Trier Case Billede">
-                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER6.jpg" alt="Karoline Trier Case Billede">
-                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER7.jpg" alt="Karoline Trier Case Billede">
-                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER8.jpg" alt="Karoline Trier Case Billede">
-                <img class="caseSlides" src="case_billeder/kt-roulette-1/KAROLINE_TRIER9.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/export/JPEG/KAROLINE_TRIER1.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/export/JPEG/KAROLINE_TRIER2.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/export/JPEG/KAROLINE_TRIER3.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/export/JPEG/KAROLINE_TRIER4.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/export/JPEG/KAROLINE_TRIER5.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/export/JPEG/KAROLINE_TRIER6.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/export/JPEG/KAROLINE_TRIER7.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/export/JPEG/KAROLINE_TRIER8.jpg" alt="Karoline Trier Case Billede">
+                <img class="caseSlides" src="case_billeder/kt-roulette-1/export/JPEG/KAROLINE_TRIER9.jpg" alt="Karoline Trier Case Billede">
             </div>
         </div>
     </section>
@@ -126,6 +126,27 @@
         </section>
     </section>
 
+    <section class="case-img-img section-wrapper">
+        <div class="case-img-wrapper wrapreverse">
+            <div class="case-col-small">
+                <img class="caseSlides4" src="case_billeder/kt-roulette-4/ig_january_statement1.png" alt="Karoline Trier Case Billede">
+
+                <img class="caseSlides4" src="case_billeder/kt-roulette-4/ig_january_statement2.png" alt="Karoline Trier Case Billede">
+
+                <img class="caseSlides4" src="case_billeder/kt-roulette-4/ig_january_statement3.png" alt="Karoline Trier Case Billede">
+            </div>
+            <div class="case-col-large"> <img src="case_billeder/phone-mockup_1.png" alt="CHS"></div>
+        </div>
+    </section>
+
+    <section class="section-wrapper">
+        <div class="collaborators">
+            <h2>COLLABORATORS:</h2>
+            <p>Katrine Rorhberg, Christian Ravnkilde, Ricco Tijsen-Echwald & Sofia Rönje</p>
+        </div>
+
+    </section>
+
 
 
 
@@ -143,8 +164,13 @@
         let ii;
         let xx = document.querySelectorAll(".caseSlides3");
 
+        let slideIndex3 = 0;
+        let iii;
+        let xxx = document.querySelectorAll(".caseSlides4");
+
         carousel();
         carousel2();
+        carousel3();
 
         function carousel() {
 
@@ -180,6 +206,25 @@
             slideIndex2++
             // skifter display mode hvert andet sekundt
             setTimeout(carousel2, 2000);
+
+
+        }
+
+        function carousel3() {
+
+            /*------- Desktop -------*/
+
+            if (slideIndex3 > xxx.length - 1) {
+                slideIndex3 = 0;
+            }
+            xxx.forEach(billede => {
+                billede.style.display = "none";
+            })
+
+            xxx[slideIndex3].style.display = "block";
+            slideIndex3++
+            // skifter display mode hvert andet sekundt
+            setTimeout(carousel3, 2000);
 
 
         }
