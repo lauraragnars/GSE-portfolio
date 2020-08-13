@@ -686,9 +686,19 @@ span.hiddenn {
 .bg-img-case-md {
     height: 70vh;
     width: 100%;
-    background-image: url(case_billeder/chs-header.jpg);
+    background-image: url(case_billeder/mille-dinesen/4.png);
     background-size: cover;
     background-position: 50% 80%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.bg-img-case-tb {
+    height: 70vh;
+    width: 100%;
+    background-image: url(case_billeder/triobike/triobike-headerbillede.jpg);
+    background-size: cover;
+    background-position: 50% 70%;
     min-width: 100%;
     min-height: 100%;
 }
@@ -702,12 +712,12 @@ span.hiddenn {
 
 }
 
-.case-title-kt {
+.case-title-white {
     color: white;
 
 }
 
-.title-container-kt {
+.title-container-white {
     width: 80vw;
     position: absolute;
     left: 10vw;
@@ -813,6 +823,14 @@ span.hiddenn {
     margin-bottom: 50px;
 }
 
+.triobike .case-single-img div {
+    width: 90%;
+    margin-left: auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .case-col {
     flex-grow: 1;
     flex-basis: 100%;
@@ -836,6 +854,7 @@ span.hiddenn {
 .collaborators {
     padding: 20px;
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .collaborators h2 {
@@ -856,6 +875,35 @@ span.hiddenn {
 
 }
 
+.case-video {
+    padding: 20px;
+}
+
+
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    width: 100%;
+}
 
 
 #case-header .title-container {
@@ -897,6 +945,11 @@ span.hiddenn {
     height: 100%;
     object-fit: cover;
     width: 100%;
+}
+
+.triobike-slides-wrapper {
+    width: 90%;
+    margin: 0 auto;
 }
 
 
@@ -1228,7 +1281,15 @@ footer p {
         margin-bottom: 50px;
     }
 
-    .title-container-kt {
+    .triobike .case-single-img div {
+        width: 75%;
+        margin-left: auto;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .title-container-white {
         width: 80vw;
         position: absolute;
         left: 10vw;
