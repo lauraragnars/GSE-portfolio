@@ -59,7 +59,7 @@
     <section class="beige">
 
         <section id="case-start" class="section-wrapper">
-            <img class="case-small-thumbnail" src="case_billeder/chs-thumbnail.jpg" alt="Carl Hansen og Søn">
+            <img class="case-small-thumbnail" src="case_billeder/CarlHansenogSon/black_chair.jpg" alt="Carl Hansen og Søn">
             <h2 class="case-name">
                 CARL HANSEN & SØN 2019
             </h2>
@@ -70,17 +70,43 @@
         </section>
     </section>
 
-    <section class="case-double-img section-wrapper">
-        <div class="case-img-wrapper">
-            <div class="case-col"> <img src="case_billeder/chs-header.jpg" alt="CHS"></div>
-            <div class="case-col"> <img src="case_billeder/chs-header.jpg" alt="CHS"></div>
+    <section class="case-text-img section-wrapper">
+        <div class="case-img-wrapper wrapreverse">
+            <div class="case-col case-col-text ">
+                <p>A SERIES OF FOOD STILL LIFES <br> CREATED FOR CONTENT <br>AND STORYTELLING</p>
+            </div>
+            <div class="case-col">
+                <img class="caseSlides" src="case_billeder/CarlHansenogSon/Roulette_1/marding1555.jpg" alt="Still life photo of wood">
+                <img class="caseSlides" src="case_billeder/CarlHansenogSon/Roulette_1/marding1556.jpg" alt="Still life photo of wood">
+                <img class="caseSlides" src="case_billeder/CarlHansenogSon/Roulette_1/marding1557.jpg" alt="Still life photo of wood">
+                <img class="caseSlides" src="case_billeder/CarlHansenogSon/Roulette_1/marding1558.jpg" alt="Still life photo of wood">
+                <img class="caseSlides" src="case_billeder/CarlHansenogSon/Roulette_1/marding1559.jpg" alt="Still life photo of wood">
+
+            </div>
         </div>
     </section>
+    <section class="beige">
+        <section class="case-single-img section-wrapper">
+            <div>
+                <img class="caseSlides2" src="case_billeder/CarlHansenogSon/Roulette_2/190405_GSE_1507.jpg" alt="Catalogue from Carl Hansen & son">
+                <img class="caseSlides2" src="case_billeder/CarlHansenogSon/Roulette_2/190405_GSE_1520.jpg" alt="Catalogue from Carl Hansen & son">
+                <img class="caseSlides2" src="case_billeder/CarlHansenogSon/Roulette_2/190405_GSE_1506.jpg" alt="Catalogue from Carl Hansen & son">
+                <img class="caseSlides2" src="case_billeder/CarlHansenogSon/roulette_2/190405_GSE_1425.jpg" alt="Catalogue from Carl Hansen & son">
+            </div>
+        </section>
 
-    <section class="case-single-img section-wrapper">
-        <div>
-            <img src="billeder/placeholder-landscape.jpg" alt="alt">
-        </div>
+
+
+        <section id="case-start" class="section-wrapper">
+            <img class="case-small-thumbnail" src="case_billeder/CarlHansenogSon/tan_chair.jpg" alt="Carl Hansen og Søn">
+            <h2 class="case-name">
+                CARL HANSEN & SØN 2018
+            </h2>
+            <p class="case-info">
+                For the 2019 Catalogue we shot the masterpiece collection by Hans Wegner that emmerged from the first 3 weeks of collaboration between Carl Hansen & Søn’s cabinetmakers and Wegner in 1949 as part of telling the story behind the design that went on to become icons of modern Danish design.For the Carl Hansen & Søn furniture books and catalogues 2019 we created a brand narrative around craftmanship and and why materials matter in creating longlasting design pieces.
+            </p>
+            <div class="arrow"><img src="billeder/arrow.svg" alt="arrow icon"></div>
+        </section>
     </section>
 
     <section class="case-double-img section-wrapper">
@@ -100,6 +126,81 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        let slideIndex = 0;
+        let i;
+        let x = document.querySelectorAll(".caseSlides");
+
+        let slideIndex2 = 0;
+        let ii;
+        let xx = document.querySelectorAll(".caseSlides2");
+
+        let slideIndex3 = 0;
+        let iii;
+        let xxx = document.querySelectorAll(".caseSlides3");
+
+        carousel();
+        carousel2();
+        carousel3();
+
+        function carousel() {
+
+            /*------- Desktop -------*/
+
+            if (slideIndex > x.length - 1) {
+                slideIndex = 0;
+            }
+            x.forEach(billede => {
+                billede.style.display = "none";
+            })
+
+            x[slideIndex].style.display = "block";
+            slideIndex++
+            // skifter display mode hvert andet sekundt
+            setTimeout(carousel, 2000);
+
+
+        }
+
+        function carousel2() {
+
+            /*------- Desktop -------*/
+
+            if (slideIndex2 > xx.length - 1) {
+                slideIndex2 = 0;
+            }
+            xx.forEach(billede => {
+                billede.style.display = "none";
+            })
+
+            xx[slideIndex2].style.display = "block";
+            slideIndex2++
+            // skifter display mode hvert andet sekundt
+            setTimeout(carousel2, 2000);
+
+
+        }
+
+        function carousel3() {
+
+            /*------- Desktop -------*/
+
+            if (slideIndex3 > xxx.length - 1) {
+                slideIndex3 = 0;
+            }
+            xxx.forEach(billede => {
+                billede.style.display = "none";
+            })
+
+            xxx[slideIndex3].style.display = "block";
+            slideIndex3++
+            // skifter display mode hvert andet sekundt
+            setTimeout(carousel3, 2000);
+
+
+        }
+
+    </script>
 </body>
 
 </html>
