@@ -1411,7 +1411,7 @@ footer p {
 
     .section-wrapper-fs {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         margin: 0;
     }
 
