@@ -1013,7 +1013,7 @@ video {
 
 .section-wrapper-fs {
     display: flex;
-
+    flex-wrap: wrap;
     margin: 0;
 }
 
