@@ -534,25 +534,15 @@ span.hiddenn {
 
 
 
-.work-title {
-    font-family: futura-pt, sans-serif;
-    font-weight: normal;
-    text-align: center;
-    font-size: 4rem;
 
-}
 
-.title-container {
-    width: 80vw;
-    position: absolute;
-    left: 10vw;
-    text-align: center;
-    top: 20vh;
-}
 
+
+/*
 #about-header .title-container {
     top: 10vh;
 }
+*/
 
 
 
@@ -623,14 +613,6 @@ span.hiddenn {
     margin-right: 20px;
 }
 
-.about-title {
-    font-family: futura-pt, sans-serif;
-    font-weight: normal;
-    text-align: center;
-    font-size: 4rem;
-
-}
-
 
 
 
@@ -644,7 +626,7 @@ span.hiddenn {
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
-    background-position: 50% 80%;
+    background-position: 50% 85%;
 }
 
 #contact-header {
@@ -654,12 +636,28 @@ span.hiddenn {
 
 
 
-.contact-title {
+
+/* --------------ALLE UNDERSIDER-------------- */
+
+
+.undersider-title {
     font-family: futura-pt, sans-serif;
     font-weight: normal;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3.2rem;
 
+}
+
+.title-container {
+    width: 80vw;
+    position: absolute;
+    left: 10vw;
+    text-align: center;
+    top: 30vh;
+}
+
+.white-font {
+    color: white;
 }
 
 
@@ -746,6 +744,7 @@ span.hiddenn {
 
 }
 
+/*
 .title-container-white {
     width: 80vw;
     position: absolute;
@@ -753,7 +752,9 @@ span.hiddenn {
     text-align: center;
     top: 35vh;
 }
+*/
 
+/*
 #contact-header .title-container-white {
     width: 80vw;
     position: absolute;
@@ -761,6 +762,7 @@ span.hiddenn {
     text-align: center;
     top: 30vh;
 }
+*/
 
 .case-arrow {
     position: relative;
@@ -1001,9 +1003,11 @@ video {
 }
 
 
+/*
 #work-header .title-container-white {
     top: 30vh;
 }
+*/
 
 .cases-knap {
     margin-top: 50px;
@@ -1387,6 +1391,7 @@ footer p {
         margin-bottom: 50px;
     }
 
+    /*
     .title-container-white {
         width: 80vw;
         position: absolute;
@@ -1394,7 +1399,9 @@ footer p {
         text-align: center;
         top: 42vh;
     }
+*/
 
+    /*
     #contact-header .title-container-white {
         width: 80vw;
         position: absolute;
@@ -1411,6 +1418,31 @@ footer p {
         top: 35vh;
     }
 
+
+*/
+
+
+
+
+    /* --------------ALLE UNDERSIDER-------------- */
+
+
+    .undersider-title {
+        font-family: futura-pt, sans-serif;
+        font-weight: normal;
+        text-align: center;
+        font-size: 6rem;
+
+    }
+
+
+    .title-container {
+        width: 80vw;
+        position: absolute;
+        left: 10vw;
+        text-align: center;
+        top: 29vh;
+    }
 
     .section-wrapper-fs {
         display: flex;
