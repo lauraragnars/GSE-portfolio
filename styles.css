@@ -521,9 +521,9 @@ span.hiddenn {
 .bg-img-work {
     height: 70vh;
     width: 100%;
-    background-image: url(case_billeder/chs-header.jpg);
+    background-image: url(case_billeder/contact-headerbillede.jpg);
     background-size: cover;
-    background-position: 50% 82%;
+    background-position: 50% 40%;
     min-width: 100%;
     min-height: 100%;
 }
@@ -554,6 +554,8 @@ span.hiddenn {
 #about-header .title-container {
     top: 10vh;
 }
+
+
 
 
 .work-all {
@@ -608,7 +610,8 @@ span.hiddenn {
     background-size: cover;
 
     background-repeat: no-repeat;
-    background-position: 50% 70%;
+    background-position: 50% 82%;
+
 
     /*
     max-width: 100%;
@@ -638,11 +641,11 @@ span.hiddenn {
 .bg-img-contact {
     height: 70vh;
     width: 100%;
-    background-image: url(case_billeder/contact-headerbillede.jpg);
+    background-image: url(case_billeder/chs-header.jpg);
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
-    background-position: 50% 30%;
+    background-position: 50% 80%;
 }
 
 #contact-header {
@@ -693,7 +696,7 @@ span.hiddenn {
 .bg-img-case-md {
     height: 70vh;
     width: 100%;
-    background-image: url(case_billeder/mille-dinesen/4.png);
+    background-image: url(case_billeder/mille-dinesen/4.jpg);
     background-size: cover;
     background-position: 50% 80%;
     min-width: 100%;
@@ -967,6 +970,10 @@ video {
     margin: 0 auto;
 }
 
+
+#work-header .title-container-white {
+    top: 30vh;
+}
 
 
 
@@ -1319,6 +1326,14 @@ footer p {
         left: 10vw;
         text-align: center;
         top: 40vh;
+    }
+
+    #contact-header .title-container {
+        top: 15vh;
+    }
+
+    #work-header .title-container-white {
+        top: 35vh;
     }
 
 
