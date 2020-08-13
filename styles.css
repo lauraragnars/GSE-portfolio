@@ -436,8 +436,7 @@ span.hiddenn {
 
 
 #contact .wrapper {
-    justify-content: flex-start;
-
+    justify-content: flex-start
 }
 
 #contact .col1 {
@@ -880,6 +879,7 @@ span.hiddenn {
 .case-col-large {
     flex-grow: 1;
     flex-basis: 100%;
+    margin-bottom: -4px;
 
 }
 
@@ -990,6 +990,11 @@ video {
     top: 30vh;
 }
 
+.cases-knap {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
 
 
 
@@ -1031,9 +1036,6 @@ footer p {
         margin-top: 30px;
     }
 
-    #contact.section-wrapper {
-        padding: 50px 30px;
-    }
 }
 
 
@@ -1054,6 +1056,10 @@ footer p {
     #menu {
 
         font-size: 5rem;
+    }
+
+    #contact .wrapper {
+        padding: 50px;
     }
 
 
@@ -1129,25 +1135,27 @@ footer p {
         text-transform: uppercase;
         margin-bottom: 0;
         margin-top: 3px;
-        margin-left: -28px;
+
     }
+
+
 
     #contact .col1 {
 
-        flex-grow: 2;
-        flex-basis: 300px;
-        text-align: center;
+        flex-grow: 1;
+        flex-basis: 100px;
+        text-align: left:
     }
 
 
     #contact .col2 {
         flex-grow: 1;
-        flex-basis: auto;
+        flex-basis: 100px;
     }
 
     #contact .col3 {
         flex-grow: 1;
-        flex-basis: auto;
+        flex-basis: 100px;
 
     }
 
@@ -1297,7 +1305,7 @@ footer p {
     .case-col-small {
         flex-grow: 1;
         flex-basis: 50%;
-        padding: 100px;
+        padding: 60px;
     }
 
     .case-col-large {
@@ -1359,15 +1367,19 @@ footer p {
 
 
 
-@media only screen and (min-width: 1000px) {}
+@media only screen and (min-width: 1200px) {
+
+    #contact .wrapper {
+        padding: 0;
+    }
+
+}
 
 @media only screen and (min-width: 1500px) {
     #forside .text p {
         font-size: 2rem;
         line-height: 50px;
     }
-
-
 
     /*
     #menu {
