@@ -656,6 +656,14 @@ span.hiddenn {
     top: 30vh;
 }
 
+.title-container-undersider {
+    width: 80vw;
+    position: absolute;
+    left: 10vw;
+    text-align: center;
+    top: 30vh;
+}
+
 .white-font {
     color: white;
 }
@@ -903,9 +911,14 @@ span.hiddenn {
 
 .collaborators {
     padding: 20px;
+    padding-bottom: 40px;
     margin-bottom: 50px;
     margin-top: 20px;
+    background-color: #f1f3f0;
+    width: 100vw;
+    margin: auto;
 }
+
 
 .collaborators h2 {
     font-family: futura-pt;
@@ -1365,6 +1378,16 @@ footer p {
         line-height: 33px;
     }
 
+    .case-info-emp {
+        font-family: 'Optima';
+        font-weight: normal;
+        text-align: center;
+        max-width: 900px;
+        font-size: 1.2rem;
+        margin: auto;
+        line-height: 33px;
+    }
+
     .case-col {
         flex-grow: 1;
         flex-basis: 50vw;
@@ -1452,8 +1475,16 @@ footer p {
         font-family: futura-pt, sans-serif;
         font-weight: normal;
         text-align: center;
-        font-size: 6rem;
+        font-size: 7.2rem;
 
+    }
+
+    .title-container-undersider {
+        width: 80vw;
+        position: absolute;
+        left: 10vw;
+        text-align: center;
+        top: 25vh;
     }
 
 
@@ -1511,6 +1542,10 @@ footer p {
 
     .img-padding {
         padding: 5vw;
+    }
+
+    .img-padding-extra {
+        padding: 10vw;
     }
 
     .text-bg-color {
