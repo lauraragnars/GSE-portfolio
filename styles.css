@@ -998,11 +998,21 @@ video {
     width: 100%;
 }
 
+/*
 .triobike-slides-wrapper {
     width: 90%;
     margin: 0 auto;
 }
+*/
 
+.title-container-trio {
+    top: 20vh;
+    width: 80vw;
+    position: absolute;
+    left: 10vw;
+    text-align: center;
+
+}
 
 /*
 #work-header .title-container-white {
@@ -1041,7 +1051,7 @@ video {
 
 
 .case-single-img-fs {
-    padding: 10vw;
+    padding: 7vw;
 }
 
 #milledinesen .col-fs {
@@ -1474,6 +1484,17 @@ footer p {
     .case-single-img-fs {
         padding: 10vw;
     }
+
+    .title-container-trio {
+        top: 20vh;
+        width: 80vw;
+        position: absolute;
+        left: 10vw;
+        text-align: center;
+
+    }
+
+
 
 
     /* --------------PADDING TIL BILLEDER-------------- */
