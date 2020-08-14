@@ -101,11 +101,11 @@
         <section class="case-single-img-fs section-wrapper-large">
             <div>
                 <img class="caseSlides2" src="case_billeder/kt-roulette-2/KAROLINE_TRIER1.jpg" alt="Karoline Trier Case Billede">
-                <!--
+
                 <img class="caseSlides2" src="case_billeder/kt-roulette-2/KAROLINE_TRIER2.jpg" alt="Karoline Trier Case Billede">
                 <img class="caseSlides2" src="case_billeder/kt-roulette-2/KAROLINE_TRIER3.jpg" alt="Karoline Trier Case Billede">
                 <img class="caseSlides2" src="case_billeder/kt-roulette-2/KAROLINE_TRIER4.jpg" alt="Karoline Trier Case Billede">
--->
+
             </div>
         </section>
     </section>
@@ -174,9 +174,14 @@
         let iii;
         let xxx = document.querySelectorAll(".caseSlides4");
 
+        let slideIndex4 = 0;
+        let iiii;
+        let xxxx = document.querySelectorAll(".caseSlides2");
+
         carousel();
         carousel2();
         carousel3();
+        carousel4();
 
         function carousel() {
 
@@ -231,6 +236,25 @@
             slideIndex3++
             // skifter display mode hvert andet sekundt
             setTimeout(carousel3, 2000);
+
+
+        }
+
+        function carousel4() {
+
+            /*------- Desktop -------*/
+
+            if (slideIndex4 > xxxx.length - 1) {
+                slideIndex4 = 0;
+            }
+            xxxx.forEach(billede => {
+                billede.style.display = "none";
+            })
+
+            xxxx[slideIndex4].style.display = "block";
+            slideIndex4++
+            // skifter display mode hvert andet sekundt
+            setTimeout(carousel4, 2000);
 
 
         }
