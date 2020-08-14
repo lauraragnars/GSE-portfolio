@@ -109,7 +109,7 @@ header {
 #menuknap {
     z-index: 101;
     position: fixed;
-    right: 20px;
+    right: 16px;
     top: 14px;
     font-family: futura-pt, sans-serif;
     font-weight: 500;
