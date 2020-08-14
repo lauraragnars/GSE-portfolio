@@ -852,6 +852,8 @@ span.hiddenn {
     font-weight: normal;
     text-align: center;
     font-size: 2rem;
+    margin-bottom: -20px;
+    padding-top: 30px;
 }
 
 /*
@@ -1452,6 +1454,7 @@ footer p {
     .col-fs {
         flex-basis: 50vw;
         flex-grow: 1;
+        height: 100%;
     }
 
     .col-fs-small {
@@ -1459,6 +1462,7 @@ footer p {
         flex-grow: 1;
         padding: 5vw;
         align-self: center;
+        height: 100%;
     }
 
     .section-wrapper-large {
@@ -1469,6 +1473,23 @@ footer p {
 
     .case-single-img-fs {
         padding: 10vw;
+    }
+
+
+    /* --------------PADDING TIL BILLEDER-------------- */
+
+    .img-padding {
+        padding: 5vw;
+    }
+
+    .text-bg-color {
+        background-color: #f1f3f0;
+        height: 100%;
+    }
+
+    .white-bg {
+        background-color: white;
+        height: 100%;
     }
 
 
