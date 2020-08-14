@@ -116,20 +116,13 @@
     </section>
 
     <section class="beige">
-        <section class="section-wrapper-fs section-wrapper-large">
+        <section class="section-wrapper-fs">
 
-            <div class="col-fs-third">
-                <img src="case_billeder/emporia/carusel3/1.jpg" alt="Emporia">
+            <div class="col-fs-small">
+                <img class="caseSlides3 emporia-catwalk" src="case_billeder/emporia/carusel3/1.jpg" alt="Emporia">
+                <img class="caseSlides3 emporia-catwalk" src="case_billeder/emporia/carusel3/2.jpg" alt="Emporia">
+                <img class="caseSlides3 emporia-catwalk" src="case_billeder/emporia/carusel3/3.jpg" alt="Emporia">
             </div>
-            <div class="col-fs-third">
-                <img src="case_billeder/emporia/carusel3/2.jpg" alt="Emporia">
-            </div>
-            <div class="col-fs-third">
-                <img src="case_billeder/emporia/carusel3/3.jpg" alt="Emporia">
-            </div>
-
-
-
         </section>
     </section>
 
@@ -171,10 +164,15 @@
         let ii;
         let xx = document.querySelectorAll(".caseSlides2");
 
+        let slideIndex3 = 0;
+        let iii;
+        let xxx = document.querySelectorAll(".caseSlides3");
+
 
 
         carousel();
         carousel2();
+        carousel3();
 
 
         function carousel() {
@@ -215,9 +213,25 @@
 
         }
 
+        function carousel3() {
+
+            /*------- Desktop -------*/
+
+            if (slideIndex3 > xxx.length - 1) {
+                slideIndex3 = 0;
+            }
+            xxx.forEach(billede => {
+                billede.style.display = "none";
+            })
+
+            xxx[slideIndex3].style.display = "block";
+            slideIndex3++
+            // skifter display mode hvert andet sekundt
+            setTimeout(carousel3, 2000);
+
+
+        }
     </script>
 
 
-</body>
-
-</html>
+</body></html>
