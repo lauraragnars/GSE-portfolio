@@ -852,6 +852,8 @@ span.hiddenn {
     font-weight: normal;
     text-align: center;
     font-size: 2rem;
+    margin-bottom: -20px;
+    padding-top: 30px;
 }
 
 /*
@@ -1469,6 +1471,23 @@ footer p {
 
     .case-single-img-fs {
         padding: 10vw;
+    }
+
+
+    /* --------------PADDING TIL BILLEDER-------------- */
+
+    .img-padding {
+        padding: 5vw;
+    }
+
+    .text-bg-color {
+        background-color: #f5ecdc;
+        height: 100%;
+    }
+
+    .white-bg {
+        background-color: white;
+        height: 100%;
     }
 
 
