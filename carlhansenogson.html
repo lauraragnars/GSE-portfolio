@@ -76,7 +76,7 @@
 
     <section class="section-wrapper-fs wrapreverse">
         <div class="col-fs case-col-text ">
-            <p>A SERIES OF FOOD STILL LIFES <br> CREATED FOR CONTENT <br>AND STORYTELLING</p>
+            <p>A SERIES OF IMAGES <br> TELLING THE STORY ABOUT <br>CH&S REFINED MATERIALS</p>
         </div>
         <div class="col-fs">
             <img class="caseSlides" src="case_billeder/CarlHansenogSon/Roulette_1/marding1555.jpg" alt="Still life photo of wood">
@@ -111,7 +111,7 @@
                 A HUMAN TOUCH
             </h2>
             <p class="case-info">
-                For the Carl Hansen & Søn Catalogues 2018 we wanted to challange the classical way of displaying products in a catalouge. We choose to tell the story about the human, in relation to CH&S Furnitures and how the experience of a beautiful, well designed and crafted furniture feelt like
+                For the Carl Hansen & Søn Catalogues 2018 we wanted to challange the classical way of displaying products in a catalouge. We choose to tell the story about the human, in relation to CH&S Furnitures and how the experience of a beautiful, well designed and crafted furniture feelt like.
             </p>
             <p class="case-category">
                 CONCEPT · DESIGN · IMAGE CREATION
@@ -142,11 +142,14 @@
     </section>
 
 
-    <section class=" beige">
+    <section class="beige">
         <section class="case-single-img-fs section-wrapper-large">
-            <div class="col-fs-small">
-                <img class="caseSlides5" src="case_billeder/CarlHansenogSon/Roulette_2/190405_GSE_1507.jpg" alt="Catalogue from Carl Hansen & son">
+            <div col-fs-small>
 
+                <img class="caseSlides4" src="case_billeder/CarlHansenogSon/roulette_4/190405_GSE_1458.jpg" alt="The Carl Hansen & Son lookbook">
+                <img class="caseSlides4" src="case_billeder/CarlHansenogSon/roulette_4/190405_GSE_1552.jpg" alt="The Carl Hansen & Son lookbook">
+                <img class="caseSlides4" src="case_billeder/CarlHansenogSon/roulette_4/190405_GSE_1553.jpg" alt="The Carl Hansen & Son lookbook">
+                <img class="caseSlides4" src="case_billeder/CarlHansenogSon/roulette_4/190405_GSE_1558.jpg" alt="The Carl Hansen & Son lookbook">
             </div>
         </section>
     </section>
@@ -154,6 +157,17 @@
 
 
 
+    <section class="section-wrapper">
+        <div class="collaborators">
+            <h2>COLLABORATORS:</h2>
+            <p>Sanne Frank, Christian Ravnkilde, Clare McNally,<br> Helene Nielsson & Louise Walther</p>
+        </div>
+
+    </section>
+
+    <div class="knap-container cases-knap">
+        <a class="knap2" href="work.html">View more cases</a>
+    </div>
 
 
     <footer>
@@ -174,9 +188,14 @@
         let iii;
         let xxx = document.querySelectorAll(".caseSlides3");
 
+        let slideIndex4 = 0;
+        let iiii;
+        let xxxx = document.querySelectorAll(".caseSlides4");
+
         carousel();
         carousel2();
         carousel3();
+        carousel4();
 
         function carousel() {
 
@@ -235,7 +254,23 @@
 
         }
 
-    </script>
-</body>
+        function carousel4() {
 
-</html>
+            /*------- Desktop -------*/
+
+            if (slideIndex4 > xxxx.length - 1) {
+                slideIndex4 = 0;
+            }
+            xxxx.forEach(billede => {
+                billede.style.display = "none";
+            })
+
+            xxxx[slideIndex4].style.display = "block";
+            slideIndex4++
+            // skifter display mode hvert andet sekundt
+            setTimeout(carousel4, 2000);
+
+
+        }
+    </script>
+</body></html>
