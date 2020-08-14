@@ -94,9 +94,14 @@
                 <img class="caseSlides2" src="case_billeder/CarlHansenogSon/roulette_2/190405_GSE_1425.jpg" alt="Catalogue from Carl Hansen & son">
             </div>
         </section>
+    </section>
+    <section id="case-start" class="section-wrapper">
 
-
-
+        <p class="case-info">
+            Each imagery reflects a furniture category Chairs, Lounge Chairs, Sofas, Tables or Coffeetables.
+        </p>
+    </section>
+    <section class="beige">
         <section id="case-start" class="section-wrapper">
             <img class="case-small-thumbnail" src="case_billeder/CarlHansenogSon/tan_chair.jpg" alt="Carl Hansen og Søn">
             <h2 class="case-name">
@@ -108,8 +113,9 @@
             <div class="arrow"><img src="billeder/arrow.svg" alt="arrow icon"></div>
         </section>
     </section>
+    <section class="beige">
 
-    <!--
+        <!--
     <section class="section-wrapper-fs">
 
         <div class="col-fs"> <img src="case_billeder/chs-header.jpg" alt="CHS"></div>
@@ -118,110 +124,107 @@
     </section>
 -->
 
-    <section class="section-wrapper-fs wrapreverse">
-        <div class="col-fs case-col-text ">
-            <p>A SERIES OF FOOD STILL LIFES <br> CREATED FOR CONTENT <br>AND STORYTELLING</p>
-        </div>
-        <div class="col-fs">
-            <img class="caseSlides25" src="case_billeder/CarlHansenogSon/Roulette_1/marding1555.jpg" alt="Still life photo of wood">
-
-        </div>
-    </section>
-
-
-    <section class="beige">
-        <section class="case-single-img-fs section-wrapper-large">
-            <div class="col-fs-small">
-                <img class="caseSlides5" src="case_billeder/CarlHansenogSon/Roulette_2/190405_GSE_1507.jpg" alt="Catalogue from Carl Hansen & son">
+        <section class="section-wrapper-fs wrapreverse">
+            <div class="col-fs case-col-text ">
+                <p>A SERIES OF FOOD STILL LIFES <br> CREATED FOR CONTENT <br>AND STORYTELLING</p>
+            </div>
+            <div class="col-fs">
+                <img class="caseSlides25" src="case_billeder/CarlHansenogSon/Roulette_1/marding1555.jpg" alt="Still life photo of wood">
 
             </div>
         </section>
-    </section>
+
+
+        <section class="beige">
+            <section class="case-single-img-fs section-wrapper-large">
+                <div class="col-fs-small">
+                    <img class="caseSlides5" src="case_billeder/CarlHansenogSon/Roulette_2/190405_GSE_1507.jpg" alt="Catalogue from Carl Hansen & son">
+
+                </div>
+            </section>
+        </section>
 
 
 
 
 
-    <footer>
-        <p>&#169;GRYSTRANGEECHWALD2020</p>
-    </footer>
+        <footer>
+            <p>&#169;GRYSTRANGEECHWALD2020</p>
+        </footer>
 
-    <script src="script.js"></script>
-    <script>
-        let slideIndex = 0;
-        let i;
-        let x = document.querySelectorAll(".caseSlides");
+        <script src="script.js"></script>
+        <script>
+            let slideIndex = 0;
+            let i;
+            let x = document.querySelectorAll(".caseSlides");
 
-        let slideIndex2 = 0;
-        let ii;
-        let xx = document.querySelectorAll(".caseSlides2");
+            let slideIndex2 = 0;
+            let ii;
+            let xx = document.querySelectorAll(".caseSlides2");
 
-        let slideIndex3 = 0;
-        let iii;
-        let xxx = document.querySelectorAll(".caseSlides3");
+            let slideIndex3 = 0;
+            let iii;
+            let xxx = document.querySelectorAll(".caseSlides3");
 
-        carousel();
-        carousel2();
-        carousel3();
+            carousel();
+            carousel2();
+            carousel3();
 
-        function carousel() {
+            function carousel() {
 
-            /*------- Desktop -------*/
+                /*------- Desktop -------*/
 
-            if (slideIndex > x.length - 1) {
-                slideIndex = 0;
+                if (slideIndex > x.length - 1) {
+                    slideIndex = 0;
+                }
+                x.forEach(billede => {
+                    billede.style.display = "none";
+                })
+
+                x[slideIndex].style.display = "block";
+                slideIndex++
+                // skifter display mode hvert andet sekundt
+                setTimeout(carousel, 2000);
+
+
             }
-            x.forEach(billede => {
-                billede.style.display = "none";
-            })
 
-            x[slideIndex].style.display = "block";
-            slideIndex++
-            // skifter display mode hvert andet sekundt
-            setTimeout(carousel, 2000);
+            function carousel2() {
+
+                /*------- Desktop -------*/
+
+                if (slideIndex2 > xx.length - 1) {
+                    slideIndex2 = 0;
+                }
+                xx.forEach(billede => {
+                    billede.style.display = "none";
+                })
+
+                xx[slideIndex2].style.display = "block";
+                slideIndex2++
+                // skifter display mode hvert andet sekundt
+                setTimeout(carousel2, 2000);
 
 
-        }
-
-        function carousel2() {
-
-            /*------- Desktop -------*/
-
-            if (slideIndex2 > xx.length - 1) {
-                slideIndex2 = 0;
             }
-            xx.forEach(billede => {
-                billede.style.display = "none";
-            })
 
-            xx[slideIndex2].style.display = "block";
-            slideIndex2++
-            // skifter display mode hvert andet sekundt
-            setTimeout(carousel2, 2000);
+            function carousel3() {
+
+                /*------- Desktop -------*/
+
+                if (slideIndex3 > xxx.length - 1) {
+                    slideIndex3 = 0;
+                }
+                xxx.forEach(billede => {
+                    billede.style.display = "none";
+                })
+
+                xxx[slideIndex3].style.display = "block";
+                slideIndex3++
+                // skifter display mode hvert andet sekundt
+                setTimeout(carousel3, 2000);
 
 
-        }
-
-        function carousel3() {
-
-            /*------- Desktop -------*/
-
-            if (slideIndex3 > xxx.length - 1) {
-                slideIndex3 = 0;
             }
-            xxx.forEach(billede => {
-                billede.style.display = "none";
-            })
-
-            xxx[slideIndex3].style.display = "block";
-            slideIndex3++
-            // skifter display mode hvert andet sekundt
-            setTimeout(carousel3, 2000);
-
-
-        }
-
-    </script>
-</body>
-
-</html>
+        </script>
+</body></html>
