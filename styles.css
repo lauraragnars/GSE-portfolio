@@ -721,7 +721,7 @@ span.hiddenn {
 .bg-img-case-rcy {
     height: 70vh;
     width: 100%;
-    background-image: url(case_billeder/red-cross-youth/rcy-thumbnail.jpg);
+    background-image: url(case_billeder/red-cross-youth/rcy-headerbillede2.jpg);
     background-size: cover;
     background-position: top;
     min-width: 100%;
@@ -1077,6 +1077,24 @@ video {
     margin-bottom: -4px;
 }
 
+.chs-text-section p {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 1rem;
+}
+
+#chs-header-title {
+    color: black;
+}
+
+#collab-kt {
+    margin-top: -5px;
+}
+
+.emporia-catwalk {
+    width: 70%;
+    margin: auto;
+}
 
 
 /* -------------- FOOTER -------------- */
@@ -1434,6 +1452,24 @@ footer p {
         padding: 5vw;
     }
 
+    .chs-text-section p {
+        padding-top: 180px;
+        padding-bottom: 180px;
+        font-size: 1.2rem;
+    }
+
+
+    #chs-header-title {
+        color: white;
+    }
+
+    .emporia-catwalk {
+        width: 20%;
+        margin: auto;
+        margin-bottom: -5%;
+    }
+
+
 
     /*
     .title-container-white {
@@ -1484,7 +1520,7 @@ footer p {
         position: absolute;
         left: 10vw;
         text-align: center;
-        top: 25vh;
+        top: 30vh;
     }
 
 
