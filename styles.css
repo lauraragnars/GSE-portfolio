@@ -741,7 +741,6 @@ span.hiddenn {
 
 .case-title-white {
     color: white;
-
 }
 
 /*
@@ -1155,7 +1154,7 @@ footer p {
         position: absolute;
         left: 10vw;
         text-align: center;
-        top: 20vh;
+        top: 40vh;
     }
 
 
