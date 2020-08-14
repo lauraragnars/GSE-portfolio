@@ -115,7 +115,6 @@ header {
     font-weight: 500;
     font-style: normal;
     font-size: 1.5rem;
-
 }
 
 .menuknapicon {
@@ -1464,7 +1463,7 @@ footer p {
     }
 
     .emporia-catwalk {
-        width: 20%;
+        width: 30%;
         margin: auto;
         margin-bottom: -5%;
     }
