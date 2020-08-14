@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gry Strange Echwald</title>
+    <title>Emporia</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/gjt1ewi.css">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
@@ -77,9 +77,9 @@
     <section class="section-wrapper-fs wrapreverse">
 
         <div class="col-fs case-col-text">
-            OUR MODELS EACH HAD <br>
-            A BEAUTYMARK <br>
-            NOSE, EARS, TEETH OR BRACES <br> THAT MADE THEM UNIQUE
+            <p> OUR MODELS EACH HAD <br>
+                A BEAUTYMARK <br>
+                NOSE, EARS, TEETH OR BRACES <br> THAT MADE THEM UNIQUE</p>
         </div>
         <div class="col-fs">
             <img class="caseSlides" src="case_billeder/emporia/carusel1/emporia-carusel-1.jpg" alt="Red Emporia poster">
@@ -88,11 +88,67 @@
             <img class="caseSlides" src="case_billeder/emporia/carusel1/emporia-carusel-5.jpg" alt="Red Emporia poster">
             <img class="caseSlides" src="case_billeder/emporia/carusel1/emporia-carusel-4.jpg" alt="Red Emporia poster">
 
+        </div>
+    </section>
 
+
+    <section class="beige">
+        <section class="case-single-img-big section-wrapper">
+
+            <div>
+                <img class="caseSlides2" src="case_billeder/emporia/carusel2/1.jpg" alt="Emporia Case Billede">
+                <img class="caseSlides2" src="case_billeder/emporia/carusel2/2.jpg" alt="Emporia Case Billede">
+                <img class="caseSlides2" src="case_billeder/emporia/carusel2/3.jpg" alt="Emporia Case Billede">
+                <img class="caseSlides2" src="case_billeder/emporia/carusel2/4.jpg" alt="Emporia Case Billede">
+            </div>
+        </section>
+    </section>
+
+
+    <section class="section-wrapper case-video img-padding">
+        <div class="video-container">
+            <iframe src="https://player.vimeo.com/video/163455768" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
         </div>
     </section>
 
+    <section class="beige">
+        <section class="section-wrapper-fs section-wrapper-large">
+
+            <div class="col-fs-third">
+                <img src="case_billeder/emporia/carusel3/1.jpg" alt="Emporia">
+            </div>
+            <div class="col-fs-third">
+                <img src="case_billeder/emporia/carusel3/2.jpg" alt="Emporia">
+            </div>
+            <div class="col-fs-third">
+                <img src="case_billeder/emporia/carusel3/3.jpg" alt="Emporia">
+            </div>
+
+
+
+        </section>
+    </section>
+
+    <section class="beige">
+        <section class="section-wrapper case-text">
+            <p>Emporia guests, participated in the contest
+                and got to walk as a model at Emporia Fashion Week show.</p>
+        </section>
+    </section>
+
+
+    <section class="section-wrapper">
+        <div class="collaborators">
+            <h2>COLLABORATORS:</h2>
+            <p>Johannes Sjöberg & Yellow</p>
+        </div>
+
+    </section>
+
+    <div class="knap-container cases-knap">
+        <a class="knap2" href="work.html">View more cases</a>
+    </div>
 
 
 
@@ -107,8 +163,14 @@
         let i;
         let x = document.querySelectorAll(".caseSlides");
 
+        let slideIndex2 = 0;
+        let ii;
+        let xx = document.querySelectorAll(".caseSlides2");
+
+
 
         carousel();
+        carousel2();
 
 
         function carousel() {
@@ -126,6 +188,25 @@
             slideIndex++
             // skifter display mode hvert andet sekundt
             setTimeout(carousel, 2000);
+
+
+        }
+
+        function carousel2() {
+
+            /*------- Desktop -------*/
+
+            if (slideIndex2 > xx.length - 1) {
+                slideIndex2 = 0;
+            }
+            xx.forEach(billede => {
+                billede.style.display = "none";
+            })
+
+            xx[slideIndex2].style.display = "block";
+            slideIndex2++
+            // skifter display mode hvert andet sekundt
+            setTimeout(carousel2, 2000);
 
 
         }
