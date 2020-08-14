@@ -998,11 +998,21 @@ video {
     width: 100%;
 }
 
+/*
 .triobike-slides-wrapper {
     width: 90%;
     margin: 0 auto;
 }
+*/
 
+.title-container-trio {
+    top: 20vh;
+    width: 80vw;
+    position: absolute;
+    left: 10vw;
+    text-align: center;
+
+}
 
 /*
 #work-header .title-container-white {
@@ -1020,6 +1030,12 @@ video {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
+}
+
+.col-fs-third {
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 50px;
 }
 
 .col-fs {
@@ -1041,15 +1057,12 @@ video {
 
 
 .case-single-img-fs {
-    padding: 10vw;
+    padding: 7vw;
 }
 
 #milledinesen .col-fs {
     margin-bottom: -4px;
 }
-
-
-
 
 
 
@@ -1392,6 +1405,13 @@ footer p {
         margin-bottom: 50px;
     }
 
+    .col-fs-third {
+        flex-basis: 33%;
+        flex-grow: 1;
+        padding: 5vw;
+    }
+
+
     /*
     .title-container-white {
         width: 80vw;
@@ -1475,6 +1495,17 @@ footer p {
         padding: 10vw;
     }
 
+    .title-container-trio {
+        top: 20vh;
+        width: 80vw;
+        position: absolute;
+        left: 10vw;
+        text-align: center;
+
+    }
+
+
+
 
     /* --------------PADDING TIL BILLEDER-------------- */
 
@@ -1491,8 +1522,6 @@ footer p {
         background-color: white;
         height: 100%;
     }
-
-
 
 
 }
