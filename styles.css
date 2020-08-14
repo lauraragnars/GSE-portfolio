@@ -1454,6 +1454,7 @@ footer p {
     .col-fs {
         flex-basis: 50vw;
         flex-grow: 1;
+        height: 100%;
     }
 
     .col-fs-small {
@@ -1461,6 +1462,7 @@ footer p {
         flex-grow: 1;
         padding: 5vw;
         align-self: center;
+        height: 100%;
     }
 
     .section-wrapper-large {
@@ -1481,7 +1483,7 @@ footer p {
     }
 
     .text-bg-color {
-        background-color: #f5ecdc;
+        background-color: #f1f3f0;
         height: 100%;
     }
 
