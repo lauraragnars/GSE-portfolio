@@ -24,7 +24,7 @@
     <header>
 
         <a class="logo-wrapper" href="index.html">
-            <div class="logo">
+            <div class="logo invisible">
                 <span class='initial'>G</span><span class='hiddenn nameFull a1'>ry</span>
 
                 <span class='initial'>S</span><span class='hiddenn nameFull a2'>trange</span>
@@ -32,6 +32,8 @@
                 <span class='initial'>E</span><span class='hiddenn nameFull a3'>chwald</span>
             </div>
         </a>
+
+        <p class="fullname">Gry Strange Echwald</p>
 
         <div id="menuknap"><img class="menuknapicon" src="billeder/burgermenuicon.svg" alt="Burger menu icon"></div>
         <nav id="menu" class="hide">
@@ -269,6 +271,33 @@
         let x = document.querySelectorAll(".mySlides");
         let xx = document.querySelectorAll(".mySlides2");
 
+        const initials = document.querySelector(".logo");
+        const fullname = document.querySelector(".fullname");
+
+        window.addEventListener("scroll", logoAnimation);
+
+
+        function logoAnimation() {
+
+            fullname.classList.add("fadeout");
+
+            fullname.addEventListener("animationend", fadeIn);
+        }
+
+
+        function fadeIn() {
+            initials.classList.remove("invisible")
+            initials.classList.add("fadein");
+
+            initials.addEventListener("animationend", removeClass)
+
+
+        }
+
+        function removeClass() {
+            initials.classList.remove("fadein");
+        }
+
 
 
         carousel();
@@ -330,8 +359,5 @@
             /*------- Desktop Slut-------*/
 
         }
-
     </script>
-</body>
-
-</html>
+</body></html>
