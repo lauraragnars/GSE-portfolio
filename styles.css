@@ -696,6 +696,8 @@ span.hiddenn {
 
 
 
+
+
 .bg-img-case-chs {
     height: 70vh;
     width: 100%;
@@ -798,6 +800,11 @@ span.hiddenn {
 }
 
 #case-start {
+    padding: 20px;
+
+}
+
+#case-start2 {
     padding: 20px;
 
 }
@@ -994,6 +1001,8 @@ video {
     text-align: center;
     top: 28vh;
 }
+
+
 
 .case-col-text {
     font-family: 'Optima';
@@ -1265,6 +1274,8 @@ footer p {
         text-align: center;
         top: 40vh;
     }
+
+
 
 
 
