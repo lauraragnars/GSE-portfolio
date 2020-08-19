@@ -116,9 +116,9 @@
                 <img class="slideshowSlides" src="case_billeder/kt-roulette-2/KAROLINE_TRIER3.jpg" alt="Karoline Trier Case Billede">
                 <img class="slideshowSlides" src="case_billeder/kt-roulette-2/KAROLINE_TRIER4.jpg" alt="Karoline Trier Case Billede">
 
-                <div class="ss-button button-left w3-display-left" onclick="plusDivs(-1)"><i class="arrow left"></i></div>
+                <div class="ss-button button-left w3-display-left" onclick="plusDivs(-1)"><i class="img-arrow left"></i></div>
 
-                <div class="ss-button button-right w3-display-right" onclick="plusDivs(1)"><i class="arrow right"></i></div>
+                <div class="ss-button button-right w3-display-right" onclick="plusDivs(1)"><i class="img-arrow right"></i></div>
 
 
             </div>
@@ -127,12 +127,15 @@
 
     <section class="case-single-img-big section-wrapper">
 
-        <div>
-            <img class="caseSlides3" src="case_billeder/kt-roulette-3/1.jpg" alt="Karoline Trier Case Billede">
-            <img class="caseSlides3" src="case_billeder/kt-roulette-3/2.jpg" alt="Karoline Trier Case Billede">
-            <img class="caseSlides3" src="case_billeder/kt-roulette-3/3.jpg" alt="Karoline Trier Case Billede">
-            <img class="caseSlides3" src="case_billeder/kt-roulette-3/4.jpg" alt="Karoline Trier Case Billede">
+        <div class="slideshow-container">
+            <img class="slideshowSlides2" src="case_billeder/kt-roulette-3/1.jpg" alt="Karoline Trier Case Billede">
+            <img class="slideshowSlides2" src="case_billeder/kt-roulette-3/2.jpg" alt="Karoline Trier Case Billede">
+            <img class="slideshowSlides2" src="case_billeder/kt-roulette-3/3.jpg" alt="Karoline Trier Case Billede">
+            <img class="slideshowSlides2" src="case_billeder/kt-roulette-3/4.jpg" alt="Karoline Trier Case Billede">
 
+            <div class="ss-button button-left button-left2 w3-display-left" onclick="plusDivs2(-1)"><i class="img-arrow left"></i></div>
+
+            <div class="ss-button button-right button-right2 w3-display-right" onclick="plusDivs2(1)"><i class="img-arrow right"></i></div>
         </div>
     </section>
 
@@ -233,9 +236,6 @@
         let i;
         let x = document.querySelectorAll(".caseSlides");
 
-        let slideIndex2 = 0;
-        let ii;
-        let xx = document.querySelectorAll(".caseSlides3");
 
         let slideIndex3 = 0;
         let iii;
@@ -246,7 +246,7 @@
         //        let xxxx = document.querySelectorAll(".caseSlides2");
 
         carousel();
-        carousel2();
+        //        carousel2();
         carousel3();
         //        carousel4();
 
@@ -269,24 +269,24 @@
 
         }
 
-        function carousel2() {
-
-            /*------- Desktop -------*/
-
-            if (slideIndex2 > xx.length - 1) {
-                slideIndex2 = 0;
-            }
-            xx.forEach(billede => {
-                billede.style.display = "none";
-            })
-
-            xx[slideIndex2].style.display = "block";
-            slideIndex2++
-            // skifter display mode hvert andet sekundt
-            setTimeout(carousel2, 2000);
-
-
-        }
+        //        function carousel2() {
+        //
+        //            /*------- Desktop -------*/
+        //
+        //            if (slideIndex2 > xx.length - 1) {
+        //                slideIndex2 = 0;
+        //            }
+        //            xx.forEach(billede => {
+        //                billede.style.display = "none";
+        //            })
+        //
+        //            xx[slideIndex2].style.display = "block";
+        //            slideIndex2++
+        //            // skifter display mode hvert andet sekundt
+        //            setTimeout(carousel2, 2000);
+        //
+        //
+        //        }
 
         function carousel3() {
 
@@ -330,6 +330,9 @@
         let slideIndex4 = 1;
         showDivs(slideIndex4);
 
+
+
+
         function plusDivs(n) {
             showDivs(slideIndex4 += n);
         }
@@ -348,16 +351,47 @@
             }
             xxxx[slideIndex4 - 1].style.display = "block";
         }
+
+
+
+
+
+        let slideIndex2 = 1;
+        showDivs2(slideIndex2);
+
+
+        function plusDivs2(n) {
+            showDivs2(slideIndex2 += n);
+        }
+
+        function showDivs2(n) {
+            let ii;
+            let xx = document.getElementsByClassName("slideshowSlides2");
+            if (n > xx.length) {
+                slideIndex2 = 1
+            }
+            if (n < 1) {
+                slideIndex2 = xx.length
+            }
+            for (ii = 0; ii < xx.length; ii++) {
+                xx[ii].style.display = "none";
+            }
+            xx[slideIndex2 - 1].style.display = "block";
+        }
+
     </script>
     <!-- Default Statcounter code for gryechwald.com http://www.gryechwald.com/ -->
     <script type="text/javascript">
         var sc_project = 7426606;
         var sc_invisible = 1;
         var sc_security = "d78f7e39";
+
     </script>
     <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
     <noscript>
         <div class="statcounter"><a title="Web Analytics Made Easy - StatCounter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/7426606/0/d78f7e39/1/" alt="Web Analytics Made Easy - StatCounter"></a></div>
     </noscript>
     <!-- End of Statcounter Code -->
-</body></html>
+</body>
+
+</html>

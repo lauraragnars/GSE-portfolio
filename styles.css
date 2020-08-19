@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }
@@ -75,6 +79,7 @@ a {
     background-color: #f9faf8;
     width: 100vw;
 }
+
 
 
 /* -------------- MENU -------------- */
@@ -1127,6 +1132,10 @@ video {
     display: none;
 }
 
+.slideshowSlides2 {
+    display: none;
+}
+
 
 .button-left {
     top: 50%;
@@ -1140,6 +1149,16 @@ video {
     right: 0%;
     transform: translate(0%, -50%);
     margin-right: 15px;
+}
+
+.button-left2 {
+
+    margin-left: -20px;
+}
+
+.button-right2 {
+
+    margin-right: -20px;
 }
 
 
@@ -1163,17 +1182,17 @@ video {
 
 }
 
-.arrow:hover {
-    border: solid pink;
-    transition: 0.3s;
-    border-width: 0 2px 2px 0;
+.img-arrow:hover {
+    border: solid #3b3b3b;
+    border-width: 0 2.5px 2.5px 0;
     display: inline-block;
     padding: 13px;
+    transition: 0.3s;
 }
 
-.arrow {
-    border: solid white;
-    border-width: 0 2px 2px 0;
+.img-arrow {
+    border: solid #c6c6c6;
+    border-width: 0 2.5px 2.5px 0;
     display: inline-block;
     padding: 13px;
     transition: 0.3s;
