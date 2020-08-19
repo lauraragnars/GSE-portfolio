@@ -110,12 +110,16 @@
 
     <section class="beige">
         <section class="case-single-img-fs section-wrapper-large">
-            <div>
-                <img class="caseSlides2" src="case_billeder/kt-roulette-2/KAROLINE_TRIER1.jpg" alt="Karoline Trier Case Billede">
+            <div class="slideshow-container">
+                <img class="slideshowSlides" src="case_billeder/kt-roulette-2/KAROLINE_TRIER1.jpg" alt="Karoline Trier Case Billede">
+                <img class="slideshowSlides" src="case_billeder/kt-roulette-2/KAROLINE_TRIER2.jpg" alt="Karoline Trier Case Billede">
+                <img class="slideshowSlides" src="case_billeder/kt-roulette-2/KAROLINE_TRIER3.jpg" alt="Karoline Trier Case Billede">
+                <img class="slideshowSlides" src="case_billeder/kt-roulette-2/KAROLINE_TRIER4.jpg" alt="Karoline Trier Case Billede">
 
-                <img class="caseSlides2" src="case_billeder/kt-roulette-2/KAROLINE_TRIER2.jpg" alt="Karoline Trier Case Billede">
-                <img class="caseSlides2" src="case_billeder/kt-roulette-2/KAROLINE_TRIER3.jpg" alt="Karoline Trier Case Billede">
-                <img class="caseSlides2" src="case_billeder/kt-roulette-2/KAROLINE_TRIER4.jpg" alt="Karoline Trier Case Billede">
+                <div class="ss-button button-left w3-display-left" onclick="plusDivs(-1)"><i class="arrow left"></i></div>
+
+                <div class="ss-button button-right w3-display-right" onclick="plusDivs(1)"><i class="arrow right"></i></div>
+
 
             </div>
         </section>
@@ -237,14 +241,14 @@
         let iii;
         let xxx = document.querySelectorAll(".caseSlides4");
 
-        let slideIndex4 = 0;
-        let iiii;
-        let xxxx = document.querySelectorAll(".caseSlides2");
+        //        let slideIndex4 = 0;
+        //        let iiii;
+        //        let xxxx = document.querySelectorAll(".caseSlides2");
 
         carousel();
         carousel2();
         carousel3();
-        carousel4();
+        //        carousel4();
 
         function carousel() {
 
@@ -303,38 +307,57 @@
 
         }
 
-        function carousel4() {
+        //        function carousel4() {
+        //
+        //            /*------- Desktop -------*/
+        //
+        //            if (slideIndex4 > xxxx.length - 1) {
+        //                slideIndex4 = 0;
+        //            }
+        //            xxxx.forEach(billede => {
+        //                billede.style.display = "none";
+        //            })
+        //
+        //            xxxx[slideIndex4].style.display = "block";
+        //            slideIndex4++
+        //            // skifter display mode hvert andet sekundt
+        //            setTimeout(carousel4, 2000);
+        //
+        //
+        //        }
 
-            /*------- Desktop -------*/
 
-            if (slideIndex4 > xxxx.length - 1) {
-                slideIndex4 = 0;
-            }
-            xxxx.forEach(billede => {
-                billede.style.display = "none";
-            })
+        let slideIndex4 = 1;
+        showDivs(slideIndex4);
 
-            xxxx[slideIndex4].style.display = "block";
-            slideIndex4++
-            // skifter display mode hvert andet sekundt
-            setTimeout(carousel4, 2000);
-
-
+        function plusDivs(n) {
+            showDivs(slideIndex4 += n);
         }
 
+        function showDivs(n) {
+            let iiii;
+            let xxxx = document.getElementsByClassName("slideshowSlides");
+            if (n > xxxx.length) {
+                slideIndex4 = 1
+            }
+            if (n < 1) {
+                slideIndex4 = xxxx.length
+            }
+            for (iiii = 0; iiii < xxxx.length; iiii++) {
+                xxxx[iiii].style.display = "none";
+            }
+            xxxx[slideIndex4 - 1].style.display = "block";
+        }
     </script>
     <!-- Default Statcounter code for gryechwald.com http://www.gryechwald.com/ -->
     <script type="text/javascript">
         var sc_project = 7426606;
         var sc_invisible = 1;
         var sc_security = "d78f7e39";
-
     </script>
     <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
     <noscript>
         <div class="statcounter"><a title="Web Analytics Made Easy - StatCounter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/7426606/0/d78f7e39/1/" alt="Web Analytics Made Easy - StatCounter"></a></div>
     </noscript>
     <!-- End of Statcounter Code -->
-</body>
-
-</html>
+</body></html>

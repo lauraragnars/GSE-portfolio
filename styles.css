@@ -1123,6 +1123,72 @@ video {
     margin: auto;
 }
 
+.slideshowSlides {
+    display: none;
+}
+
+
+.button-left {
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    margin-left: 15px;
+}
+
+.button-right {
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    margin-right: 15px;
+}
+
+
+.slideshow-container {
+    position: relative;
+}
+
+
+.ss-button {
+    display: inline-block;
+    border: none;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+
+}
+
+.arrow:hover {
+    border: solid pink;
+    transition: 0.3s;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 13px;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 13px;
+    transition: 0.3s;
+}
+
+.right {
+    transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+}
+
+
+
 
 /* -------------- FOOTER -------------- */
 
