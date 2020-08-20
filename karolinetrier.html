@@ -133,9 +133,9 @@
             <img class="slideshowSlides2" src="case_billeder/kt-roulette-3/3.jpg" alt="Karoline Trier Case Billede">
             <img class="slideshowSlides2" src="case_billeder/kt-roulette-3/4.jpg" alt="Karoline Trier Case Billede">
 
-            <div class="ss-button button-left button-left2 w3-display-left" onclick="plusDivs2(-1)"><i class="img-arrow left"></i></div>
+            <div class="ss-button button-left button-left2 w3-display-left" onclick="plusSlides2(-1)"><i class="img-arrow left"></i></div>
 
-            <div class="ss-button button-right button-right2 w3-display-right" onclick="plusDivs2(1)"><i class="img-arrow right"></i></div>
+            <div class="ss-button button-right button-right2 w3-display-right" onclick="plusSlides2(1)"><i class="img-arrow right"></i></div>
         </div>
     </section>
 
@@ -349,15 +349,16 @@
         //        }
 
         let slideIndex4 = 0;
+
         automaticSlider();
+
 
         function automaticSlider() {
             showSlides(slideIndex4);
             myTimer = setInterval(function() {
                 plusSlides(1)
             }, 4000);
-        }
-
+        };
 
 
         function plusSlides(n) {
@@ -381,62 +382,79 @@
         function showSlides(n) {
             let i2;
             let slides = document.getElementsByClassName("slideshowSlides");
-            //            var dots = document.getElementsByClassName("dot");
             if (n > slides.length) {
                 slideIndex4 = 1
             }
             if (n < 1) {
                 slideIndex4 = slides.length
             }
-            for (i2 = 0; i2 < slides.length; i++) {
+            for (i2 = 0; i2 < slides.length; i2++) {
                 slides[i2].style.display = "none";
             }
-            //            for (i2 = 0; i2 < dots.length; i2++) {
-            //                dots[i2].className = dots[i].className.replace(" active", "");
-            //            }
+
             slides[slideIndex4 - 1].style.display = "block";
-            //            dots[slideIndex4 - 1].className += " active";
+
         }
 
 
+        let slideIndex2 = 0;
 
 
-        let slideIndex2 = 1;
-        showDivs2(slideIndex2);
+        automaticSlider2();
 
 
-        function plusDivs2(n) {
-            showDivs2(slideIndex2 += n);
+        function automaticSlider2() {
+            showSlides2(slideIndex2);
+            myTimer2 = setInterval(function() {
+                plusSlides2(1)
+            }, 4000);
+        };
+
+
+        function plusSlides2(n) {
+            clearInterval(myTimer2);
+            if (n < 0) {
+                showSlides2(slideIndex2 -= 1);
+            } else {
+                showSlides2(slideIndex2 += 1);
+            }
+            if (n === -1) {
+                myTimer2 = setInterval(function() {
+                    plusSlides2(n + 2)
+                }, 4000);
+            } else {
+                myTimer2 = setInterval(function() {
+                    plusSlides2(n + 1)
+                }, 4000);
+            }
         }
 
-        function showDivs2(n) {
-            let ii;
-            let xx = document.getElementsByClassName("slideshowSlides2");
-            if (n > xx.length) {
+        function showSlides2(n) {
+            let i3;
+            let slides2 = document.getElementsByClassName("slideshowSlides2");
+            if (n > slides2.length) {
                 slideIndex2 = 1
             }
             if (n < 1) {
-                slideIndex2 = xx.length
+                slideIndex2 = slides2.length
             }
-            for (ii = 0; ii < xx.length; ii++) {
-                xx[ii].style.display = "none";
+            for (i3 = 0; i3 < slides2.length; i3++) {
+                slides2[i3].style.display = "none";
             }
-            xx[slideIndex2 - 1].style.display = "block";
-        }
 
+            slides2[slideIndex2 - 1].style.display = "block";
+
+        }
     </script>
     <!-- Default Statcounter code for gryechwald.com http://www.gryechwald.com/ -->
     <script type="text/javascript">
         var sc_project = 7426606;
         var sc_invisible = 1;
         var sc_security = "d78f7e39";
-
     </script>
     <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
     <noscript>
         <div class="statcounter"><a title="Web Analytics Made Easy - StatCounter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/7426606/0/d78f7e39/1/" alt="Web Analytics Made Easy - StatCounter"></a></div>
     </noscript>
     <!-- End of Statcounter Code -->
-</body>
-
-</html>
+</body></html>
