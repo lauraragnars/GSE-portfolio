@@ -614,7 +614,11 @@ span.hiddenn {
 #clients {
     padding-top: 50px;
     padding-bottom: 50px;
-    max-width: 700px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .bg-img-about {
@@ -1643,35 +1647,6 @@ footer p {
 
 
 
-    /*
-    .title-container-white {
-        width: 80vw;
-        position: absolute;
-        left: 10vw;
-        text-align: center;
-        top: 42vh;
-    }
-*/
-
-    /*
-    #contact-header .title-container-white {
-        width: 80vw;
-        position: absolute;
-        left: 10vw;
-        text-align: center;
-        top: 40vh;
-    }
-
-    #contact-header .title-container {
-        top: 15vh;
-    }
-
-    #work-header .title-container-white {
-        top: 35vh;
-    }
-
-
-*/
 
 
 
@@ -1780,6 +1755,16 @@ footer p {
 
     #contact .wrapper {
         padding: 0;
+    }
+
+    #clients {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
     }
 
 }
