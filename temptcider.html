@@ -95,7 +95,123 @@
         </div>
     </section>
 
+    <section class="section-wrapper-fs wrapreverse text-bg-color">
 
+        <div class="col-fs case-col-text">
+            <p>A SERIES OF CAN <br> AND BOTTLE DESIGN </p>
+        </div>
+
+        <div class="col-fs img-padding white-bg">
+            <img class="caseSlides" src="case_billeder/temptcider/roulette2/1.jpg" alt="Tempt Cider bottle design">
+            <img class="caseSlides" src="case_billeder/temptcider/roulette2/2.jpg" alt="Tempt Cider bottle design">
+            <img class="caseSlides" src="case_billeder/temptcider/roulette2/3.jpg" alt="Tempt Cider bottle design">
+
+        </div>
+
+    </section>
+
+
+    <section class="section-wrapper case-video">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/MQvK5OvmY_c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="tempt-slideshow-2" class="case-single-img-big section-wrapper">
+
+        <div class="slideshow-container">
+            <img class="slideshowSlides2" src="case_billeder/temptcider/roulette3/1.jpg" alt="Tempt Cider Case Billede">
+            <img class="slideshowSlides2" src="case_billeder/temptcider/roulette3/2.jpg" alt="Tempt Cider Case Billede">
+            <img class="slideshowSlides2" src="case_billeder/temptcider/roulette3/3.jpg" alt="Tempt Cider Case Billede">
+
+
+            <div class="ss-button button-left button-left2 w3-display-left" onclick="plusSlides2(-1)"><i class="img-arrow left"></i></div>
+
+            <div class="ss-button button-right button-right2 w3-display-right" onclick="plusSlides2(1)"><i class="img-arrow right"></i></div>
+        </div>
+    </section>
+
+
+    <section class="beige">
+        <section class="section-wrapper case-text">
+            <p>We invited our audience to share their secret <br> on the TemptCider campaign website.
+            </p>
+        </section>
+    </section>
+
+    <section class="section-wrapper-fs">
+        <div class="collaborators">
+            <h2>COLLABORATORS:</h2>
+            <p>DDB & Spoiled Productions, <br> Johannes Bøjesen, Jan Gleie.</p>
+        </div>
+
+    </section>
+
+    <section id="work" class="section-wrapper work-all">
+        <h1 class="section-header section-header2">VIEW MORE CASES</h1>
+
+        <section class="data-container">
+
+            <div class="grid-item">
+                <a href="karolinetrier"><img src="case_billeder/karoline-thumbnail.jpg" alt="Karoline_billede"></a>
+                <p class="navn">Karoline Trier</p>
+                <a class="knap" href="karolinetrier">View project</a>
+
+            </div>
+
+            <div class="grid-item">
+                <a href="milledinesen"><img src="case_billeder/milledinesen-thumbnail.jpg" alt="alt"></a>
+                <p class="navn">Mille Dinesen</p>
+                <a class="knap" href="milledinesen">View project</a>
+
+            </div>
+
+            <div class="grid-item">
+                <a href="carlhansenogson"><img src="case_billeder/chs-thumbnail.jpg" alt="CSH"></a>
+                <p class="navn">Carl Hansen & Søn</p>
+                <a class="knap" href="carlhansenogson">View project</a>
+
+            </div>
+
+            <div class="grid-item">
+                <a href="emporia"> <img src="case_billeder/emporia/eporia-thumbnail.jpg" alt="alt"></a>
+                <p class="navn">Emporia</p>
+                <a class="knap" href="emporia">View project</a>
+
+            </div>
+
+            <div class="grid-item">
+                <a href="redcrossyouth"> <img src="case_billeder/red-cross-youth/rcy-thumbnail.jpg" alt="alt"></a>
+                <p class="navn">Red Cross Youth</p>
+                <a class="knap" href="redcrossyouth">View project</a>
+
+            </div>
+
+
+            <div class="grid-item">
+                <a href="triobike"><img src="case_billeder/triobike_thumbnail.jpg" alt="trio bike"></a>
+                <p class="navn">Trio Bike</p>
+                <a class="knap" href="triobike">View project</a>
+
+            </div>
+
+            <!--
+            <div class="grid-item">
+                <a href="temptcider"><img src="case_billeder/temptcider-thumbnail.png" alt="Tempt Cider thumbnail"></a>
+                <p class="navn">Tempt Cider</p>
+                <a class="knap" href="temptcider">View project</a>
+
+            </div>
+-->
+
+            <div class="grid-item">
+                <a href="microsoft"><img src="case_billeder/microsoft-thumbnail.jpg" alt="Microsoft thumbnail"></a>
+                <p class="navn">Microsoft</p>
+                <a class="knap" href="microsoft">View project</a>
+
+            </div>
+        </section>
+    </section>
 
     <footer>
         <p>&#169;GRYSTRANGEECHWALD2020</p>
@@ -146,6 +262,85 @@
             }
 
             slides[slideIndex4 - 1].style.display = "block";
+
+        }
+
+
+
+        let slideIndex = 0;
+        let i;
+        let x = document.querySelectorAll(".caseSlides");
+
+
+        carousel();
+
+
+        function carousel() {
+
+            /*------- Desktop -------*/
+
+            if (slideIndex > x.length - 1) {
+                slideIndex = 0;
+            }
+            x.forEach(billede => {
+                billede.style.display = "none";
+            })
+
+            x[slideIndex].style.display = "block";
+            slideIndex++
+            // skifter display mode hvert andet sekundt
+            setTimeout(carousel, 2000);
+
+
+        }
+
+
+        let slideIndex2 = 0;
+
+
+        automaticSlider2();
+
+
+        function automaticSlider2() {
+            showSlides2(slideIndex2);
+            myTimer2 = setInterval(function() {
+                plusSlides2(1)
+            }, 4000);
+        };
+
+
+        function plusSlides2(n) {
+            clearInterval(myTimer2);
+            if (n < 0) {
+                showSlides2(slideIndex2 -= 1);
+            } else {
+                showSlides2(slideIndex2 += 1);
+            }
+            if (n === -1) {
+                myTimer2 = setInterval(function() {
+                    plusSlides2(n + 2)
+                }, 4000);
+            } else {
+                myTimer2 = setInterval(function() {
+                    plusSlides2(n + 1)
+                }, 4000);
+            }
+        }
+
+        function showSlides2(n) {
+            let i3;
+            let slides2 = document.getElementsByClassName("slideshowSlides2");
+            if (n > slides2.length) {
+                slideIndex2 = 1
+            }
+            if (n < 1) {
+                slideIndex2 = slides2.length
+            }
+            for (i3 = 0; i3 < slides2.length; i3++) {
+                slides2[i3].style.display = "none";
+            }
+
+            slides2[slideIndex2 - 1].style.display = "block";
 
         }
     </script>

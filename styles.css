@@ -770,7 +770,7 @@ span.hiddenn {
     width: 100%;
     background-image: url(case_billeder/temptcider/tempt-header.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: 50% 35%;
     min-width: 100%;
     min-height: 100%;
 }
@@ -1764,6 +1764,10 @@ footer p {
     .white-bg {
         background-color: white;
         height: 100%;
+    }
+
+    #tempt-slideshow-2 img {
+        padding: 5vw;
     }
 
 
