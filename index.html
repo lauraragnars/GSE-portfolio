@@ -206,103 +206,6 @@
 
     <script src="script.js"></script>
     <script>
-        //        document.addEventListener("DOMContentLoaded", hentData);
-
-
-        let work = [];
-        let billeder = [];
-        let billeder2 = [];
-        const link = "http://lauraragnars.dk/GSE-wordpress/wordpress/wp-json/wp/v2/featuredwork";
-        const link2 = "http://lauraragnars.dk/GSE-wordpress/wordpress/wp-json/wp/v2/billede/42?per_page=100";
-        const link3 = "http://lauraragnars.dk/GSE-wordpress/wordpress/wp-json/wp/v2/billede/68"
-        const container = document.querySelector(".data-container");
-        const template = document.querySelector("template");
-
-        //        async function hentData() {
-        //            //            const response = await fetch(link);
-        //            // work = await response.json();
-        //            // visWork();
-        //
-        //            const response2 = await fetch(link2);
-        //            billeder = await response2.json();
-        //            visBilleder();
-        //
-        //            const response3 = await fetch(link3);
-        //            billeder2 = await response3.json();
-        //            visBilleder2();
-        //        }
-
-        //        function visBilleder() {
-        //            document.querySelector(".billede1").src = billeder.billede1.guid;
-        //
-        //            document.querySelector(".billede2").src = billeder.billede2.guid;
-        //
-        //            document.querySelector(".billede3").src = billeder.billede3.guid;
-        //
-        //            document.querySelector(".billede4").src = billeder.billede4.guid;
-        //
-        //            document.querySelector(".billede5").src = billeder.billede5.guid;
-        //
-        //            //            document.querySelector(".billede6").src = billeder.billede6.guid;
-        //
-        //            //            document.querySelector(".billede7").src = billeder.billede7.guid;
-        //
-        //            document.querySelector(".billede8").src = billeder.billede8.guid;
-        //
-        //            document.querySelector(".billede9").src = billeder.billede9.guid;
-        //
-        //            document.querySelector(".billede10").src = billeder.billede10.guid;
-        //
-        //            document.querySelector(".billede111").src = billeder.billede11.guid;
-        //
-        //            document.querySelector(".billede12").src = billeder.billede12.guid;
-        //
-        //
-        //
-        //        }
-
-        //        function visBilleder2() {
-        //            document.querySelector(".billede11").src = billeder2.billede1.guid;
-        //
-        //            document.querySelector(".billede22").src = billeder2.billede2.guid;
-        //
-        //            document.querySelector(".billede33").src = billeder2.billede3.guid;
-        //
-        //            document.querySelector(".billede44").src = billeder2.billede4.guid;
-        //
-        //            document.querySelector(".billede55").src = billeder2.billede5.guid;
-        //
-        //            document.querySelector(".billede66").src = billeder2.billede6.guid;
-        //
-        //            document.querySelector(".billede77").src = billeder2.billede7.guid;
-        //
-        //            document.querySelector(".billede88").src = billeder2.billede8.guid;
-        //
-        //
-        //
-        //        }
-
-        function visWork() {
-            container.innerHTML = "";
-
-
-            work.forEach(elm => {
-
-                let klon = template.cloneNode(true).content;
-                klon.querySelector(".navn").textContent = elm.title.rendered;
-
-                klon.querySelector("img").src = elm.billede.guid;
-
-                container.appendChild(klon);
-
-                //                    container.lastElementChild.addEventListener("click", () => {
-                //                        location.href = "produktview.html?id=" + produkt.id;
-                //                    });
-
-            })
-
-        };
-
         // carousel aka slideshow
         let slideIndex = 0;
         let ii;
@@ -365,7 +268,7 @@
             x[slideIndex].style.display = "block";
             slideIndex++
             // skifter display mode hvert andet sekundt
-            setTimeout(carousel, 1700);
+            setTimeout(carousel, 1400);
 
 
             /*------- Desktop Slut-------*/
@@ -393,7 +296,7 @@
             xx[slideIndex2].style.display = "block";
             slideIndex2++
             // skifter display mode hvert andet sekundt
-            setTimeout(carousel2, 2000);
+            setTimeout(carousel2, 1600);
 
             /*------- Desktop Slut-------*/
 

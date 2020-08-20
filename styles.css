@@ -82,6 +82,8 @@ a {
 
 
 
+
+
 /* -------------- MENU -------------- */
 
 #menu {
@@ -763,6 +765,16 @@ span.hiddenn {
     min-height: 100%;
 }
 
+.bg-img-case-tempt {
+    height: 70vh;
+    width: 100%;
+    background-image: url(case_billeder/temptcider/tempt-header.jpg);
+    background-size: cover;
+    background-position: top;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 .case-title {
     font-family: 'Optima';
     font-size: 1.7rem;
@@ -1102,7 +1114,7 @@ video {
 
 
 .case-single-img-fs {
-    padding: 7vw;
+    padding: 20px;
 }
 
 #milledinesen .col-fs {
@@ -1206,6 +1218,10 @@ video {
     transform: rotate(135deg);
 }
 
+.invertcolor img {
+    filter: invert(1);
+    opacity: 1;
+}
 
 
 
