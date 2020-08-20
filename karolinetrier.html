@@ -116,9 +116,9 @@
                 <img class="slideshowSlides" src="case_billeder/kt-roulette-2/KAROLINE_TRIER3.jpg" alt="Karoline Trier Case Billede">
                 <img class="slideshowSlides" src="case_billeder/kt-roulette-2/KAROLINE_TRIER4.jpg" alt="Karoline Trier Case Billede">
 
-                <div class="ss-button button-left w3-display-left" onclick="plusDivs(-1)"><i class="img-arrow left"></i></div>
+                <div class="ss-button button-left w3-display-left" onclick="plusSlides(-1)"><i class="img-arrow left"></i></div>
 
-                <div class="ss-button button-right w3-display-right" onclick="plusDivs(1)"><i class="img-arrow right"></i></div>
+                <div class="ss-button button-right w3-display-right" onclick="plusSlides(1)"><i class="img-arrow right"></i></div>
 
 
             </div>
@@ -322,31 +322,79 @@
         //        }
 
 
+
+        //        let slideIndex4 = 1;
+        //        showDivs(slideIndex4);
+        //
+        //
+        //
+        //
+        //        function plusDivs(n) {
+        //            showDivs(slideIndex4 += n);
+        //        }
+        //
+        //        function showDivs(n) {
+        //            let iiii;
+        //            let xxxx = document.getElementsByClassName("slideshowSlides");
+        //            if (n > xxxx.length) {
+        //                slideIndex4 = 1
+        //            }
+        //            if (n < 1) {
+        //                slideIndex4 = xxxx.length
+        //            }
+        //            for (iiii = 0; iiii < xxxx.length; iiii++) {
+        //                xxxx[iiii].style.display = "none";
+        //            }
+        //            xxxx[slideIndex4 - 1].style.display = "block";
+        //        }
+
+
+        window.addEventListener("load", function() {
+            showSlides(slideIndex4);
+            myTimer = setInterval(function() {
+                plusSlides(1)
+            }, 4000);
+        })
+
         let slideIndex4 = 1;
-        showDivs(slideIndex4);
 
-
-
-
-        function plusDivs(n) {
-            showDivs(slideIndex4 += n);
+        function plusSlides(n) {
+            clearInterval(myTimer);
+            if (n < 0) {
+                showSlides(slideIndex4 -= 1);
+            } else {
+                showSlides(slideIndex4 += 1);
+            }
+            if (n === -1) {
+                myTimer = setInterval(function() {
+                    plusSlides(n + 2)
+                }, 4000);
+            } else {
+                myTimer = setInterval(function() {
+                    plusSlides(n + 1)
+                }, 4000);
+            }
         }
 
-        function showDivs(n) {
-            let iiii;
-            let xxxx = document.getElementsByClassName("slideshowSlides");
-            if (n > xxxx.length) {
+        function showSlides(n) {
+            let i2;
+            let slides = document.getElementsByClassName("slideshowSlides");
+            //            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
                 slideIndex4 = 1
             }
             if (n < 1) {
-                slideIndex4 = xxxx.length
+                slideIndex4 = slides.length
             }
-            for (iiii = 0; iiii < xxxx.length; iiii++) {
-                xxxx[iiii].style.display = "none";
+            for (i2 = 0; i2 < slides.length; i++) {
+                slides[i2].style.display = "none";
             }
-            xxxx[slideIndex4 - 1].style.display = "block";
+            //            for (i2 = 0; i2 < dots.length; i2++) {
+            //                dots[i2].className = dots[i].className.replace(" active", "");
+            //            }
+            slides[slideIndex4 - 1].style.display = "block";
+            //            dots[slideIndex4 - 1].className += " active";
         }
-
 
 
 
