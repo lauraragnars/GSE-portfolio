@@ -89,12 +89,16 @@
     </section>
 
     <section class="section-wrapper-fs">
-        <div class="col-fs">
-            <img class="caseSlides" src="case_billeder/triobike/roulette1/tb-roulette1-1.png" alt="Triobike">
-            <img class="caseSlides" src="case_billeder/triobike/roulette1/tb-roulette1-2.png" alt="Triobike">
-            <img class="caseSlides" src="case_billeder/triobike/roulette1/tb-roulette1-3.png" alt="Triobike">
-            <img class="caseSlides" src="case_billeder/triobike/roulette1/tb-roulette1-4.png" alt="Triobike">
-            <img class="caseSlides" src="case_billeder/triobike/roulette1/tb-roulette1-5.png" alt="Triobike">
+        <div class="col-fs slideshow-container">
+            <img class="slideshowSlides" src="case_billeder/triobike/roulette1/tb-roulette1-1.png" alt="Triobike">
+            <img class="slideshowSlides" src="case_billeder/triobike/roulette1/tb-roulette1-2.png" alt="Triobike">
+            <img class="slideshowSlides" src="case_billeder/triobike/roulette1/tb-roulette1-3.png" alt="Triobike">
+            <img class="slideshowSlides" src="case_billeder/triobike/roulette1/tb-roulette1-4.png" alt="Triobike">
+            <img class="slideshowSlides" src="case_billeder/triobike/roulette1/tb-roulette1-5.png" alt="Triobike">
+
+            <div class="ss-button button-left w3-display-left" onclick="plusSlides2(-1)"><i class="img-arrow left"></i></div>
+
+            <div class="ss-button button-right w3-display-right" onclick="plusSlides2(1)"><i class="img-arrow right"></i></div>
         </div>
 
     </section>
@@ -131,19 +135,23 @@
     <section class="beige">
         <section class="case-single-img-fs section-wrapper-large">
 
-            <div>
-                <img class="caseSlides3" src="case_billeder/triobike/roulette3/1.jpg" alt="trio bike">
+            <div class="slideshow-container">
+                <img class="slideshowSlides2" src="case_billeder/triobike/roulette3/1.jpg" alt="trio bike">
 
-                <img class="caseSlides3" src="case_billeder/triobike/roulette3/2.jpg" alt="trio bike">
-
-
-                <img class="caseSlides3" src="case_billeder/triobike/roulette3/3.jpg" alt="trio bike">
+                <img class="slideshowSlides2" src="case_billeder/triobike/roulette3/2.jpg" alt="trio bike">
 
 
-                <img class="caseSlides3" src="case_billeder/triobike/roulette3/4.jpg" alt="trio bike">
+                <img class="slideshowSlides2" src="case_billeder/triobike/roulette3/3.jpg" alt="trio bike">
 
 
-                <img class="caseSlides3" src="case_billeder/triobike/roulette3/5.jpg" alt="trio bike">
+                <img class="slideshowSlides2" src="case_billeder/triobike/roulette3/4.jpg" alt="trio bike">
+
+
+                <img class="slideshowSlides2" src="case_billeder/triobike/roulette3/5.jpg" alt="trio bike">
+
+                <div class="ss-button button-left w3-display-left" onclick="plusSlides(-1)"><i class="img-arrow left"></i></div>
+
+                <div class="ss-button button-right w3-display-right" onclick="plusSlides(1)"><i class="img-arrow right"></i></div>
 
             </div>
         </section>
@@ -234,40 +242,63 @@
 
     <script src="script.js"></script>
     <script>
-        let slideIndex = 0;
-        let i;
-        let x = document.querySelectorAll(".caseSlides");
-
         let slideIndex2 = 0;
         let ii;
         let xx = document.querySelectorAll(".caseSlides2");
 
-        let slideIndex3 = 0;
-        let iii;
-        let xxx = document.querySelectorAll(".caseSlides3");
 
 
-        carousel();
+
         carousel2();
-        carousel3();
 
 
-        function carousel() {
 
-            /*------- Desktop -------*/
+        let slideIndex = 0;
 
-            if (slideIndex > x.length - 1) {
-                slideIndex = 0;
+
+        automaticSlider2();
+
+
+        function automaticSlider2() {
+            showSlides2(slideIndex);
+            myTimer2 = setInterval(function() {
+                plusSlides2(1)
+            }, 4000);
+        };
+
+
+        function plusSlides2(n) {
+            clearInterval(myTimer2);
+            if (n < 0) {
+                showSlides2(slideIndex -= 1);
+            } else {
+                showSlides2(slideIndex += 1);
             }
-            x.forEach(billede => {
-                billede.style.display = "none";
-            })
+            if (n === -1) {
+                myTimer2 = setInterval(function() {
+                    plusSlides2(n + 2)
+                }, 4000);
+            } else {
+                myTimer2 = setInterval(function() {
+                    plusSlides2(n + 1)
+                }, 4000);
+            }
+        }
 
-            x[slideIndex].style.display = "block";
-            slideIndex++
-            // skifter display mode hvert andet sekundt
-            setTimeout(carousel, 2000);
+        function showSlides2(n) {
+            let i3;
+            let slides2 = document.getElementsByClassName("slideshowSlides");
+            if (n > slides2.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides2.length
+            }
+            for (i3 = 0; i3 < slides2.length; i3++) {
+                slides2[i3].style.display = "none";
+            }
 
+            slides2[slideIndex - 1].style.display = "block";
 
         }
 
@@ -290,22 +321,51 @@
 
         }
 
-        function carousel3() {
+        let slideIndex4 = 0;
 
-            /*------- Desktop -------*/
+        automaticSlider();
 
-            if (slideIndex3 > xxx.length - 1) {
-                slideIndex3 = 0;
+
+        function automaticSlider() {
+            showSlides(slideIndex4);
+            myTimer = setInterval(function() {
+                plusSlides(1)
+            }, 4000);
+        };
+
+
+        function plusSlides(n) {
+            clearInterval(myTimer);
+            if (n < 0) {
+                showSlides(slideIndex4 -= 1);
+            } else {
+                showSlides(slideIndex4 += 1);
             }
-            xxx.forEach(billede => {
-                billede.style.display = "none";
-            })
+            if (n === -1) {
+                myTimer = setInterval(function() {
+                    plusSlides(n + 2)
+                }, 4000);
+            } else {
+                myTimer = setInterval(function() {
+                    plusSlides(n + 1)
+                }, 4000);
+            }
+        }
 
-            xxx[slideIndex3].style.display = "block";
-            slideIndex3++
-            // skifter display mode hvert andet sekundt
-            setTimeout(carousel3, 2000);
+        function showSlides(n) {
+            let i2;
+            let slides = document.getElementsByClassName("slideshowSlides2");
+            if (n > slides.length) {
+                slideIndex4 = 1
+            }
+            if (n < 1) {
+                slideIndex4 = slides.length
+            }
+            for (i2 = 0; i2 < slides.length; i2++) {
+                slides[i2].style.display = "none";
+            }
 
+            slides[slideIndex4 - 1].style.display = "block";
 
         }
     </script>
