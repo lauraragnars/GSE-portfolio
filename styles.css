@@ -779,6 +779,16 @@ span.hiddenn {
     min-height: 100%;
 }
 
+.bg-img-case-microsoft {
+    height: 70vh;
+    width: 100%;
+    background-image: url(case_billeder/microsoft/microsoft-header.jpg);
+    background-size: cover;
+    background-position: 100% 50%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 .case-title {
     font-family: 'Optima';
     font-size: 1.7rem;
@@ -1227,7 +1237,33 @@ video {
     opacity: 1;
 }
 
+.img-padding-xtra {
+    padding: 10vw;
+    align-self: center;
+}
 
+.img-padding-xtra2 {
+    padding: 0 10vw;
+    align-self: center;
+}
+
+.caption {
+    font-family: 'Optima';
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.smaller-pictures {
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.smaller-pictures img {
+    padding: 10vw;
+    margin-bottom: -40px;
+}
 
 /* -------------- FOOTER -------------- */
 
@@ -1645,6 +1681,20 @@ footer p {
         margin-bottom: -5%;
     }
 
+    .smaller-pictures {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+
+    .smaller-pictures img {
+        padding: 0vw;
+        margin-bottom: -70px;
+    }
+
+
 
 
 
@@ -1766,6 +1816,7 @@ footer p {
 
     .img-padding {
         padding: 5vw;
+        align-self: center;
     }
 
     .img-padding-extra {
