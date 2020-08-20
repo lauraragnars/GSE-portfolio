@@ -111,11 +111,15 @@
     <section class="beige">
         <section class="case-single-img-big section-wrapper">
 
-            <div>
-                <img class="caseSlides2" src="case_billeder/emporia/carusel2/1.jpg" alt="Emporia Case Billede">
-                <img class="caseSlides2" src="case_billeder/emporia/carusel2/2.jpg" alt="Emporia Case Billede">
-                <img class="caseSlides2" src="case_billeder/emporia/carusel2/3.jpg" alt="Emporia Case Billede">
-                <img class="caseSlides2" src="case_billeder/emporia/carusel2/4.jpg" alt="Emporia Case Billede">
+            <div class="slideshow-container">
+                <img class="slideshowSlides2" src="case_billeder/emporia/carusel2/1.jpg" alt="Emporia Case Billede">
+                <img class="slideshowSlides2" src="case_billeder/emporia/carusel2/2.jpg" alt="Emporia Case Billede">
+                <img class="slideshowSlides2" src="case_billeder/emporia/carusel2/3.jpg" alt="Emporia Case Billede">
+                <img class="slideshowSlides2" src="case_billeder/emporia/carusel2/4.jpg" alt="Emporia Case Billede">
+
+                <div class="ss-button button-left button-left w3-display-left" onclick="plusSlides2(-1)"><i class="img-arrow left"></i></div>
+
+                <div class="ss-button button-right button-right w3-display-right" onclick="plusSlides2(1)"><i class="img-arrow right"></i></div>
             </div>
         </section>
     </section>
@@ -233,9 +237,9 @@
         let i;
         let x = document.querySelectorAll(".caseSlides");
 
-        let slideIndex2 = 0;
-        let ii;
-        let xx = document.querySelectorAll(".caseSlides2");
+        //        let slideIndex2 = 0;
+        //        let ii;
+        //        let xx = document.querySelectorAll(".caseSlides2");
 
         let slideIndex3 = 0;
         let iii;
@@ -244,7 +248,7 @@
 
 
         carousel();
-        carousel2();
+
         carousel3();
 
 
@@ -267,24 +271,55 @@
 
         }
 
-        function carousel2() {
+        let slideIndex2 = 0;
 
-            /*------- Desktop -------*/
 
-            if (slideIndex2 > xx.length - 1) {
-                slideIndex2 = 0;
+        automaticSlider2();
+
+
+        function automaticSlider2() {
+            showSlides2(slideIndex2);
+            myTimer2 = setInterval(function() {
+                plusSlides2(1)
+            }, 4000);
+        };
+
+
+        function plusSlides2(n) {
+            clearInterval(myTimer2);
+            if (n < 0) {
+                showSlides2(slideIndex2 -= 1);
+            } else {
+                showSlides2(slideIndex2 += 1);
             }
-            xx.forEach(billede => {
-                billede.style.display = "none";
-            })
+            if (n === -1) {
+                myTimer2 = setInterval(function() {
+                    plusSlides2(n + 2)
+                }, 4000);
+            } else {
+                myTimer2 = setInterval(function() {
+                    plusSlides2(n + 1)
+                }, 4000);
+            }
+        }
 
-            xx[slideIndex2].style.display = "block";
-            slideIndex2++
-            // skifter display mode hvert andet sekundt
-            setTimeout(carousel2, 2000);
+        function showSlides2(n) {
+            let i3;
+            let slides2 = document.getElementsByClassName("slideshowSlides2");
+            if (n > slides2.length) {
+                slideIndex2 = 1
+            }
+            if (n < 1) {
+                slideIndex2 = slides2.length
+            }
+            for (i3 = 0; i3 < slides2.length; i3++) {
+                slides2[i3].style.display = "none";
+            }
 
+            slides2[slideIndex2 - 1].style.display = "block";
 
         }
+
 
         function carousel3() {
 
