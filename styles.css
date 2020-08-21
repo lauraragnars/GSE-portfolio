@@ -547,7 +547,7 @@ span.hiddenn {
     width: 100%;
     background-image: url(case_billeder/contact-headerbillede.jpg);
     background-size: cover;
-    background-position: 50% 40%;
+    background-position: 50% 35%;
     min-width: 100%;
     min-height: 100%;
 }
@@ -655,7 +655,7 @@ span.hiddenn {
     background-size: cover;
     min-width: 100%;
     min-height: 100%;
-    background-position: 50% 85%;
+    background-position: 50% 73%;
 }
 
 #contact-header {
@@ -690,7 +690,7 @@ span.hiddenn {
     position: absolute;
     left: 10vw;
     text-align: center;
-    top: 30vh;
+    top: 25vh;
 }
 
 .white-font {
@@ -714,7 +714,7 @@ span.hiddenn {
     width: 100%;
     background-image: url(case_billeder/chs-header.jpg);
     background-size: cover;
-    background-position: 50% 80%;
+    background-position: 50% 75%;
     min-width: 100%;
     min-height: 100%;
 }
@@ -802,25 +802,7 @@ span.hiddenn {
     color: white;
 }
 
-/*
-.title-container-white {
-    width: 80vw;
-    position: absolute;
-    left: 10vw;
-    text-align: center;
-    top: 35vh;
-}
-*/
 
-/*
-#contact-header .title-container-white {
-    width: 80vw;
-    position: absolute;
-    left: 10vw;
-    text-align: center;
-    top: 30vh;
-}
-*/
 
 .case-arrow {
     position: relative;
@@ -1027,10 +1009,11 @@ video {
 
 #case-header .title-container {
     width: 80vw;
+    height: 20vh;
     position: absolute;
     left: 10vw;
     text-align: center;
-    top: 28vh;
+    top: 34vh;
 }
 
 
@@ -1069,12 +1052,6 @@ video {
     width: 100%;
 }
 
-/*
-.triobike-slides-wrapper {
-    width: 90%;
-    margin: 0 auto;
-}
-*/
 
 .title-container-trio {
     top: 20vh;
@@ -1085,11 +1062,7 @@ video {
 
 }
 
-/*
-#work-header .title-container-white {
-    top: 30vh;
-}
-*/
+
 
 .cases-knap {
     margin-top: 50px;
@@ -1208,6 +1181,10 @@ video {
 
 }
 
+#microsoft-ss-3 .ss-button {
+    transform: translate(0%, -200%);
+}
+
 .img-arrow:hover {
     border: solid #3b3b3b;
     border-width: 0 1px 1px 0;
@@ -1242,15 +1219,13 @@ video {
     align-self: center;
 }
 
-.img-padding-xtra2 {
-    padding: 0 10vw;
-    align-self: center;
-}
+
 
 .caption {
     font-family: 'Optima';
     text-align: center;
     text-transform: uppercase;
+    padding: 20px 0 25px 0;
 }
 
 .smaller-pictures {
@@ -1348,10 +1323,18 @@ footer p {
         flex-wrap: wrap-reverse;
     }
 
+    .caption {
+        font-size: 0.8rem;
+    }
+
 }
 
+@media only screen and (min-width: 500px) {
+    .caption {
+        font-size: 1rem;
+    }
 
-
+}
 
 
 @media only screen and (min-width: 600px) {
@@ -1413,7 +1396,7 @@ footer p {
         position: absolute;
         left: 10vw;
         text-align: center;
-        top: 40vh;
+        top: 34vh;
     }
 
 
@@ -1694,6 +1677,16 @@ footer p {
         margin-bottom: -70px;
     }
 
+    .caption {
+
+        padding: 0;
+
+    }
+
+    #microsoft-ss-3 .ss-button {
+        transform: translate(0%, -50%);
+    }
+
 
 
 
@@ -1717,7 +1710,7 @@ footer p {
         position: absolute;
         left: 10vw;
         text-align: center;
-        top: 30vh;
+        top: 25vh;
     }
 
 
@@ -1835,6 +1828,11 @@ footer p {
 
     #tempt-slideshow-2 img {
         padding: 5vw;
+    }
+
+    .img-padding-xtra2 {
+        padding: 0 10vw;
+        align-self: center;
     }
 
 
