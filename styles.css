@@ -744,7 +744,7 @@ span.hiddenn {
     width: 100%;
     background-image: url(case_billeder/triobike/triobike-headerbillede.jpg);
     background-size: cover;
-    background-position: 50% 70%;
+    background-position: 50% 40%;
     min-width: 100%;
     min-height: 100%;
 }
@@ -1701,7 +1701,6 @@ footer p {
     #microsoft-ss-3 .ss-button {
         transform: translate(0%, -50%);
     }
-
 
 
 
