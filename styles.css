@@ -586,7 +586,7 @@ span.hiddenn {
     text-align: center;
     font-family: 'optima', sans-serif;
     font-size: 1.3rem;
-    padding: 50px;
+    padding: 50px 50px 20px 50px;
 }
 
 #abouttext {
@@ -1240,6 +1240,14 @@ video {
     margin-bottom: -40px;
 }
 
+.collaborators br {
+    display: none;
+}
+
+.case-text br {
+    display: none;
+}
+
 /* -------------- FOOTER -------------- */
 
 
@@ -1327,11 +1335,16 @@ footer p {
         font-size: 0.8rem;
     }
 
+
 }
 
 @media only screen and (min-width: 500px) {
     .caption {
         font-size: 1rem;
+    }
+
+    br {
+        display: block;
     }
 
 }
@@ -1398,6 +1411,8 @@ footer p {
         text-align: center;
         top: 34vh;
     }
+
+
 
 
 
