@@ -1343,9 +1343,16 @@ footer p {
         font-size: 1rem;
     }
 
-    br {
+
+
+    .collaborators br {
         display: block;
     }
+
+    .case-text br {
+        display: block;
+    }
+
 
 }
 
