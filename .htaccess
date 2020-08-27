@@ -1,5 +1,3 @@
-Header add "Cache-Control" "no-cache"
-
 
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
