@@ -1,567 +1,506 @@
 /* Generalle indstillinger */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 img {
-    width: 100%;
-
+  width: 100%;
 }
 
 a:hover {
-    color: #c6c6c6;
-    transition: 0.3s;
+  color: #c6c6c6;
+  transition: 0.3s;
 }
 
 a {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .hide {
-    transition: 0.2s;
-    opacity: 0;
-    pointer-events: none;
+  transition: 0.2s;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .invisible {
-    display: none;
+  display: none;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
 }
 
-
 .wrapreverse {
-    flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
 }
 
 .section-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .section-wrapper-forside {
-    margin: 0 auto;
-
+  margin: 0 auto;
 }
 
 .knap {
-    font-family: futura-pt, sans-serif;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-weight: normal;
-    color: black;
-    text-decoration: none;
-
-
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: black;
+  text-decoration: none;
 }
-
-
 
 .beige {
-    background-color: #f9faf8;
-    width: 100vw;
+  background-color: #f9faf8;
+  width: 100vw;
 }
 
-
-
-
+.currentyear {
+  display: inline;
+}
 
 /* -------------- MENU -------------- */
 
 #menu {
-    background-color: #f9faf8;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    text-align: center;
-    font-family: futura-pt, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 4rem;
-    transition: 0.3s;
+  background-color: #f9faf8;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  transition: 0.3s;
 }
 
 .fullname {
-    text-align: center;
-    font-family: 'Optima';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.4rem;
-    margin-top: 17.5px;
-
+  text-align: center;
+  font-family: "Optima";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  margin-top: 17.5px;
 }
 
 .spacer {
-    height: 60px;
-    width: 100vw;
+  height: 60px;
+  width: 100vw;
 }
 
 header {
-    height: 60px;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    z-index: 90;
-    background-color: white;
+  height: 60px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 90;
+  background-color: white;
 }
 
 #menuknap {
-    z-index: 101;
-    position: fixed;
-    right: 16px;
-    top: 14px;
-    font-family: futura-pt, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.5rem;
+  z-index: 101;
+  position: fixed;
+  right: 16px;
+  top: 14px;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
 }
 
 .menuknapicon {
-    width: 34px;
+  width: 34px;
 }
 
 #menulist {
-    list-style-type: none;
-    color: black;
-    padding-left: 0;
-    margin-top: 20vh;
+  list-style-type: none;
+  color: black;
+  padding-left: 0;
+  margin-top: 20vh;
 }
 
 #menu a {
-    color: black;
-    text-decoration: none;
-    transition: 0.3s;
-
-
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 #menu li {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 #menu a:hover {
-    color: #c6c6c6;
-    transition: 0.3s;
+  color: #c6c6c6;
+  transition: 0.3s;
 }
 
 .knap {
-    color: #000;
-    border-bottom: 1px solid black;
-    text-decoration: none;
-    transition: 0.3s;
-
-
+  color: #000;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  transition: 0.3s;
 }
-
 
 .knap:hover {
-    color: #c6c6c6;
-    transition: 0.3s;
+  color: #c6c6c6;
+  transition: 0.3s;
 }
-
-
 
 .knap2 {
-    color: #000;
-    border-bottom: 1px solid black;
-    text-decoration: none;
-    transition: 0.3s;
-
-
+  color: #000;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  transition: 0.3s;
 }
-
 
 .knap2:hover {
-    color: #c6c6c6;
-    transition: 0.3s;
+  color: #c6c6c6;
+  transition: 0.3s;
 }
 
-
-
-
 .logo {
-    font-family: 'Optima';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.4rem;
-    position: fixed;
-    left: 20px;
-    top: 17.5px;
+  font-family: "Optima";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  position: fixed;
+  left: 20px;
+  top: 17.5px;
 }
 
 .logo a {
-    margin-top: 0;
-    text-decoration: none;
-    color: black;
+  margin-top: 0;
+  text-decoration: none;
+  color: black;
 }
 
-
 .arrow {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .arrow img {
-    width: 40px;
-    opacity: 0.9;
-
-
+  width: 40px;
+  opacity: 0.9;
 }
-
 
 /* -------------- TOP ANIMATION -------------- */
 
 span {
-    display: inline-block;
-    overflow: hidden;
-    transition: all 1s;
-    -moz-transition: all 1s;
-    -webkit-transition: all 1s;
-    transition-delay: 0.2s;
+  display: inline-block;
+  overflow: hidden;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition-delay: 0.2s;
 }
 
 .a1 {
-    width: 21px;
+  width: 21px;
 }
 
 .a2 {
-    width: 62px;
+  width: 62px;
 }
 
 .a3 {
-    width: 80px;
+  width: 80px;
 }
 
 span.hiddenn {
-    width: 0px;
-    opacity: 0;
+  width: 0px;
+  opacity: 0;
 }
 
 .logo-wrapper {
-    color: black;
-
+  color: black;
 }
 
 .logo-wrapper:hover {
-    color: black;
-
+  color: black;
 }
-
-
-
 
 /* -------------- FONTE -------------- */
 
 @font-face {
-    font-family: 'Optima';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Optima Regular'), url('Optima-Regular.woff') format('woff');
+  font-family: "Optima";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Optima Regular"), url("Optima-Regular.woff") format("woff");
 }
-
-
-
 
 /* -------------- FORSIDE -------------- */
 
 #forside .wrapper {
-    display: flex;
-    margin: 0px 20px 20px 20px;
+  display: flex;
+  margin: 0px 20px 20px 20px;
 }
 
-
 #forside .text {
-    text-align: center;
-    font-family: 'Optima';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.5rem;
-    line-height: 30px;
-    align-self: center;
-    flex-basis: 100%;
-
+  text-align: center;
+  font-family: "Optima";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 30px;
+  align-self: center;
+  flex-basis: 100%;
 }
 
 .mySlides {
-    height: 70vh;
-    object-fit: cover;
-    width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  width: 100%;
 }
 
 .billede1 {
-    object-position: 50% 35%;
+  object-position: 50% 35%;
 }
 
 .billede2 {
-    object-position: 20% 60%;
+  object-position: 20% 60%;
 }
 
 .billede3 {
-    object-position: 50% 90%;
+  object-position: 50% 90%;
 }
 
 .billede4 {
-    object-position: 50% 59%;
+  object-position: 50% 59%;
 }
 
 .billede8 {
-    object-position: bottom;
+  object-position: bottom;
 }
 
-
 .billede9 {
-    object-position: bottom;
+  object-position: bottom;
 }
 
 .billede10 {
-    object-position: 50% 89%;
-
+  object-position: 50% 89%;
 }
 
 .billede11 {
-    object-position: 50% 60%;
+  object-position: 50% 60%;
 }
 
 .mySlides2 {
-    object-fit: cover;
+  object-fit: cover;
 
-    border-radius: 50%;
-    width: 75%;
-    padding-bottom: 5vw;
-    padding-top: 5vw;
-    margin: 0 auto;
+  border-radius: 50%;
+  width: 75%;
+  padding-bottom: 5vw;
+  padding-top: 5vw;
+  margin: 0 auto;
 }
 
-
 #forside .box {
-    flex-basis: 100%;
+  flex-basis: 100%;
 }
 
 #about .img {
-    flex-grow: 1;
-    flex-basis: 100%;
-    align-self: center;
-    text-align: center;
+  flex-grow: 1;
+  flex-basis: 100%;
+  align-self: center;
+  text-align: center;
 }
 
 #about .text {
-    flex-grow: 1;
-    flex-basis: 100%;
-    text-align: center;
-    font-family: 'Optima';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.5rem;
-    line-height: 30px;
-    align-self: center;
-    padding: 70px;
-
+  flex-grow: 1;
+  flex-basis: 100%;
+  text-align: center;
+  font-family: "Optima";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 30px;
+  align-self: center;
+  padding: 70px;
 }
 
 #forside .text p {
-    line-height: 35px;
+  line-height: 35px;
 }
 
 #about .text p {
-    line-height: 35px;
-    padding-bottom: 20px;
+  line-height: 35px;
+  padding-bottom: 20px;
 }
 
 #about .text h2 {
-    text-align: center;
-    font-family: futura-pt, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding-bottom: 30px;
+  text-align: center;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 30px;
 }
 
 #work .data-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    margin: 0 auto;
-    grid-gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  margin: 0 auto;
+  grid-gap: 20px;
+  padding: 20px;
 }
 
 .grid-item {
-
-    text-align: center;
-    margin-bottom: 30px;
-
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .grid-item .navn {
-    font-family: 'Optima';
-    text-align: center;
-    font-size: 1.3rem;
-    margin-bottom: 8px;
+  font-family: "Optima";
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
 }
 
 .grid-item .knap {
-    font-size: 0.8rem;
-
+  font-size: 0.8rem;
 }
 
 .section-header {
-    font-family: futura-pt, sans-serif;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 40px;
-    letter-spacing: 1px;
+  font-family: futura-pt, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 40px;
+  letter-spacing: 1px;
 }
 
 .section-header2 {
-    margin-top: 70px;
-    font-size: 1.8rem;
-    letter-spacing: 0;
+  margin-top: 70px;
+  font-size: 1.8rem;
+  letter-spacing: 0;
 }
 
 .knap-container {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .knap2 {
-    font-family: futura-pt, sans-serif;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    font-weight: normal;
-    color: black;
-
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: black;
 }
 
-
 #contact .wrapper {
-    justify-content: flex-start
+  justify-content: flex-start;
 }
 
 #contact .col1 {
-    flex-grow: 2;
-    text-align: left;
-    flex-basis: 100%;
+  flex-grow: 2;
+  text-align: left;
+  flex-basis: 100%;
 }
 
 #contact .col2 {
-    flex-grow: 1;
-    flex-basis: 100%;
+  flex-grow: 1;
+  flex-basis: 100%;
 }
 
 #contact .col3 {
-    flex-grow: 1;
-    flex-basis: 100%;
-
+  flex-grow: 1;
+  flex-basis: 100%;
 }
 
 #contact .col {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-
-
 .p1 {
-    font-family: 'Optima';
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    margin-top: 20px;
+  font-family: "Optima";
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin-top: 20px;
 }
 
 .p2 {
-    font-family: futura-pt, sans-serif;
-    text-transform: uppercase;
-    font-size: 1rem;
-    text-decoration: none;
-    color: black;
-    margin: 15px 0 5px 0;
-    display: inline-block;
+  font-family: futura-pt, sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  margin: 15px 0 5px 0;
+  display: inline-block;
 }
 
 .p3 {
-    font-family: futura-pt, sans-serif;
-    font-size: 4.3rem;
-    text-transform: uppercase;
-    margin-bottom: 0;
-    margin-top: 3px;
-    margin-left: -3px;
-
+  font-family: futura-pt, sans-serif;
+  font-size: 4.3rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 3px;
+  margin-left: -3px;
 }
 
 .p3_email {
-    font-family: 'optima';
-    font-weight: normal;
-    color: black;
-    font-size: 1.2rem;
-    border-bottom: 1px solid black;
-    text-decoration: none;
-    padding-bottom: 5px;
+  font-family: "optima";
+  font-weight: normal;
+  color: black;
+  font-size: 1.2rem;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  padding-bottom: 5px;
 }
 
 #contact .knap {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
-
 
 #contact {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
-
-
 
 /* -------------- WORK -------------- */
 
-
-
 .bg-img-work {
-    height: 70vh;
-    width: 100%;
-    background-image: url(case_billeder/contact-headerbillede.jpg);
-    background-size: cover;
-    background-position: 50% 35%;
-    min-width: 100%;
-    min-height: 100%;
+  height: 70vh;
+  width: 100%;
+  background-image: url(case_billeder/contact-headerbillede.jpg);
+  background-size: cover;
+  background-position: 50% 35%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 #work-header {
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-
-
-
-
-
-
 
 /*
 #about-header .title-container {
@@ -569,314 +508,286 @@ span.hiddenn {
 }
 */
 
-
-
-
 .work-all {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
-
-
-
-
 
 /* -------------- ABOUT -------------- */
 
 #abouttext .abouttext {
-    text-align: center;
-    font-family: 'optima', sans-serif;
-    font-size: 1.3rem;
-    padding: 50px 50px 20px 50px;
+  text-align: center;
+  font-family: "optima", sans-serif;
+  font-size: 1.3rem;
+  padding: 50px 50px 20px 50px;
 }
 
 #abouttext {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    max-width: 900px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 900px;
 }
 
 .client-header {
-    text-align: center;
-    font-family: futura-pt, sans-serif;
-    font-weight: normal;
-    font-size: 2rem;
+  text-align: center;
+  font-family: futura-pt, sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
 }
 
 .client-text {
-    font-family: 'optima', sans-serif;
-    font-size: 1.2rem;
-    font-weight: normal;
-    text-align: center;
-    line-height: 35px;
-    padding: 50px;
+  font-family: "optima", sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-align: center;
+  line-height: 35px;
+  padding: 50px;
 }
 
 #clients {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .bg-img-about {
-    height: 70vh;
-    width: 100%;
-    background-image: url(case_billeder/about-headerbillede.jpg);
-    background-size: cover;
+  height: 70vh;
+  width: 100%;
+  background-image: url(case_billeder/about-headerbillede.jpg);
+  background-size: cover;
 
-    background-repeat: no-repeat;
-    background-position: 50% 82%;
+  background-repeat: no-repeat;
+  background-position: 50% 82%;
 
-
-    /*
+  /*
     max-width: 100%;
     max-height: 100%;
 */
 }
 
 #about-header {
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-
-
-
-
 
 /* -------------- CONTACT -------------- */
 
 .bg-img-contact {
-    height: 70vh;
-    width: 100%;
-    background-image: url(case_billeder/chs-header.jpg);
-    background-size: cover;
-    min-width: 100%;
-    min-height: 100%;
-    background-position: 50% 73%;
+  height: 70vh;
+  width: 100%;
+  background-image: url(case_billeder/chs-header.jpg);
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+  background-position: 50% 73%;
 }
 
 #contact-header {
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-
-
-
 
 /* --------------ALLE UNDERSIDER-------------- */
 
-
 .undersider-title {
-    font-family: futura-pt, sans-serif;
-    font-weight: normal;
-    text-align: center;
-    font-size: 3.2rem;
-
+  font-family: futura-pt, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 3.2rem;
 }
 
 .title-container {
-    width: 80vw;
-    position: absolute;
-    left: 10vw;
-    text-align: center;
-    top: 30vh;
+  width: 80vw;
+  position: absolute;
+  left: 10vw;
+  text-align: center;
+  top: 30vh;
 }
 
 .title-container-undersider {
-    width: 80vw;
-    position: absolute;
-    left: 10vw;
-    text-align: center;
-    top: 25vh;
+  width: 80vw;
+  position: absolute;
+  left: 10vw;
+  text-align: center;
+  top: 25vh;
 }
 
 .white-font {
-    color: white;
+  color: white;
 }
-
 
 /* -------------- CASES -------------- */
 
 #case-header {
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-
-
-
-
 .bg-img-case-chs {
-    height: 70vh;
-    width: 100%;
-    background-image: url(case_billeder/chs-header.jpg);
-    background-size: cover;
-    background-position: 50% 75%;
-    min-width: 100%;
-    min-height: 100%;
+  height: 70vh;
+  width: 100%;
+  background-image: url(case_billeder/chs-header.jpg);
+  background-size: cover;
+  background-position: 50% 75%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .bg-img-case-kt {
-    height: 70vh;
-    width: 100%;
-    background-image: url(case_billeder/karoline-headerbillede.jpg);
-    background-size: cover;
-    background-position: top;
-    min-width: 100%;
-    min-height: 100%;
+  height: 70vh;
+  width: 100%;
+  background-image: url(case_billeder/karoline-headerbillede.jpg);
+  background-size: cover;
+  background-position: top;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .bg-img-case-md {
-    height: 70vh;
-    width: 100%;
-    background-image: url(case_billeder/mille-dinesen/header-billede.jpg);
-    background-size: cover;
-    background-position: 50% 60%;
-    min-width: 100%;
-    min-height: 100%;
+  height: 70vh;
+  width: 100%;
+  background-image: url(case_billeder/mille-dinesen/header-billede.jpg);
+  background-size: cover;
+  background-position: 50% 60%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .bg-img-case-tb {
-    height: 70vh;
-    width: 100%;
-    background-image: url(case_billeder/triobike/triobike-headerbillede.jpg);
-    background-size: cover;
-    background-position: 50% 40%;
-    min-width: 100%;
-    min-height: 100%;
+  height: 70vh;
+  width: 100%;
+  background-image: url(case_billeder/triobike/triobike-headerbillede.jpg);
+  background-size: cover;
+  background-position: 50% 40%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .bg-img-case-rcy {
-    height: 70vh;
-    width: 100%;
-    background-image: url(case_billeder/red-cross-youth/rcy-headerbillede2.jpg);
-    background-size: cover;
-    background-position: top;
-    min-width: 100%;
-    min-height: 100%;
+  height: 70vh;
+  width: 100%;
+  background-image: url(case_billeder/red-cross-youth/rcy-headerbillede2.jpg);
+  background-size: cover;
+  background-position: top;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .bg-img-case-emp {
-    height: 70vh;
-    width: 100%;
-    background-image: url(case_billeder/emporia/emporia-headerbillede.jpg);
-    background-size: cover;
-    background-position: top;
-    min-width: 100%;
-    min-height: 100%;
+  height: 70vh;
+  width: 100%;
+  background-image: url(case_billeder/emporia/emporia-headerbillede.jpg);
+  background-size: cover;
+  background-position: top;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .bg-img-case-tempt {
-    height: 70vh;
-    width: 100%;
-    background-image: url(case_billeder/temptcider/tempt-header.jpg);
-    background-size: cover;
-    background-position: 50% 35%;
-    min-width: 100%;
-    min-height: 100%;
+  height: 70vh;
+  width: 100%;
+  background-image: url(case_billeder/temptcider/tempt-header.jpg);
+  background-size: cover;
+  background-position: 50% 35%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .bg-img-case-microsoft {
-    height: 70vh;
-    width: 100%;
-    background-image: url(case_billeder/microsoft/microsoft-header.jpg);
-    background-size: cover;
-    background-position: 100% 50%;
-    min-width: 100%;
-    min-height: 100%;
+  height: 70vh;
+  width: 100%;
+  background-image: url(case_billeder/microsoft/microsoft-header.jpg);
+  background-size: cover;
+  background-position: 100% 50%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .case-title {
-    font-family: 'Optima';
-    font-size: 1.7rem;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: normal;
-
+  font-family: "Optima";
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
 }
 
 .case-title-white {
-    color: white;
+  color: white;
 }
 
-
-
 .case-arrow {
-    position: relative;
-    bottom: 50px;
-    margin: 0;
-    margin-bottom: -20px;
-
+  position: relative;
+  bottom: 50px;
+  margin: 0;
+  margin-bottom: -20px;
 }
 
 #case-start {
-    padding: 20px;
-
+  padding: 20px;
 }
 
 #case-start2 {
-    padding: 20px;
-
+  padding: 20px;
 }
 
 .case-small-thumbnail {
-    width: 35%;
-    margin-left: 32.5%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  width: 35%;
+  margin-left: 32.5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .case-name {
-    font-family: futura-pt, sans-serif;
-    font-size: 1.5rem;
-    margin-top: 50px;
-    text-align: center;
-    font-weight: normal;
-    text-transform: uppercase;
+  font-family: futura-pt, sans-serif;
+  font-size: 1.5rem;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .case-info {
-    font-family: 'Optima';
-    font-weight: normal;
-    text-align: center;
-    max-width: 800px;
-    font-size: 1rem;
-    padding: 20px;
-    margin: auto;
-    line-height: 25px;
+  font-family: "Optima";
+  font-weight: normal;
+  text-align: center;
+  max-width: 800px;
+  font-size: 1rem;
+  padding: 20px;
+  margin: auto;
+  line-height: 25px;
 }
 
 .case-category {
-    font-family: 'Optima';
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    margin: 30px 20px 50px 20px;
-    text-align: center;
+  font-family: "Optima";
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin: 30px 20px 50px 20px;
+  text-align: center;
 }
 
 .case-img-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .case-img-wrapper.wrapreverse {
-    flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
 }
 
 .case-double-img {
-    padding: 20px;
+  padding: 20px;
 }
 
 .case-img-img {
-    padding: 0 20px 0 20px;
+  padding: 0 20px 0 20px;
 }
 
 .case-text-img {
-    padding: 20px;
+  padding: 20px;
 }
 
 /*
@@ -886,20 +797,20 @@ span.hiddenn {
 */
 
 .case-single-img-big {
-    padding: 50px;
+  padding: 50px;
 }
 
 .rcy-website-img {
-    padding: 10vw;
+  padding: 10vw;
 }
 
 .kt-case-header {
-    font-family: futura-pt;
-    font-weight: normal;
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: -20px;
-    padding-top: 30px;
+  font-family: futura-pt;
+  font-weight: normal;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: -20px;
+  padding-top: 30px;
 }
 
 /*
@@ -919,736 +830,654 @@ span.hiddenn {
 }*/
 
 .triobike .case-single-img div {
-    width: 90%;
-    margin-left: auto;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  width: 90%;
+  margin-left: auto;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .case-col {
-    flex-grow: 1;
-    flex-basis: 100%;
-    /*    margin-bottom: 19px;*/
+  flex-grow: 1;
+  flex-basis: 100%;
+  /*    margin-bottom: 19px;*/
 }
 
 .case-col-small {
-    flex-grow: 1;
-    flex-basis: 100%;
-    padding: 40px;
-    align-self: center;
+  flex-grow: 1;
+  flex-basis: 100%;
+  padding: 40px;
+  align-self: center;
 }
 
-
 .case-col-large {
-    flex-grow: 1;
-    flex-basis: 100%;
-    margin-bottom: -4px;
-
+  flex-grow: 1;
+  flex-basis: 100%;
+  margin-bottom: -4px;
 }
 
 .collaborators {
-    padding: 20px;
-    padding-bottom: 40px;
-    margin-bottom: 50px;
-    margin-top: 20px;
-    background-color: #f1f3f0;
-    width: 100vw;
-    margin: auto;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  background-color: #f1f3f0;
+  width: 100vw;
+  margin: auto;
 }
 
-
 .collaborators h2 {
-    font-family: futura-pt;
-    font-size: 1.5rem;
-    font-weight: normal;
-    text-align: center;
-
+  font-family: futura-pt;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
 }
 
 .collaborators p {
-    font-family: 'Optima';
-    font-weight: normal;
-    max-width: 800px;
-    line-height: 30px;
-    text-align: center;
-    margin: 0 auto;
-
+  font-family: "Optima";
+  font-weight: normal;
+  max-width: 800px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .case-video {
-    padding: 20px;
+  padding: 20px;
 }
 
-
-
 .video-container {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .video-container::after {
-    padding-top: 56.25%;
-    display: block;
-    content: '';
+  padding-top: 56.25%;
+  display: block;
+  content: "";
 }
 
 .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 video {
-    width: 100%;
+  width: 100%;
 }
-
 
 #case-header .title-container {
-    width: 80vw;
-    height: 20vh;
-    position: absolute;
-    left: 10vw;
-    text-align: center;
-    top: 34vh;
+  width: 80vw;
+  height: 20vh;
+  position: absolute;
+  left: 10vw;
+  text-align: center;
+  top: 34vh;
 }
 
-
-
 .case-col-text {
-    font-family: 'Optima';
-    font-weight: normal;
-    text-align: center;
-    align-self: center;
-    font-size: 1.2rem;
-    line-height: 30px;
+  font-family: "Optima";
+  font-weight: normal;
+  text-align: center;
+  align-self: center;
+  font-size: 1.2rem;
+  line-height: 30px;
 }
 
 .case-text p {
-    font-family: 'Optima';
-    font-weight: normal;
-    font-size: 1.1rem;
-    text-align: center;
-    line-height: 30px;
-    padding: 50px;
-    max-width: 600px;
-    margin: auto;
-
-
+  font-family: "Optima";
+  font-weight: normal;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 30px;
+  padding: 50px;
+  max-width: 600px;
+  margin: auto;
 }
 
 .caseSlides {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .caseSlides2 {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
-
 
 .title-container-trio {
-    top: 20vh;
-    width: 80vw;
-    position: absolute;
-    left: 10vw;
-    text-align: center;
-
+  top: 20vh;
+  width: 80vw;
+  position: absolute;
+  left: 10vw;
+  text-align: center;
 }
-
-
 
 .cases-knap {
-    margin-top: 50px;
-    margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
-
 .section-wrapper-fs {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
 }
 
 .col-fs-third {
-    flex-basis: 100%;
-    flex-grow: 1;
-    padding: 50px;
+  flex-basis: 100%;
+  flex-grow: 1;
+  padding: 50px;
 }
 
 .col-fs {
-    flex-basis: 100vw;
-    flex-grow: 1;
+  flex-basis: 100vw;
+  flex-grow: 1;
 }
 
 .col-fs-small {
-    flex-basis: 100vw;
-    flex-grow: 1;
-    padding: 10vw;
-    align-self: center;
+  flex-basis: 100vw;
+  flex-grow: 1;
+  padding: 10vw;
+  align-self: center;
 }
 
 .section-wrapper-large {
-    max-width: 1800px;
-    margin: 0 auto;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
-
 .case-single-img-fs {
-    padding: 20px;
+  padding: 20px;
 }
 
 #milledinesen .col-fs {
-    margin-bottom: -4px;
+  margin-bottom: -4px;
 }
 
 .chs-text-section p {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 1rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 1rem;
 }
 
 #chs-header-title {
-    color: black;
+  color: black;
 }
 
 #collab-kt {
-    margin-top: -5px;
+  margin-top: -5px;
 }
 
 .emporia-catwalk {
-    width: 70%;
-    margin: auto;
+  width: 70%;
+  margin: auto;
 }
 
 .slideshowSlides {
-    display: none;
+  display: none;
 }
 
 .slideshowSlides2 {
-    display: none;
+  display: none;
 }
 
-
 .button-left {
-    top: 50%;
-    left: 0%;
-    transform: translate(0%, -50%);
-    margin-left: 0px;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  margin-left: 0px;
 }
 
 .button-right {
-    top: 50%;
-    right: 0%;
-    transform: translate(0%, -50%);
-    margin-right: 0px;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  margin-right: 0px;
 }
 
 .button-left2 {
-
-    margin-left: -40px;
+  margin-left: -40px;
 }
 
 .button-right2 {
-
-    margin-right: -40px;
+  margin-right: -40px;
 }
-
 
 .slideshow-container {
-    position: relative;
+  position: relative;
 }
 
-
 .ss-button {
-    display: inline-block;
-    border: none;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    cursor: pointer;
-    position: absolute;
-
+  display: inline-block;
+  border: none;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
 }
 
 #microsoft-ss-3 .ss-button {
-    transform: translate(0%, -200%);
+  transform: translate(0%, -200%);
 }
 
 .img-arrow:hover {
-    border: solid #3b3b3b;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 8px;
-    transition: 0.3s;
+  border: solid #3b3b3b;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 8px;
+  transition: 0.3s;
 }
 
 .img-arrow {
-    border: solid #c6c6c6;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 8px;
-    transition: 0.3s;
+  border: solid #c6c6c6;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 8px;
+  transition: 0.3s;
 }
 
 .right {
-    transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .left {
-    transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .invertcolor img {
-    filter: invert(1);
-    opacity: 1;
+  filter: invert(1);
+  opacity: 1;
 }
 
 .img-padding-xtra {
-    padding: 10vw;
-    align-self: center;
+  padding: 10vw;
+  align-self: center;
 }
 
-
-
 .caption {
-    font-family: 'Optima';
-    text-align: center;
-    text-transform: uppercase;
-    padding: 20px 0 25px 0;
+  font-family: "Optima";
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0 25px 0;
 }
 
 .smaller-pictures {
-    max-width: 1000px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  display: flex;
 }
 
 .smaller-pictures img {
-    padding: 10vw;
-    margin-bottom: -40px;
+  padding: 10vw;
+  margin-bottom: -40px;
 }
 
 .collaborators br {
-    display: none;
+  display: none;
 }
 
 .case-text br {
-    display: none;
+  display: none;
 }
 
 /* -------------- FOOTER -------------- */
 
-
 footer p {
-    font-family: futura-pt, sans-serif;
-    text-align: center;
-    letter-spacing: 1px;
-
+  font-family: futura-pt, sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 /* -------------- ANIMATIONER -------------- */
 
-
 .fadein {
-    animation-name: fadein_kf;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
+  animation-name: fadein_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
 
 @keyframes fadein_kf {
-    0% {
-        opacity: 0;
-        transform: translateX(20%);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .fadeout {
-    animation-name: fadeout_kf;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-delay: 2s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    pointer-events: none;
+  animation-name: fadeout_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  pointer-events: none;
 }
 
 @keyframes fadeout_kf {
-    0% {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
 }
-
-
-
-
-
-
 
 /* -------------- MEDIA QUERY -------------- */
 
-
 @media only screen and (min-width: 300px) {
+  #about .text {
+    padding: 0px 40px;
 
+    font-size: 1.2rem;
+  }
 
+  #about .img img {
+    margin-top: 30px;
+  }
 
-    #about .text {
-        padding: 0px 40px;
+  .wrapreverse {
+    flex-wrap: wrap-reverse;
+  }
 
-        font-size: 1.2rem;
-
-    }
-
-    #about .img img {
-        margin-top: 30px;
-    }
-
-    .wrapreverse {
-        flex-wrap: wrap-reverse;
-    }
-
-    .caption {
-        font-size: 0.8rem;
-    }
-
-
+  .caption {
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (min-width: 500px) {
-    .caption {
-        font-size: 1rem;
-    }
+  .caption {
+    font-size: 1rem;
+  }
 
+  .collaborators br {
+    display: block;
+  }
 
-
-    .collaborators br {
-        display: block;
-    }
-
-    .case-text br {
-        display: block;
-    }
-
-
+  .case-text br {
+    display: block;
+  }
 }
 
-
 @media only screen and (min-width: 600px) {
+  #work .data-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    margin: 0 auto;
+    grid-gap: 20px;
+    padding: 20px;
+  }
 
+  #menu {
+    font-size: 5rem;
+  }
 
-    #work .data-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-        margin: 0 auto;
-        grid-gap: 20px;
-        padding: 20px;
-    }
+  #contact .wrapper {
+    padding: 50px;
+  }
 
-    #menu {
+  #forside .box {
+    margin: 0;
+  }
 
-        font-size: 5rem;
-    }
+  #forside .text {
+    margin: 0;
+  }
 
-    #contact .wrapper {
-        padding: 50px;
-    }
+  #contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
+  .client-text {
+    font-family: "Optima";
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: center;
+    line-height: 35px;
+    padding: 10px;
+  }
 
-    #forside .box {
-        margin: 0;
-    }
+  .case-title {
+    font-family: "Optima";
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+  }
 
-    #forside .text {
-        margin: 0;
-    }
-
-    #contact {
-        padding-top: 100px;
-        padding-bottom: 100px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    .client-text {
-        font-family: 'Optima';
-        font-size: 1.2rem;
-        font-weight: normal;
-        text-align: center;
-        line-height: 35px;
-        padding: 10px;
-    }
-
-    .case-title {
-        font-family: 'Optima';
-        font-size: 2.5rem;
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: normal;
-
-    }
-
-    #case-header .title-container {
-        width: 80vw;
-        position: absolute;
-        left: 10vw;
-        text-align: center;
-        top: 34vh;
-    }
-
-
-
-
-
-
-
-
+  #case-header .title-container {
+    width: 80vw;
+    position: absolute;
+    left: 10vw;
+    text-align: center;
+    top: 34vh;
+  }
 }
 
 @media only screen and (min-width: 800px) {
-    /* -------   FOOTER ---------*/
+  /* -------   FOOTER ---------*/
 
+  .p1 {
+    font-family: "Optima";
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-top: 20px;
+  }
 
-    .p1 {
-        font-family: 'Optima';
-        text-transform: uppercase;
-        font-size: 1.8rem;
-        margin-top: 20px;
-    }
+  .p2 {
+    font-family: futura-pt, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+  }
 
-    .p2 {
-        font-family: futura-pt, sans-serif;
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: black;
-        display: inline-block;
-    }
+  .p3 {
+    font-family: futura-pt, sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 3px;
+  }
 
-    .p3 {
-        font-family: futura-pt, sans-serif;
-        font-size: 4rem;
-        text-transform: uppercase;
-        margin-bottom: 0;
-        margin-top: 3px;
+  #contact .col1 {
+    flex-grow: 1;
+    flex-basis: 100px;
+    text-align: left;
+  }
 
-    }
+  #contact .col2 {
+    flex-grow: 1;
+    flex-basis: 100px;
+  }
 
+  #contact .col3 {
+    flex-grow: 1;
+    flex-basis: 100px;
+  }
 
+  /* -------------- FORSIDE -------------- */
 
-    #contact .col1 {
+  #forside .text {
+    text-align: center;
+    font-family: "Optima";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 30px;
+    align-self: center;
+    flex-basis: 50%;
+  }
 
-        flex-grow: 1;
-        flex-basis: 100px;
-        text-align: left;
-    }
+  .mySlides {
+    height: 80vh;
+    object-fit: cover;
+    width: 100%;
+  }
 
+  #forside .box {
+    flex-basis: 50%;
+  }
 
-    #contact .col2 {
-        flex-grow: 1;
-        flex-basis: 100px;
-    }
+  #about .img {
+    flex-grow: 1;
+    flex-basis: 50%;
+    align-self: center;
+    text-align: center;
+  }
 
-    #contact .col3 {
-        flex-grow: 1;
-        flex-basis: 100px;
+  #about .text {
+    flex-grow: 1;
+    flex-basis: 50%;
+    text-align: center;
+    font-family: "Optima";
+    font-style: normal;
+    font-weight: normal;
+    padding: 0px 40px;
+    line-height: 30px;
+    align-self: center;
+    padding: 70px;
+    font-size: 1.2rem;
+    padding: 0 30px;
+  }
 
-    }
+  .bg-img-work {
+    height: 89vh;
+  }
 
-    /* -------------- FORSIDE -------------- */
+  .bg-img-about {
+    height: 89vh;
+  }
 
-    #forside .text {
-        text-align: center;
-        font-family: 'Optima';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 1.5rem;
-        line-height: 30px;
-        align-self: center;
-        flex-basis: 50%;
+  .bg-img-contact {
+    height: 89vh;
+  }
 
-    }
+  .grid-item {
+    margin-bottom: 20px;
+  }
 
-    .mySlides {
-        height: 80vh;
-        object-fit: cover;
-        width: 100%;
-    }
+  #menu {
+    background-color: #f9faf8;
+    height: 500px;
+    width: 350px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    z-index: 100;
+    text-align: center;
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    transition: 0.3s;
+  }
 
+  #menulist {
+    list-style-type: none;
+    color: black;
+    padding-left: 0;
+    margin-top: 150px;
+  }
 
+  /* --------------CASES-------------- */
 
-    #forside .box {
-        flex-basis: 50%;
-    }
+  .case-title {
+    font-family: "Optima";
+    font-size: 3.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+  }
 
-    #about .img {
-        flex-grow: 1;
-        flex-basis: 50%;
-        align-self: center;
-        text-align: center;
-    }
+  .bg-img-case {
+    height: 89vh;
+  }
 
-    #about .text {
-        flex-grow: 1;
-        flex-basis: 50%;
-        text-align: center;
-        font-family: 'Optima';
-        font-style: normal;
-        font-weight: normal;
-        padding: 0px 40px;
-        line-height: 30px;
-        align-self: center;
-        padding: 70px;
-        font-size: 1.2rem;
-        padding: 0 30px;
-    }
+  .case-small-thumbnail {
+    width: 15%;
+    margin-left: 42.5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
+  .case-name {
+    font-family: futura-pt, sans-serif;
+    font-size: 2.2rem;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
 
+  .case-info {
+    font-family: "Optima";
+    font-weight: normal;
+    text-align: center;
+    max-width: 800px;
+    font-size: 1.2rem;
+    margin: auto;
+    line-height: 33px;
+  }
 
+  .case-info-emp {
+    font-family: "Optima";
+    font-weight: normal;
+    text-align: center;
+    max-width: 900px;
+    font-size: 1.2rem;
+    margin: auto;
+    line-height: 33px;
+  }
 
+  .case-col {
+    flex-grow: 1;
+    flex-basis: 50vw;
+  }
 
-    .bg-img-work {
-        height: 89vh;
+  .case-col-small {
+    flex-grow: 1;
+    flex-basis: 50vw;
+    padding: 60px;
+  }
 
-    }
+  .case-col-large {
+    flex-grow: 1;
+    flex-basis: 50vw;
+  }
 
-    .bg-img-about {
-        height: 89vh;
+  .case-col-text {
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
 
-    }
-
-    .bg-img-contact {
-        height: 89vh;
-
-    }
-
-
-    .grid-item {
-        margin-bottom: 20px;
-    }
-
-    #menu {
-        background-color: #f9faf8;
-        height: 500px;
-        width: 350px;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: auto;
-        z-index: 100;
-        text-align: center;
-        font-family: futura-pt, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 3rem;
-        transition: 0.3s;
-    }
-
-    #menulist {
-        list-style-type: none;
-        color: black;
-        padding-left: 0;
-        margin-top: 150px;
-    }
-
-    /* --------------CASES-------------- */
-
-    .case-title {
-        font-family: 'Optima';
-        font-size: 3.9rem;
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: normal;
-
-    }
-
-    .bg-img-case {
-        height: 89vh;
-
-    }
-
-    .case-small-thumbnail {
-        width: 15%;
-        margin-left: 42.5%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .case-name {
-        font-family: futura-pt, sans-serif;
-        font-size: 2.2rem;
-        margin-top: 50px;
-        text-align: center;
-        font-weight: normal;
-        text-transform: uppercase;
-    }
-
-    .case-info {
-        font-family: 'Optima';
-        font-weight: normal;
-        text-align: center;
-        max-width: 800px;
-        font-size: 1.2rem;
-        margin: auto;
-        line-height: 33px;
-    }
-
-    .case-info-emp {
-        font-family: 'Optima';
-        font-weight: normal;
-        text-align: center;
-        max-width: 900px;
-        font-size: 1.2rem;
-        margin: auto;
-        line-height: 33px;
-    }
-
-    .case-col {
-        flex-grow: 1;
-        flex-basis: 50vw;
-    }
-
-    .case-col-small {
-        flex-grow: 1;
-        flex-basis: 50vw;
-        padding: 60px;
-    }
-
-    .case-col-large {
-        flex-grow: 1;
-        flex-basis: 50vw;
-    }
-
-    .case-col-text {
-
-        font-size: 1.5rem;
-        line-height: 40px;
-    }
-
-    /*
+  /*
     .case-single-img div {
         width: 50%;
         margin-left: auto;
@@ -1658,235 +1487,207 @@ footer p {
     }
 */
 
-    .triobike .case-single-img div {
-        width: 75%;
-        margin-left: auto;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+  .triobike .case-single-img div {
+    width: 75%;
+    margin-left: auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 
-    .col-fs-third {
-        flex-basis: 33%;
-        flex-grow: 1;
-        padding: 5vw;
-    }
+  .col-fs-third {
+    flex-basis: 33%;
+    flex-grow: 1;
+    padding: 5vw;
+  }
 
-    .chs-text-section p {
-        padding-top: 180px;
-        padding-bottom: 180px;
-        font-size: 1.2rem;
-    }
+  .chs-text-section p {
+    padding-top: 180px;
+    padding-bottom: 180px;
+    font-size: 1.2rem;
+  }
 
+  .emporia-catwalk {
+    width: 30%;
+    margin: auto;
+    margin-bottom: -5%;
+  }
 
+  .smaller-pictures {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
 
-    .emporia-catwalk {
-        width: 30%;
-        margin: auto;
-        margin-bottom: -5%;
-    }
+  .smaller-pictures img {
+    padding: 0vw;
+    margin-bottom: -70px;
+  }
 
-    .smaller-pictures {
-        max-width: 1300px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: nowrap;
-        padding: 0;
-    }
+  .caption {
+    padding: 0;
+  }
 
-    .smaller-pictures img {
-        padding: 0vw;
-        margin-bottom: -70px;
-    }
+  #microsoft-ss-3 .ss-button {
+    transform: translate(0%, -50%);
+  }
 
-    .caption {
+  /* --------------ALLE UNDERSIDER-------------- */
 
-        padding: 0;
+  .undersider-title {
+    font-family: futura-pt, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 7.2rem;
+  }
 
-    }
+  .title-container-undersider {
+    width: 80vw;
+    position: absolute;
+    left: 10vw;
+    text-align: center;
+    top: 25vh;
+  }
 
-    #microsoft-ss-3 .ss-button {
-        transform: translate(0%, -50%);
-    }
+  .title-container {
+    width: 80vw;
+    position: absolute;
+    left: 10vw;
+    text-align: center;
+    top: 29vh;
+  }
 
+  .section-wrapper-fs {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
 
+  .col-fs {
+    flex-basis: 50vw;
+    flex-grow: 1;
+    height: 100%;
+  }
 
+  .col-fs-small {
+    flex-basis: 50vw;
+    flex-grow: 1;
+    padding: 5vw;
+    align-self: center;
+    height: 100%;
+  }
 
+  .section-wrapper-large {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
 
+  .case-single-img-fs {
+    padding: 10vw;
+  }
 
+  .title-container-trio {
+    top: 20vh;
+    width: 80vw;
+    position: absolute;
+    left: 10vw;
+    text-align: center;
+  }
 
-    /* --------------ALLE UNDERSIDER-------------- */
+  .img-arrow:hover {
+    border: solid #3b3b3b;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 13px;
+    transition: 0.3s;
+  }
 
+  .img-arrow {
+    border: solid #c6c6c6;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 13px;
+    transition: 0.3s;
+  }
 
-    .undersider-title {
-        font-family: futura-pt, sans-serif;
-        font-weight: normal;
-        text-align: center;
-        font-size: 7.2rem;
+  .button-left {
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    margin-left: 15px;
+  }
 
-    }
+  .button-right {
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    margin-right: 15px;
+  }
 
-    .title-container-undersider {
-        width: 80vw;
-        position: absolute;
-        left: 10vw;
-        text-align: center;
-        top: 25vh;
-    }
+  .button-left2 {
+    margin-left: -20px;
+  }
 
+  .button-right2 {
+    margin-right: -20px;
+  }
 
-    .title-container {
-        width: 80vw;
-        position: absolute;
-        left: 10vw;
-        text-align: center;
-        top: 29vh;
-    }
+  /* --------------PADDING TIL BILLEDER-------------- */
 
-    .section-wrapper-fs {
-        display: flex;
-        flex-wrap: nowrap;
-        margin: 0;
-    }
+  .img-padding {
+    padding: 5vw;
+    align-self: center;
+  }
 
-    .col-fs {
-        flex-basis: 50vw;
-        flex-grow: 1;
-        height: 100%;
-    }
+  .img-padding-extra {
+    padding: 10vw;
+  }
 
-    .col-fs-small {
-        flex-basis: 50vw;
-        flex-grow: 1;
-        padding: 5vw;
-        align-self: center;
-        height: 100%;
-    }
+  .text-bg-color {
+    background-color: #f1f3f0;
+    height: 100%;
+  }
 
-    .section-wrapper-large {
-        max-width: 1800px;
-        margin: 0 auto;
-    }
+  .white-bg {
+    background-color: white;
+    height: 100%;
+  }
 
+  #tempt-slideshow-2 img {
+    padding: 5vw;
+  }
 
-    .case-single-img-fs {
-        padding: 10vw;
-    }
-
-    .title-container-trio {
-        top: 20vh;
-        width: 80vw;
-        position: absolute;
-        left: 10vw;
-        text-align: center;
-
-    }
-
-    .img-arrow:hover {
-        border: solid #3b3b3b;
-        border-width: 0 2px 2px 0;
-        display: inline-block;
-        padding: 13px;
-        transition: 0.3s;
-    }
-
-    .img-arrow {
-        border: solid #c6c6c6;
-        border-width: 0 2px 2px 0;
-        display: inline-block;
-        padding: 13px;
-        transition: 0.3s;
-    }
-
-    .button-left {
-        top: 50%;
-        left: 0%;
-        transform: translate(0%, -50%);
-        margin-left: 15px;
-    }
-
-    .button-right {
-        top: 50%;
-        right: 0%;
-        transform: translate(0%, -50%);
-        margin-right: 15px;
-    }
-
-    .button-left2 {
-
-        margin-left: -20px;
-    }
-
-    .button-right2 {
-
-        margin-right: -20px;
-    }
-
-
-
-
-
-    /* --------------PADDING TIL BILLEDER-------------- */
-
-    .img-padding {
-        padding: 5vw;
-        align-self: center;
-    }
-
-    .img-padding-extra {
-        padding: 10vw;
-    }
-
-    .text-bg-color {
-        background-color: #f1f3f0;
-        height: 100%;
-    }
-
-    .white-bg {
-        background-color: white;
-        height: 100%;
-    }
-
-    #tempt-slideshow-2 img {
-        padding: 5vw;
-    }
-
-    .img-padding-xtra2 {
-        padding: 0 10vw;
-        align-self: center;
-    }
-
-
+  .img-padding-xtra2 {
+    padding: 0 10vw;
+    align-self: center;
+  }
 }
 
-
-
-
 @media only screen and (min-width: 1200px) {
+  #contact .wrapper {
+    padding: 0;
+  }
 
-    #contact .wrapper {
-        padding: 0;
-    }
-
-    #clients {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-    }
-
+  #clients {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
 }
 
 @media only screen and (min-width: 1500px) {
-    #forside .text p {
-        font-size: 2rem;
-        line-height: 50px;
-    }
+  #forside .text p {
+    font-size: 2rem;
+    line-height: 50px;
+  }
 
-    /*
+  /*
     #menu {
         background-color: #f9faf8;
         height: 50vh;
@@ -1911,36 +1712,29 @@ footer p {
         margin-top: 15vh;
     }
 */
-
-
 }
 
 @media only screen and (min-width: 1800px) {
-    .section-wrapper {
-        max-width: 1500px;
-        margin: 0 auto;
-    }
+  .section-wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
 
-    #work .data-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-        margin: 0 auto;
-        grid-gap: 20px;
-        padding: 20px;
-    }
+  #work .data-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    margin: 0 auto;
+    grid-gap: 20px;
+    padding: 20px;
+  }
 
-    #about .text {
-        font-size: 1.3rem;
-        padding: 70px
-    }
+  #about .text {
+    font-size: 1.3rem;
+    padding: 70px;
+  }
 
-    .case-col-text {
-
-        font-size: 2rem;
-        line-height: 50px;
-    }
-
-
-
-
+  .case-col-text {
+    font-size: 2rem;
+    line-height: 50px;
+  }
 }
