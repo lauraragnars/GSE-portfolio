@@ -679,9 +679,9 @@ span.hiddenn {
 .bg-img-case-hew {
   height: 70vh;
   width: 100%;
-  background-image: url(case_billeder/highend/hew_7.jpg);
+  background-image: url(case_billeder/highend/hew_headerbillede.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: 50% 55%;
   min-width: 100%;
   min-height: 100%;
 }
