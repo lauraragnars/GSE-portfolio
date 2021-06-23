@@ -676,6 +676,16 @@ span.hiddenn {
   min-height: 100%;
 }
 
+.bg-img-case-hew {
+  height: 70vh;
+  width: 100%;
+  background-image: url(case_billeder/highend/hew_7.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .bg-img-case-emp {
   height: 70vh;
   width: 100%;
