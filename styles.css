@@ -839,6 +839,14 @@ span.hiddenn {
     margin-bottom: 50px;
 }*/
 
+.high-end-whisky .case-col-text p {
+  padding: 10px 0 40px 0;
+}
+
+.high-end-whisky .custom-br {
+  display: block;
+}
+
 .triobike .case-single-img div {
   width: 90%;
   margin-left: auto;
@@ -1289,6 +1297,13 @@ footer p {
 }
 
 @media only screen and (min-width: 800px) {
+  .high-end-whisky .case-col-text p {
+    padding: 0;
+  }
+
+  .high-end-whisky .custom-br {
+    display: none;
+  }
   /* -------   FOOTER ---------*/
 
   .p1 {
