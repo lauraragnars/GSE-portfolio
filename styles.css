@@ -959,6 +959,8 @@ video {
   font-size: 1.2rem;
   line-height: 30px;
   padding: 3rem 0;
+  background-color: #f1f3f0;
+  margin-top: -5px;
 }
 
 .case-text p {
@@ -1332,6 +1334,11 @@ footer p {
     padding: 0;
   }
 
+  .case-col-text {
+    background-color: transparent;
+    margin-top: 0;
+  }
+
   .high-end-whisky .custom-br {
     display: none;
   }
@@ -1652,14 +1659,6 @@ footer p {
     text-align: center;
   }
 
-  .img-arrow:hover {
-    border: solid #3b3b3b;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 13px;
-    transition: 0.3s;
-  }
-
   .img-arrow {
     border: solid #c6c6c6;
     border-width: 0 2px 2px 0;
@@ -1792,5 +1791,15 @@ footer p {
   .case-col-text {
     font-size: 2rem;
     line-height: 50px;
+  }
+}
+
+@media (hover: hover) {
+  .img-arrow:hover {
+    border: solid #3b3b3b;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 13px;
+    transition: 0.3s;
   }
 }
