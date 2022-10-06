@@ -963,6 +963,10 @@ video {
   margin-top: -5px;
 }
 
+.rosendal-website .case-col-text {
+  background-color: transparent;
+}
+
 .case-text p {
   font-family: "Optima";
   font-weight: normal;
