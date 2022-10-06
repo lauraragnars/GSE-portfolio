@@ -958,6 +958,7 @@ video {
   align-self: center;
   font-size: 1.2rem;
   line-height: 30px;
+  padding: 3rem 0;
 }
 
 .case-text p {
