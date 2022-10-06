@@ -78,11 +78,10 @@
         <img class="case-small-thumbnail" src="case_billeder/triobike/tb-littlethumbnail.gif" alt="Trio Bike" />
         <h2 class="case-name">CLIMATE-FRIENDLY TRANSPORTATION</h2>
         <p class="case-info">
-          Trio Bike is a Danish cargo bike company that wanted to challenge the way we transport ourselves. Can we make people change their behaviour
-          and choose bikes over cars?
+          Trio Bike is a Danish cargo bike company that wanted to challenge the way we transport ourselves. Can we make people change their behaviour and choose bikes over cars?
           <br />
-          They needed a rebranding and repositioning of the Trio Bike brand. We created a platform where we invited people to “Live the Trio Way” in
-          an easy-going, vibrant and playful manner.
+          They needed a rebranding and repositioning of the Trio Bike brand. We created a platform where we invited people to “Live the Trio Way” in an easy-going, vibrant and
+          playful manner.
         </p>
         <p class="case-category">BRAND POSITIONING · IDENTITY · OUTDOOR · STOREDESIGN · WEBDESIGN · SOME CONTENT · ILLUSTRATION</p>
         <div class="arrow">
@@ -247,124 +246,124 @@
 
     <script src="script.js"></script>
     <script>
-      let slideIndex2 = 0;
-      let ii;
-      let xx = document.querySelectorAll(".caseSlides2");
+      let slideIndex2 = 0
+      let ii
+      let xx = document.querySelectorAll('.caseSlides2')
 
-      carousel2();
+      carousel2()
 
-      let slideIndex = 0;
+      let slideIndex = 0
 
-      automaticSlider2();
+      automaticSlider2()
 
       function automaticSlider2() {
-        showSlides2(slideIndex);
+        showSlides2(slideIndex)
         myTimer2 = setInterval(function () {
-          plusSlides2(1);
-        }, 4000);
+          plusSlides2(1)
+        }, 4000)
       }
 
       function plusSlides2(n) {
-        clearInterval(myTimer2);
+        clearInterval(myTimer2)
         if (n < 0) {
-          showSlides2((slideIndex -= 1));
+          showSlides2((slideIndex -= 1))
         } else {
-          showSlides2((slideIndex += 1));
+          showSlides2((slideIndex += 1))
         }
         if (n === -1) {
           myTimer2 = setInterval(function () {
-            plusSlides2(n + 2);
-          }, 4000);
+            plusSlides2(n + 2)
+          }, 4000)
         } else {
           myTimer2 = setInterval(function () {
-            plusSlides2(n + 1);
-          }, 4000);
+            plusSlides2(n + 1)
+          }, 4000)
         }
       }
 
       function showSlides2(n) {
-        let i3;
-        let slides2 = document.getElementsByClassName("slideshowSlides");
+        let i3
+        let slides2 = document.getElementsByClassName('slideshowSlides')
         if (n > slides2.length) {
-          slideIndex = 1;
+          slideIndex = 1
         }
         if (n < 1) {
-          slideIndex = slides2.length;
+          slideIndex = slides2.length
         }
         for (i3 = 0; i3 < slides2.length; i3++) {
-          slides2[i3].style.display = "none";
+          slides2[i3].style.display = 'none'
         }
 
-        slides2[slideIndex - 1].style.display = "block";
+        slides2[slideIndex - 1].style.display = 'block'
       }
 
       function carousel2() {
         /*------- Desktop -------*/
 
         if (slideIndex2 > xx.length - 1) {
-          slideIndex2 = 0;
+          slideIndex2 = 0
         }
         xx.forEach((billede) => {
-          billede.style.display = "none";
-        });
+          billede.style.display = 'none'
+        })
 
-        xx[slideIndex2].style.display = "block";
-        slideIndex2++;
+        xx[slideIndex2].style.display = 'block'
+        slideIndex2++
         // skifter display mode hvert andet sekundt
-        setTimeout(carousel2, 3000);
+        setTimeout(carousel2, 3000)
       }
 
-      let slideIndex4 = 0;
+      let slideIndex4 = 0
 
-      automaticSlider();
+      automaticSlider()
 
       function automaticSlider() {
-        showSlides(slideIndex4);
+        showSlides(slideIndex4)
         myTimer = setInterval(function () {
-          plusSlides(1);
-        }, 4000);
+          plusSlides(1)
+        }, 4000)
       }
 
       function plusSlides(n) {
-        clearInterval(myTimer);
+        clearInterval(myTimer)
         if (n < 0) {
-          showSlides((slideIndex4 -= 1));
+          showSlides((slideIndex4 -= 1))
         } else {
-          showSlides((slideIndex4 += 1));
+          showSlides((slideIndex4 += 1))
         }
         if (n === -1) {
           myTimer = setInterval(function () {
-            plusSlides(n + 2);
-          }, 4000);
+            plusSlides(n + 2)
+          }, 4000)
         } else {
           myTimer = setInterval(function () {
-            plusSlides(n + 1);
-          }, 4000);
+            plusSlides(n + 1)
+          }, 4000)
         }
       }
 
       function showSlides(n) {
-        let i2;
-        let slides = document.getElementsByClassName("slideshowSlides2");
+        let i2
+        let slides = document.getElementsByClassName('slideshowSlides2')
         if (n > slides.length) {
-          slideIndex4 = 1;
+          slideIndex4 = 1
         }
         if (n < 1) {
-          slideIndex4 = slides.length;
+          slideIndex4 = slides.length
         }
         for (i2 = 0; i2 < slides.length; i2++) {
-          slides[i2].style.display = "none";
+          slides[i2].style.display = 'none'
         }
 
-        slides[slideIndex4 - 1].style.display = "block";
+        slides[slideIndex4 - 1].style.display = 'block'
       }
     </script>
 
     <!-- Default Statcounter code for gryechwald.com http://www.gryechwald.com/ -->
     <script type="text/javascript">
-      var sc_project = 7426606;
-      var sc_invisible = 1;
-      var sc_security = "d78f7e39";
+      var sc_project = 7426606
+      var sc_invisible = 1
+      var sc_security = 'd78f7e39'
     </script>
     <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
     <noscript>
