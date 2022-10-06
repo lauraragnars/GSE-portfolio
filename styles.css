@@ -97,7 +97,7 @@ a {
 
 .fullname {
   text-align: center;
-  font-family: 'Optima';
+  font-family: "Optima";
   font-style: normal;
   font-weight: normal;
   font-size: 1.4rem;
@@ -180,7 +180,7 @@ header {
 }
 
 .logo {
-  font-family: 'Optima';
+  font-family: "Optima";
   font-style: normal;
   font-weight: normal;
   font-size: 1.4rem;
@@ -246,10 +246,10 @@ span.hiddenn {
 /* -------------- FONTE -------------- */
 
 @font-face {
-  font-family: 'Optima';
+  font-family: "Optima";
   font-style: normal;
   font-weight: normal;
-  src: local('Optima Regular'), url('Optima-Regular.woff') format('woff');
+  src: local("Optima Regular"), url("Optima-Regular.woff") format("woff");
 }
 
 /* -------------- FORSIDE -------------- */
@@ -261,7 +261,7 @@ span.hiddenn {
 
 #forside .text {
   text-align: center;
-  font-family: 'Optima';
+  font-family: "Optima";
   font-style: normal;
   font-weight: normal;
   font-size: 1.5rem;
@@ -333,7 +333,7 @@ span.hiddenn {
   flex-grow: 1;
   flex-basis: 100%;
   text-align: center;
-  font-family: 'Optima';
+  font-family: "Optima";
   font-style: normal;
   font-weight: normal;
   font-size: 1.5rem;
@@ -373,7 +373,7 @@ span.hiddenn {
 }
 
 .grid-item .navn {
-  font-family: 'Optima';
+  font-family: "Optima";
   text-align: center;
   font-size: 1.3rem;
   margin-bottom: 8px;
@@ -439,7 +439,7 @@ span.hiddenn {
 }
 
 .p1 {
-  font-family: 'Optima';
+  font-family: "Optima";
   text-transform: uppercase;
   font-size: 1.6rem;
   margin-top: 20px;
@@ -465,7 +465,7 @@ span.hiddenn {
 }
 
 .p3_email {
-  font-family: 'optima';
+  font-family: "optima";
   font-weight: normal;
   color: black;
   font-size: 1.2rem;
@@ -516,7 +516,7 @@ span.hiddenn {
 
 #abouttext .abouttext {
   text-align: center;
-  font-family: 'optima', sans-serif;
+  font-family: "optima", sans-serif;
   font-size: 1.3rem;
   padding: 50px 50px 20px 50px;
 }
@@ -535,7 +535,7 @@ span.hiddenn {
 }
 
 .client-text {
-  font-family: 'optima', sans-serif;
+  font-family: "optima", sans-serif;
   font-size: 1.2rem;
   font-weight: normal;
   text-align: center;
@@ -727,7 +727,7 @@ span.hiddenn {
 }
 
 .case-title {
-  font-family: 'Optima';
+  font-family: "Optima";
   font-size: 1.7rem;
   text-transform: uppercase;
   text-align: center;
@@ -770,7 +770,7 @@ span.hiddenn {
 }
 
 .case-info {
-  font-family: 'Optima';
+  font-family: "Optima";
   font-weight: normal;
   text-align: center;
   max-width: 800px;
@@ -781,7 +781,7 @@ span.hiddenn {
 }
 
 .case-category {
-  font-family: 'Optima';
+  font-family: "Optima";
   font-weight: normal;
   text-transform: uppercase;
   font-size: 0.9rem;
@@ -906,7 +906,7 @@ span.hiddenn {
 }
 
 .collaborators p {
-  font-family: 'Optima';
+  font-family: "Optima";
   font-weight: normal;
   max-width: 800px;
   line-height: 30px;
@@ -927,7 +927,7 @@ span.hiddenn {
 .video-container::after {
   padding-top: 56.25%;
   display: block;
-  content: '';
+  content: "";
 }
 
 .video-container iframe {
@@ -952,7 +952,7 @@ video {
 }
 
 .case-col-text {
-  font-family: 'Optima';
+  font-family: "Optima";
   font-weight: normal;
   text-align: center;
   align-self: center;
@@ -961,7 +961,7 @@ video {
 }
 
 .case-text p {
-  font-family: 'Optima';
+  font-family: "Optima";
   font-weight: normal;
   font-size: 1.1rem;
   text-align: center;
@@ -1139,7 +1139,7 @@ video {
 }
 
 .caption {
-  font-family: 'Optima';
+  font-family: "Optima";
   text-align: center;
   text-transform: uppercase;
   padding: 20px 0 25px 0;
@@ -1163,6 +1163,14 @@ video {
 
 .case-text br {
   display: none;
+}
+
+.desktop-br {
+  display: none;
+}
+
+.mobile-br {
+  display: block;
 }
 
 /* -------------- FOOTER -------------- */
@@ -1250,6 +1258,14 @@ footer p {
   .case-text br {
     display: block;
   }
+
+  .desktop-br {
+    display: block;
+  }
+
+  .mobile-br {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -1285,7 +1301,7 @@ footer p {
   }
 
   .client-text {
-    font-family: 'Optima';
+    font-family: "Optima";
     font-size: 1.2rem;
     font-weight: normal;
     text-align: center;
@@ -1294,7 +1310,7 @@ footer p {
   }
 
   .case-title {
-    font-family: 'Optima';
+    font-family: "Optima";
     font-size: 2.5rem;
     text-transform: uppercase;
     text-align: center;
@@ -1321,7 +1337,7 @@ footer p {
   /* -------   FOOTER ---------*/
 
   .p1 {
-    font-family: 'Optima';
+    font-family: "Optima";
     text-transform: uppercase;
     font-size: 1.8rem;
     margin-top: 20px;
@@ -1364,7 +1380,7 @@ footer p {
 
   #forside .text {
     text-align: center;
-    font-family: 'Optima';
+    font-family: "Optima";
     font-style: normal;
     font-weight: normal;
     font-size: 1.5rem;
@@ -1394,7 +1410,7 @@ footer p {
     flex-grow: 1;
     flex-basis: 50%;
     text-align: center;
-    font-family: 'Optima';
+    font-family: "Optima";
     font-style: normal;
     font-weight: normal;
     padding: 0px 40px;
@@ -1448,7 +1464,7 @@ footer p {
   /* --------------CASES-------------- */
 
   .case-title {
-    font-family: 'Optima';
+    font-family: "Optima";
     font-size: 3.9rem;
     text-transform: uppercase;
     text-align: center;
@@ -1476,7 +1492,7 @@ footer p {
   }
 
   .case-info {
-    font-family: 'Optima';
+    font-family: "Optima";
     font-weight: normal;
     text-align: center;
     max-width: 800px;
@@ -1486,7 +1502,7 @@ footer p {
   }
 
   .case-info-emp {
-    font-family: 'Optima';
+    font-family: "Optima";
     font-weight: normal;
     text-align: center;
     max-width: 900px;
