@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rosendal</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v1-1" />
     <meta
       name="description"
       content="Rosendal Castle is an invitation into an exclusive space where time comes to life. Here, presence is woven into every detail. Rosendal facilitates timeless gatherings with space to be, sense, and listen completely."
@@ -322,66 +322,66 @@
 
     <script src="script.js"></script>
     <script>
-      let slideIndex2 = 0;
-      let ii;
-      let xx = document.querySelectorAll(".caseSlides");
-      let slideIndexTall2 = 0;
-      let tall2 = document.querySelectorAll(".caseSlides2");
+      let slideIndex2 = 0
+      let ii
+      let xx = document.querySelectorAll('.caseSlides')
+      let slideIndexTall2 = 0
+      let tall2 = document.querySelectorAll('.caseSlides2')
 
-      carousel2();
+      carousel2()
 
-      let slideIndex = 0;
+      let slideIndex = 0
 
-      automaticSlider2();
+      automaticSlider2()
 
       function automaticSlider2() {
-        showSlides2(slideIndex);
+        showSlides2(slideIndex)
         myTimer2 = setInterval(function () {
-          plusSlides2(1);
-        }, 4000);
+          plusSlides2(1)
+        }, 4000)
       }
 
       function plusSlides2(n) {
-        clearInterval(myTimer2);
+        clearInterval(myTimer2)
         if (n < 0) {
-          showSlides2((slideIndex -= 1));
+          showSlides2((slideIndex -= 1))
         } else {
-          showSlides2((slideIndex += 1));
+          showSlides2((slideIndex += 1))
         }
         if (n === -1) {
           myTimer2 = setInterval(function () {
-            plusSlides2(n + 2);
-          }, 4000);
+            plusSlides2(n + 2)
+          }, 4000)
         } else {
           myTimer2 = setInterval(function () {
-            plusSlides2(n + 1);
-          }, 4000);
+            plusSlides2(n + 1)
+          }, 4000)
         }
       }
 
       function showSlides2(n) {
-        let i3;
-        let slides2 = document.getElementsByClassName("slideshowSlides");
+        let i3
+        let slides2 = document.getElementsByClassName('slideshowSlides')
         if (n > slides2.length) {
-          slideIndex = 1;
+          slideIndex = 1
         }
         if (n < 1) {
-          slideIndex = slides2.length;
+          slideIndex = slides2.length
         }
         for (i3 = 0; i3 < slides2.length; i3++) {
-          slides2[i3].style.display = "none";
+          slides2[i3].style.display = 'none'
         }
 
-        slides2[slideIndex - 1].style.display = "block";
+        slides2[slideIndex - 1].style.display = 'block'
       }
 
       // slides 3
-      let slideIndex3 = 0;
+      let slideIndex3 = 0
 
-      automaticSlider3();
+      automaticSlider3()
 
       function automaticSlider3() {
-        showSlides3(slideIndex3);
+        showSlides3(slideIndex3)
         // myTimer3 = setInterval(function () {
         //   plusSlides3(1);
         // }, 4000);
@@ -390,9 +390,9 @@
       function plusSlides3(n) {
         // clearInterval(myTimer3);
         if (n < 0) {
-          showSlides3((slideIndex3 -= 1));
+          showSlides3((slideIndex3 -= 1))
         } else {
-          showSlides3((slideIndex3 += 1));
+          showSlides3((slideIndex3 += 1))
         }
         // if (n === -1) {
         //   myTimer3 = setInterval(function () {
@@ -406,30 +406,30 @@
       }
 
       function showSlides3(n) {
-        let i;
-        let slides = document.getElementsByClassName("slideshowSlides3");
+        let i
+        let slides = document.getElementsByClassName('slideshowSlides3')
         if (n > slides.length) {
-          slideIndex3 = 1;
+          slideIndex3 = 1
         }
         if (n < 1) {
-          slideIndex3 = slides.length;
+          slideIndex3 = slides.length
         }
         for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
+          slides[i].style.display = 'none'
         }
 
-        slides[slideIndex3 - 1].style.display = "block";
+        slides[slideIndex3 - 1].style.display = 'block'
       }
 
       // SLides 3 END
 
       // slides 3
-      let slideIndex44 = 0;
+      let slideIndex44 = 0
 
-      automaticSlider4();
+      automaticSlider4()
 
       function automaticSlider4() {
-        showSlides4(slideIndex44);
+        showSlides4(slideIndex44)
         // myTimer4 = setInterval(function () {
         //   plusSlides4(1);
         // }, 4000);
@@ -438,9 +438,9 @@
       function plusSlides4(n) {
         // clearInterval(myTimer4);
         if (n < 0) {
-          showSlides4((slideIndex44 -= 1));
+          showSlides4((slideIndex44 -= 1))
         } else {
-          showSlides4((slideIndex44 += 1));
+          showSlides4((slideIndex44 += 1))
         }
         // if (n === -1) {
         //   myTimer4 = setInterval(function () {
@@ -454,19 +454,19 @@
       }
 
       function showSlides4(n) {
-        let i;
-        let slides = document.getElementsByClassName("slideshowSlides4");
+        let i
+        let slides = document.getElementsByClassName('slideshowSlides4')
         if (n > slides.length) {
-          slideIndex44 = 1;
+          slideIndex44 = 1
         }
         if (n < 1) {
-          slideIndex44 = slides.length;
+          slideIndex44 = slides.length
         }
         for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
+          slides[i].style.display = 'none'
         }
 
-        slides[slideIndex44 - 1].style.display = "block";
+        slides[slideIndex44 - 1].style.display = 'block'
       }
 
       // SLides 4 END
@@ -475,41 +475,41 @@
         /*------- Desktop -------*/
 
         if (slideIndex2 > xx.length - 1) {
-          slideIndex2 = 0;
+          slideIndex2 = 0
         }
         xx.forEach((billede) => {
-          billede.style.display = "none";
-        });
+          billede.style.display = 'none'
+        })
 
-        xx[slideIndex2].style.display = "block";
-        slideIndex2++;
+        xx[slideIndex2].style.display = 'block'
+        slideIndex2++
         // skifter display mode hvert andet sekundt
-        setTimeout(carousel2, 3000);
+        setTimeout(carousel2, 3000)
       }
 
-      carouselTall2();
+      carouselTall2()
       function carouselTall2() {
         /*------- Desktop -------*/
 
         if (slideIndexTall2 > tall2.length - 1) {
-          slideIndexTall2 = 0;
+          slideIndexTall2 = 0
         }
         tall2.forEach((billede) => {
-          billede.style.display = "none";
-        });
+          billede.style.display = 'none'
+        })
 
-        tall2[slideIndexTall2].style.display = "block";
-        slideIndexTall2++;
+        tall2[slideIndexTall2].style.display = 'block'
+        slideIndexTall2++
         // skifter display mode hvert andet sekundt
-        setTimeout(carouselTall2, 3000);
+        setTimeout(carouselTall2, 3000)
       }
 
-      let slideIndex4 = 0;
+      let slideIndex4 = 0
 
-      automaticSlider();
+      automaticSlider()
 
       function automaticSlider() {
-        showSlides(slideIndex4);
+        showSlides(slideIndex4)
         // myTimer = setInterval(function () {
         //   plusSlides(1);
         // }, 4000);
@@ -518,9 +518,9 @@
       function plusSlides(n) {
         // clearInterval(myTimer);
         if (n < 0) {
-          showSlides((slideIndex4 -= 1));
+          showSlides((slideIndex4 -= 1))
         } else {
-          showSlides((slideIndex4 += 1));
+          showSlides((slideIndex4 += 1))
         }
         // if (n === -1) {
         //   myTimer = setInterval(function () {
@@ -534,27 +534,27 @@
       }
 
       function showSlides(n) {
-        let i2;
-        let slides = document.getElementsByClassName("slideshowSlides2");
+        let i2
+        let slides = document.getElementsByClassName('slideshowSlides2')
         if (n > slides.length) {
-          slideIndex4 = 1;
+          slideIndex4 = 1
         }
         if (n < 1) {
-          slideIndex4 = slides.length;
+          slideIndex4 = slides.length
         }
         for (i2 = 0; i2 < slides.length; i2++) {
-          slides[i2].style.display = "none";
+          slides[i2].style.display = 'none'
         }
 
-        slides[slideIndex4 - 1].style.display = "block";
+        slides[slideIndex4 - 1].style.display = 'block'
       }
     </script>
 
     <!-- Default Statcounter code for gryechwald.com http://www.gryechwald.com/ -->
     <script type="text/javascript">
-      var sc_project = 7426606;
-      var sc_invisible = 1;
-      var sc_security = "d78f7e39";
+      var sc_project = 7426606
+      var sc_invisible = 1
+      var sc_security = 'd78f7e39'
     </script>
     <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
     <noscript>
