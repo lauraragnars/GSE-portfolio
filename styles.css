@@ -280,6 +280,10 @@ span.hiddenn {
   object-position: 50% 35%;
 }
 
+.billede1111 {
+  object-position: 0% 60%;
+}
+
 .billede2 {
   object-position: 20% 60%;
 }
@@ -716,6 +720,16 @@ span.hiddenn {
   min-height: 100%;
 }
 
+.bg-img-case-rosendal {
+  height: 70vh;
+  width: 100%;
+  background-image: url(case_billeder/rosendal/rosendal-top-billede.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .case-title {
   font-family: "Optima";
   font-size: 1.7rem;
@@ -884,6 +898,10 @@ span.hiddenn {
   margin: auto;
 }
 
+.collaborators-beige {
+  background-color: #f9faf8;
+}
+
 .collaborators h2 {
   font-family: futura-pt;
   font-size: 1.5rem;
@@ -944,6 +962,13 @@ video {
   align-self: center;
   font-size: 1.2rem;
   line-height: 30px;
+  padding: 3rem 0;
+  background-color: #f1f3f0;
+  margin-top: -5px;
+}
+
+.rosendal-website .case-col-text {
+  background-color: transparent;
 }
 
 .case-text p {
@@ -1084,26 +1109,31 @@ video {
   text-align: center;
   cursor: pointer;
   position: absolute;
+  mix-blend-mode: exclusion;
 }
 
 #microsoft-ss-3 .ss-button {
   transform: translate(0%, -200%);
 }
 
-.img-arrow:hover {
-  border: solid #3b3b3b;
-  border-width: 0 1px 1px 0;
+.img-arrow {
+  border: solid white;
+  border-width: 0 1.5px 1.5px 0;
   display: inline-block;
   padding: 8px;
   transition: 0.3s;
+  background-blend-mode: exclusion;
+  mix-blend-mode: exclusion;
 }
 
-.img-arrow {
-  border: solid #c6c6c6;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 8px;
-  transition: 0.3s;
+@media (hover: hover) {
+  .img-arrow:hover {
+    border: solid #3b3b3b;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 8px;
+    transition: 0.3s;
+  }
 }
 
 .right {
@@ -1149,6 +1179,14 @@ video {
 
 .case-text br {
   display: none;
+}
+
+.desktop-br {
+  display: none;
+}
+
+.mobile-br {
+  display: block;
 }
 
 /* -------------- FOOTER -------------- */
@@ -1236,6 +1274,14 @@ footer p {
   .case-text br {
     display: block;
   }
+
+  .desktop-br {
+    display: block;
+  }
+
+  .mobile-br {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -1301,6 +1347,11 @@ footer p {
     padding: 0;
   }
 
+  .case-col-text {
+    background-color: transparent;
+    margin-top: 0;
+  }
+
   .high-end-whisky .custom-br {
     display: none;
   }
@@ -1344,6 +1395,16 @@ footer p {
   #contact .col3 {
     flex-grow: 1;
     flex-basis: 100px;
+  }
+
+  @media (hover: hover) {
+    .img-arrow:hover {
+      border: solid #3b3b3b;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 13px;
+      transition: 0.3s;
+    }
   }
 
   /* -------------- FORSIDE -------------- */
@@ -1559,6 +1620,10 @@ footer p {
     transform: translate(0%, -50%);
   }
 
+  /* .ss-button {
+    mix-blend-mode: normal;
+  } */
+
   /* --------------ALLE UNDERSIDER-------------- */
 
   .undersider-title {
@@ -1621,16 +1686,9 @@ footer p {
     text-align: center;
   }
 
-  .img-arrow:hover {
-    border: solid #3b3b3b;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 13px;
-    transition: 0.3s;
-  }
-
+  /* border: solid #c6c6c6; */
   .img-arrow {
-    border: solid #c6c6c6;
+    border: solid white;
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 13px;
