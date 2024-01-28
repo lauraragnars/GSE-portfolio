@@ -660,6 +660,16 @@ span.hiddenn {
   min-height: 100%;
 }
 
+.bg-img-case-ma {
+  height: 70vh;
+  width: 100%;
+  background-image: url(case_billeder/matas/matas-1.jpeg);
+  background-size: cover;
+  background-position: 50% 30%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .bg-img-case-tb {
   height: 70vh;
   width: 100%;
