@@ -5,8 +5,6 @@ const date = new Date();
 const year = date.getFullYear();
 
 function sidenVises() {
-  console.log("sidenVises!!!");
-
   yearDOM.textContent = year;
   document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 }
