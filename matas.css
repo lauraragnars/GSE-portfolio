@@ -1,0 +1,48 @@
+#matas .case-small-thumbnail {
+  padding: 2rem 0;
+  width: 45%;
+  margin-left: 27.5%;
+}
+
+/* #matas img {
+  display: flex;
+} */
+
+.flex {
+  display: flex;
+}
+
+.full-video {
+  padding: 0;
+  width: 100%;
+  min-width: 100%;
+}
+
+.full-image {
+  padding: 0;
+  width: 100%;
+  min-width: 100%;
+}
+
+.full-image img {
+  aspect-ratio: 16 / 9;
+  object-position: center bottom;
+  object-fit: cover;
+}
+
+.portrait-image img {
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.stretch-items {
+  align-items: stretch;
+}
+
+@media only screen and (min-width: 800px) {
+  #matas .case-small-thumbnail {
+    padding: 2rem 0;
+    width: 30%;
+    margin-left: 35%;
+  }
+}

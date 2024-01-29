@@ -10,6 +10,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 img {
@@ -1171,6 +1172,27 @@ video {
   padding: 20px 0 25px 0;
 }
 
+.caption-large {
+  font-family: "Optima";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.padding-top {
+  padding-top: 2rem;
+}
+
+.padding-bottom-mobile {
+  padding-bottom: 1rem;
+}
+
+.padding-bottom {
+  padding-bottom: 3rem;
+}
+
 .smaller-pictures {
   max-width: 1000px;
   margin: 0 auto;
@@ -1355,6 +1377,14 @@ footer p {
 @media only screen and (min-width: 800px) {
   .high-end-whisky .case-col-text p {
     padding: 0;
+  }
+
+  .caption-large {
+    font-size: 1.7rem;
+  }
+
+  .padding-bottom-mobile {
+    padding-bottom: unset;
   }
 
   .case-col-text {
