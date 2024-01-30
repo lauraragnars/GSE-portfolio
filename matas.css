@@ -4,18 +4,43 @@
   margin-left: 27.5%;
 }
 
-/* #matas img {
-  display: flex;
-} */
-
 .flex {
   display: flex;
 }
 
+.col-portrait {
+  aspect-ratio: 2 / 3;
+}
+
+.img-zoom {
+  transform: scale(1.4);
+  transform-origin: 50% 25%;
+}
+
+.col-portrait img {
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 2 / 3;
+}
+
+#matas .col-fs img {
+  min-height: 100%;
+  object-fit: cover;
+}
+
+#matas .col-fs {
+  margin: -10px;
+  overflow: hidden;
+}
+
+#matas .section-wrapper-fs {
+  overflow: hidden;
+}
 .full-video {
-  padding: 0;
+  padding: 0 !important;
+  margin: 0;
   width: 100%;
-  min-width: 100%;
+  max-width: unset;
 }
 
 .full-image {
