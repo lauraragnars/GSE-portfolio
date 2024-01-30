@@ -56,7 +56,7 @@
 }
 
 .portrait-image img {
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 4/ 5;
   object-fit: cover;
 }
 
