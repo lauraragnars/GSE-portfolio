@@ -78,6 +78,16 @@ a {
   display: inline;
 }
 
+.vertical-padding {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.col-fs-small.no-padding-mob {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* -------------- MENU -------------- */
 
 #menu {
@@ -1377,6 +1387,10 @@ footer p {
 @media only screen and (min-width: 800px) {
   .high-end-whisky .case-col-text p {
     padding: 0;
+  }
+
+  .no-padding-mob {
+    padding: 10vw;
   }
 
   .caption-large {
