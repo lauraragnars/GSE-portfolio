@@ -10,6 +10,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 img {
@@ -75,6 +76,16 @@ a {
 
 .currentyear {
   display: inline;
+}
+
+.vertical-padding {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.col-fs-small.no-padding-mob {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* -------------- MENU -------------- */
@@ -660,6 +671,16 @@ span.hiddenn {
   min-height: 100%;
 }
 
+.bg-img-case-ma {
+  height: 70vh;
+  width: 100%;
+  background-image: url(case_billeder/matas/matas-1-1.png);
+  background-size: cover;
+  background-position: 50% 40%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .bg-img-case-tb {
   height: 70vh;
   width: 100%;
@@ -1161,6 +1182,27 @@ video {
   padding: 20px 0 25px 0;
 }
 
+.caption-large {
+  font-family: "Optima";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.padding-top {
+  padding-top: 2rem;
+}
+
+.padding-bottom-mobile {
+  padding-bottom: 1rem;
+}
+
+.padding-bottom {
+  padding-bottom: 3rem;
+}
+
 .smaller-pictures {
   max-width: 1000px;
   margin: 0 auto;
@@ -1347,6 +1389,18 @@ footer p {
     padding: 0;
   }
 
+  .no-padding-mob {
+    padding: 10vw;
+  }
+
+  .caption-large {
+    font-size: 1.7rem;
+  }
+
+  .padding-bottom-mobile {
+    padding-bottom: unset;
+  }
+
   .case-col-text {
     background-color: transparent;
     margin-top: 0;
@@ -1466,6 +1520,11 @@ footer p {
 
   .grid-item {
     margin-bottom: 20px;
+  }
+
+  .grid-item img {
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
   }
 
   #menu {
