@@ -11,6 +11,17 @@
   aspect-ratio: 2 / 3;
 }
 
+.img-padding-extra {
+  padding: 10vw;
+  align-self: center;
+}
+
+.mobile-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+}
+
 .img-zoom {
   transform: scale(1.4);
   transform-origin: 50% 25%;
@@ -68,5 +79,10 @@
     padding: 2rem 0;
     width: 30%;
     margin-left: 35%;
+  }
+
+  .mobile-reverse {
+    display: flex;
+    flex-direction: column;
   }
 }

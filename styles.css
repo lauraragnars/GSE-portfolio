@@ -674,9 +674,9 @@ span.hiddenn {
 .bg-img-case-ma {
   height: 70vh;
   width: 100%;
-  background-image: url(case_billeder/matas/matas-1.jpeg);
+  background-image: url(case_billeder/matas/matas-1-1.png);
   background-size: cover;
-  background-position: 50% 30%;
+  background-position: 50% 40%;
   min-width: 100%;
   min-height: 100%;
 }
